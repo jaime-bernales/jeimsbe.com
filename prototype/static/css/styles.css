@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/* 
+==============================
+	Bases
+==============================
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+  
+html {
+    scroll-behavior: smooth;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+:root{
+    /* Colors */
+    --green: #153926;
+    --dark-green: #112D1F;
+    --beige: #D7CFB9;
+    --black: #000000;
+    --dark-gray: #444444;
+    --mid-gray: #888888;
+    --light-gray: #CCCCCC;
+    --white: #FFFFFF;
+
+    /* Spacing */
+    --S: 8px;
+    --M: 16px;
+    --L: 32px;
+    --XL: 40px;
+
+    /* Fonts */
+
+}
+
+body {
+    background-color: var(--green);
+    margin: 0;
+}
+
+nav.menu {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    background-image: url(../img/icons/menu.svg);
+    background-repeat: no-repeat;
+    background-color: var(--dark-green);
+    background-position: center;
+}
+
+.container {
+    padding: var(--M);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* 
+==============================
+	Contenido
+==============================
+*/
+
+.side {
+    display: block;
+    position: fixed;
+    height: 100%;
+    width: 50%;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    background-color: #19402B;
+}
+
+.hero-image {
+    margin: 210px auto 0 auto;
+    width: 100%;
+    height: auto;
+    display: block;
+}
