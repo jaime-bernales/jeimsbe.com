@@ -18,6 +18,8 @@
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
 }
+
+img {display: block}
   
 html {
     scroll-behavior: smooth;
@@ -28,7 +30,30 @@ html {
     user-select: none;
 }
 
+@font-face {
+    font-family: 'Poppins-Extralight';
+    src: url(../fonts/Poppins-ExtraLight.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url(../fonts/Poppins-Regular.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url(../fonts/Poppins-Medium.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'Poppins-Semibold';
+    src: url(../fonts/Poppins-SemiBold.ttf) format(truetype);
+}
+
 :root {
+    /* Fonts */
+    font-family: 'Poppins-Regular', sans-serif;
+
     /* Colors */
     --green: #153926;
     --dark-green: #112D1F;
@@ -44,15 +69,13 @@ html {
     --M: 16px;
     --L: 32px;
     --XL: 40px;
-
-    /* Fonts */
-
 }
 
-body {
-    background-color: var(--green);
-    margin: 0;
-}
+.mb-s {margin-bottom: var(--S)}
+.mb-m {margin-bottom: var(--M)}
+
+body {margin: 0}
+body.home {background-color: var(--green)}
 
 nav.menu {
     width: 50px;
@@ -68,13 +91,27 @@ nav.menu {
 }
 
 .btn {
-    display: block;
+    display: inline-block;
     width: auto;
     padding: 0 var(--L);
     height: 60px;
+    line-height: 60px;
     text-align: center;
     font-size: var(--M);
-    border-radius: 0;
+    border: 0;
+    text-decoration: none;
+    border-radius: 60px;
+    font-family: 'Poppins-Semibold', sans-serif;
+}
+
+.btn-primary {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.btn-secondary {
+    background-color: var(--beige);
+    color: var(--green);
 }
 
 .container {
@@ -90,6 +127,13 @@ nav.menu {
 ==============================
 */
 
+h1.home {
+    font-size: 40px;
+    line-height: 54px;
+    color: var(--white);
+    font-family: 'Poppins-Extralight', sans-serif;
+}
+
 .side {
     display: block;
     position: fixed;
@@ -102,7 +146,7 @@ nav.menu {
 }
 
 .hero-image {
-    margin: 210px auto 0 auto;
+    margin: 100px auto 32px auto;
     width: 100%;
     height: auto;
     display: block;
