@@ -1,0 +1,15 @@
+/* Margin */
+.mt-0 {margin-top: 0}
+.mt-s {margin-top: var(--S)}
+.mt-m {margin-top: var(--M)}
+.mt-l {margin-top: var(--L)}
+.mt-xl {margin-top: var(--XL)}
+
+/* Padding */
+.pt-0 {padding-top: 0} 
+.pt-s {padding-top: var(--S)}
+.pt-m {padding-top: var(--M)}
+.pt-l {padding-top: var(--L)}
+.pt-xl {padding-top: var(--XL)}
+
+/* Display */
