@@ -23,17 +23,18 @@ html {
 }
 
 body {
-    padding: 16px;
+    padding: 50px 16px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
+    text-align: center;
     margin-bottom: 40px;
 }
 
 ul li {
     list-style: none;
-    border: 1px solid #909090;
+    border: 1px solid #e1e1e1;
     border-bottom-width: 0;
 }
 
