@@ -58,7 +58,27 @@ html {
 }
 
 body {margin: 0}
-body.home {background-color: var(--beige)}
+
+body.home {
+    background-color: var(--beige);
+    background: linear-gradient(-45deg, #D7CFB9, #D7CFB9, #AEA187, #AEA187, #D7CFB9, #D7CFB9, #AEA187, #AEA187);
+    background-size: 400% 400%;
+    animation: gradientHome 10s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradientHome {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 
 /* Buttons */
 
@@ -104,6 +124,8 @@ header {
     top: 0;
     left: 0;
     background-color: rgba(215, 207, 185, 0.8);
+    background-color: transparent;
+
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
     -o-backdrop-filter: blur(50px);
