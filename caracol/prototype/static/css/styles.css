@@ -63,7 +63,7 @@ body.home {
     background-color: var(--beige);
     background: linear-gradient(-45deg, #D7CFB9, #D7CFB9, #AEA187, #AEA187, #D7CFB9, #D7CFB9, #AEA187, #AEA187);
     background-size: 400% 400%;
-    animation: gradientHome 10s ease infinite;
+    animation: gradientHome 5s ease infinite;
     height: 100vh;
 }
 
@@ -125,17 +125,30 @@ header {
     left: 0;
     background-color: rgba(215, 207, 185, 0.8);
     background-color: transparent;
-
+    /*background: linear-gradient(90deg, #D7CFB9 10%, transparent);*/
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
     -o-backdrop-filter: blur(50px);
     -moz-backdrop-filter: blur(50px);
 }
 
+header .gradient {
+    display: block;
+    background-image: url(../img/header-gradient.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    height: 54px;
+    width: 234px;
+    margin-top: -54px;
+    position: relative;
+    z-index: 1;
+}
+
 header nav.menu {
     width: 54px;
     height: 54px;
-    border-radius: 10px;
+    z-index: 2;
+    position: relative;
     background-image: url(../img/icons/nav-menu.svg);
     background-repeat: no-repeat;
     background-position: center;
