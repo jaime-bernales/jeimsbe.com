@@ -61,9 +61,9 @@ body {margin: 0}
 
 body.home {
     background-color: var(--beige);
-    background: linear-gradient(-45deg, #D7CFB9, #D7CFB9, #AEA187, #AEA187, #D7CFB9, #D7CFB9, #AEA187, #AEA187);
+    background: linear-gradient(-45deg, #D7CFB9, #D7CFB9, #AEA187, #AEA187, #D7CFB9, #D7CFB9, #AEA187, #AEA187, #D7CFB9, #D7CFB9);
     background-size: 400% 400%;
-    animation: gradientHome 5s ease infinite;
+    animation: gradientHome 10s ease infinite;
     height: 100vh;
 }
 
@@ -164,7 +164,7 @@ nav.menu.active {
 
 footer {
     padding: 0;
-    background-color: #AEA187;
+    background-color: #BFB49B;
 }
 
 footer ul li {
@@ -176,6 +176,13 @@ footer ul li {
 footer ul li a {
     color: var(--black);
     text-decoration: none;
+    display: inline-block;
+}
+
+footer ul li img {
+    display: block;
+    float: right;
+    margin-left: 4px;
 }
 
 /* 
