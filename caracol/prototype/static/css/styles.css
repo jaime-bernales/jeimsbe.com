@@ -178,6 +178,11 @@ footer ul li a {
     display: inline-block;
     padding: var(--M);
     height: 53px;
+    width: 100%;
+}
+
+footer ul li a span {
+    display: inline-block;
 }
 
 footer ul li img {
