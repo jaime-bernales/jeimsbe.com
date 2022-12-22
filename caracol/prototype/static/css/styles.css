@@ -61,9 +61,9 @@ body {margin: 0}
 
 body.home {
     background-color: var(--beige);
-    background: linear-gradient(-45deg, #D7CFB9, #D7CFB9, #AEA187, #AEA187, #D7CFB9, #D7CFB9, #AEA187, #AEA187, #D7CFB9, #D7CFB9);
+    background: linear-gradient(-45deg, #D7CFB9, #D7CFB9, #AEA187, #AEA187, #D7CFB9, #D7CFB9, #AEA187, #AEA187);
     background-size: 400% 400%;
-    animation: gradientHome 10s ease infinite;
+    animation: gradientHome 5s ease infinite;
     height: 100vh;
 }
 
@@ -169,7 +169,6 @@ footer {
 
 footer ul li {
     list-style: none;
-    padding: var(--M);
     border-bottom: 1px solid var(--beige);
 }
 
@@ -177,6 +176,8 @@ footer ul li a {
     color: var(--black);
     text-decoration: none;
     display: inline-block;
+    padding: var(--M);
+    height: 53px;
 }
 
 footer ul li img {
