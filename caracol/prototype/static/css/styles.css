@@ -57,10 +57,12 @@ html {
     --XL: 40px;
 }
 
-body {margin: 0}
+body {
+    margin: 0;
+    background-color: var(--beige);
+}
 
 body.home {
-    background-color: var(--beige);
     background: linear-gradient(-45deg, #D7CFB9, #D7CFB9, #AEA187, #AEA187, #D7CFB9, #D7CFB9, #AEA187, #AEA187);
     background-size: 400% 400%;
     animation: gradientHome 5s ease infinite;
@@ -151,6 +153,18 @@ header nav.menu {
     z-index: 2;
     position: relative;
     background-image: url(../img/icons/nav-menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header .back {
+    width: 54px;
+    height: 54px;
+    display: block;
+    z-index: 2;
+    position: relative;
+    background-image: url(../img/icons/nav-back.svg);
+    background-size: 24px;
     background-repeat: no-repeat;
     background-position: center;
 }
