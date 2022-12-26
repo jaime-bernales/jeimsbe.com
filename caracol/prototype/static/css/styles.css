@@ -20,7 +20,7 @@
     font-family: 'Unbounded-Regular', cursive;
 
     /* Colors */
-    --beige: #D7CFB9;
+    --primary: #D7CFB9;
     --black: #000000;
     --white: #FFFFFF;
 
@@ -64,7 +64,7 @@ h1 {
 
 body {
     margin: 0;
-    background-color: var(--beige);
+    background-color: var(--primary);
 }
 
 body.home {
@@ -162,7 +162,7 @@ footer {
 
 footer ul li {
     list-style: none;
-    border-bottom: 1px solid var(--beige);
+    border-bottom: 1px solid var(--primary);
 }
 
 footer ul li a {
