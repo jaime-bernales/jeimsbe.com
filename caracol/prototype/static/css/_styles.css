@@ -87,31 +87,7 @@ body.home {
 }
 
 
-/* Buttons */
-
-.btn {
-    display: inline-block;
-    width: auto;
-    padding: 0 var(--L);
-    height: 60px;
-    text-transform: uppercase;
-    line-height: 60px;
-    text-align: center;
-    font-size: var(--M);
-    border: 0;
-    text-decoration: none;
-    font-family: 'Unbounded-Medium', cursive;
-}
-
-.btn-primary {
-    background-color: var(--black);
-    color: var(--white);
-}
-
-.btn-secondary {
-    background-color: var(--beige);
-    color: var(--green);
-}
+@import "buttons.css";
 
 /* Wrappers */
 
@@ -277,8 +253,6 @@ footer ul li img {
     background-position: center right 30px;
     background-image: url(../img/icons/arrow-start.svg);
 }
-
-
 
 
 @import "helpers.css";
