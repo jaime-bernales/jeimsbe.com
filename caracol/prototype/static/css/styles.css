@@ -173,11 +173,11 @@ nav.nav-overlay.active {
 
 footer {
     padding: 0;
-    background-color: #BFB49B;
 }
 
 footer ul li {
     list-style: none;
+    background-color: #BFB49B;
     margin-bottom: 1px;
 }
 
