@@ -86,6 +86,20 @@ body.home {
     }
 }
 
+.home-gradient {
+    display: block;
+    background-image: url(../img/home-gradient.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 100% auto;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
 /* Wrappers */
 
 .container {
@@ -109,20 +123,6 @@ header {
     -webkit-backdrop-filter: blur(50px);
     -o-backdrop-filter: blur(50px);
     -moz-backdrop-filter: blur(50px);
-}
-
-.home-gradient {
-    display: block;
-    background-image: url(../img/home-gradient.png);
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-size: 100% auto;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    position: absolute;
-    z-index: -1;
 }
 
 header nav.menu {
@@ -149,8 +149,24 @@ header .back {
 
 /* Navigation */
 
-nav.menu.active {
-    background-image: url(../img/icons/nav-close.svg);
+nav.nav-overlay {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(215, 207, 185, 0.8);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    -o-backdrop-filter: blur(50px);
+    -moz-backdrop-filter: blur(50px);
+    position: fixed;
+    left: 0;
+    z-index: 11;
+    bottom: -100%;
+    transition: all 0.5s ease;
+}
+
+nav.nav-overlay.active {
+    bottom: 0;
+    transition: all 0.5s ease;
 }
 
 /* Footer */
