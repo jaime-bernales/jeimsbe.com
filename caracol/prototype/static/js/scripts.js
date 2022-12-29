@@ -7,3 +7,8 @@ $(function() {
         $(this).removeClass('active');
     })
 });
+
+
+$('.input-group').click(function(){
+    $(this).addClass('active');
+});

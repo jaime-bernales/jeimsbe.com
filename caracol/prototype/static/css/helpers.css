@@ -16,3 +16,6 @@
 .pt-xl {padding-top: var(--XL)}
 
 /* Display */
+.block {display: block}
+.inline {display: inline}
+.inline-block {display: inline-block}

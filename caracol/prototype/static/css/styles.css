@@ -101,7 +101,6 @@ body.home {
 }
 
 /* Wrappers */
-
 .container {
     padding: var(--M);
     width: 100%;
@@ -110,7 +109,6 @@ body.home {
 }
 
 /* Headers */
-
 header {
     height: 54px;
     width: 100%;
@@ -148,10 +146,10 @@ header .back {
 }
 
 /* Navigation */
-
-nav.nav-overlay {
+.nav-overlay {
     height: 100vh;
     width: 100%;
+    padding: 16px;
     background-color: rgba(215, 207, 185, 0.8);
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
@@ -162,11 +160,34 @@ nav.nav-overlay {
     z-index: 11;
     bottom: -100vh;
     transition: all 0.5s ease;
+    overflow: hidden;
 }
 
-nav.nav-overlay.active {
+.nav-overlay.active {
     bottom: 0;
     transition: all 0.5s ease;
+}
+
+.nav-overlay .cta {
+    position: absolute;
+    bottom: 50px;
+}
+
+.nav-overlay .cta .btn {
+    display: inline-block;
+    float: left;
+    clear: left;
+}
+
+.nav-overlay .close {
+    position: fixed;
+    top: -300px;
+    left: 16px;
+    transition: all 1s ease;
+}
+
+.nav-overlay.active .close {
+    top: 16px;
 }
 
 /* Footer */

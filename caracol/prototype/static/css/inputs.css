@@ -1,3 +1,29 @@
+.input-group {
+	position: relative;
+}
+
+.input-group .input-label {
+	font-size: var(--M);
+	position: absolute;
+	bottom: 24px;
+	padding: 0 16px;
+	left: 0;
+	height: 56px;
+	line-height: 56px;
+	width: 100%;
+	color: #9E957D;
+    transition: all 0.3s ease;
+}
+
+.input-group.active .input-label {
+	font-size: 12px;
+	height: 12px;
+	line-height: 12px;
+	bottom: auto;
+	top: 0;
+    transition: all 0.3s ease;
+}
+
 input {
 	caret-color: var(--black);
 }
