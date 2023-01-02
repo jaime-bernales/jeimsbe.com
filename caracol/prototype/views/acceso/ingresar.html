@@ -9,6 +9,7 @@
 
         <link rel="stylesheet" type="text/css" href="../../static/css/styles.css">
         <link rel="stylesheet" type="text/css" href="../../static/css/buttons.css">
+        <link rel="stylesheet" type="text/css" href="../../static/css/inputs.css">
         <link rel="stylesheet" type="text/css" href="../../static/css/helpers.css">
     </head>
 
@@ -20,7 +21,17 @@
         <div class="container">
             <h1>Ingresar</h1>
 
-            <input class="input-text" type="email" id="emailLogin" name="emailLogin">
+            <div class="input-group">
+                <label class="input-label" for="emailAccess">Email</label>
+                <input class="input-text" type="email" id="emailAccess" name="emailAccess">
+            </div>
+
+            <div class="input-group">
+                <label class="input-label" for="passAccess">Contraseña</label>
+                <input class="input-text" type="email" id="passAccess" name="passAccess">
+            </div>
+            
+            <button class="btn btn-primary" type="button">Iniciar sesión</button>
         </div>
 
         <script type="text/javascript" src="static/js/jquery-3.6.0.min.js"></script>
