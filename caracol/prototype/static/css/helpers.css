@@ -19,3 +19,7 @@
 .block {display: block}
 .inline {display: inline}
 .inline-block {display: inline-block}
+
+/* Floating */
+.float-right {float: right}
+.float-left {float: left}
