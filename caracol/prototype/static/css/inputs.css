@@ -42,3 +42,9 @@ input {
     font-family: 'Unbounded-Regular', cursive;
     outline: none;
 }
+
+.input-text.password {
+	background-image: url(../img/icons/pass-hide.svg);
+	background-repeat: no-repeat;
+	background-position: right 16px center;
+}
