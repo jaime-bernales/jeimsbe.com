@@ -140,6 +140,7 @@ header nav.menu {
 }
 
 header .back {
+    display: block;
     width: 54px;
     height: 54px;
     display: block;

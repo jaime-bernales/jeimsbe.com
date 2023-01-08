@@ -77,7 +77,19 @@
         </footer>
         
         <script type="text/javascript" src="static/js/jquery-3.6.0.min.js"></script>
-        <script type="text/javascript" src="static/js/scripts.js"></script>
+        <script type="text/javascript" src="static/js/inputs.js"></script>
+
+        <script type="text/javascript">
+            $(function() {
+                $('#home-menu').click(function(){
+                    $('.nav-overlay').addClass('active');
+                });
+
+                $('.nav-overlay').click(function(){
+                    $(this).removeClass('active');
+                })
+            });
+        </script>
     </body>
 
 </html>

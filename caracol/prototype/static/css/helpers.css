@@ -19,6 +19,7 @@
 .block {display: block}
 .inline {display: inline}
 .inline-block {display: inline-block}
+.hidden {display: none !important}
 
 /* Floating */
 .float-right {float: right}
