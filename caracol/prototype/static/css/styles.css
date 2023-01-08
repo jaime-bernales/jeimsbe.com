@@ -27,8 +27,8 @@
     /* Sizing */
     --S: 8px;
     --M: 16px;
-    --L: 32px;
-    --XL: 40px;
+    --L: 24px;
+    --XL: 32px;
 }
 
 * {
@@ -62,7 +62,7 @@ html {
 }
 
 h1 {
-    font-size: var(--L);
+    font-size: var(--XL);
     line-height: 36px;
     text-align: center;
     margin: 140px 0 64px 0;
@@ -112,6 +112,7 @@ body.home {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
+    height: 100vh;
 }
 
 /* Headers */
@@ -239,7 +240,7 @@ footer ul li img {
     width: calc(100% - 30px);
     color: var(--black);
     text-align: left;
-    margin: 0  0 var(--L) 0;
+    margin: 0  0 var(--XL) 0;
 }
 
 .home .hero-image {
