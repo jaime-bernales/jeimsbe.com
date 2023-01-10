@@ -55,10 +55,12 @@
             $(function() {
                 $('.back').click(function(){
                     $('.nav-overlay').addClass('active');
+                    $('body').css('overflow', 'hidden');
                 });
 
                 $('.nav-overlay').click(function(){
                     $(this).removeClass('active');
+                    $('body').css('overflow', 'auto');
                 })
             });
         </script>
