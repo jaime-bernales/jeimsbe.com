@@ -7,6 +7,11 @@
 */
 
 @font-face {
+    font-family: 'Unbounded-Light';
+    src: url(../fonts/Unbounded-Light.ttf) format(truetype);
+}
+
+@font-face {
     font-family: 'Unbounded-Regular';
     src: url(../fonts/Unbounded-Regular.ttf) format(truetype);
 }
@@ -66,6 +71,14 @@ h1 {
     line-height: 36px;
     text-align: center;
     margin: 140px 0 64px 0;
+}
+
+
+p {
+    font-size: var(--M);
+    line-height: var(--L);
+    margin: 0 0 var(--M) 0;
+    font-family: 'Unbounded-Light', cursive;
 }
 
 body {
@@ -190,11 +203,30 @@ header .back {
     position: fixed;
     top: -300px;
     left: 16px;
+    display: block;
     transition: all 1s ease;
+    background-repeat: no-repeat;
+    background-image: url(../img/icons/overlay-close.svg);
+    width: 60px;
+    height: 60px;
 }
 
 .nav-overlay.active .close {
     top: 16px;
+}
+
+.nav-overlay .overlay-content {
+    position: absolute;
+    width: calc(100% - var(--XL));
+    top: 50%;
+    margin-top: -25%;
+}
+
+.nav-overlay .overlay-content p {
+    font-family: 'Unbounded-Regular', cursive;
+    font-size: 20px;
+    line-height: var(--XL);
+    text-align: center;
 }
 
 /* Footer */

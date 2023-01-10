@@ -20,8 +20,8 @@
 }
 
 .btn-secondary {
-    background-color: var(--beige);
-    color: var(--green);
+    background-color: var(--primary);
+    color: var(--black);
 }
 
 .btn-link {

@@ -5,7 +5,9 @@
 .mt-l {margin-top: var(--L)}
 .mt-xl {margin-top: var(--XL)}
 
+.m-0 {margin-bottom: 0}
 .m-m {margin-bottom: var(--M)}
+.m-l {margin-bottom: var(--L)}
 .m-xl {margin-bottom: var(--XL)}
 
 /* Padding */
@@ -24,3 +26,5 @@
 /* Floating */
 .float-right {float: right}
 .float-left {float: left}
+
+.bg-transparent {background-color: transparent}
