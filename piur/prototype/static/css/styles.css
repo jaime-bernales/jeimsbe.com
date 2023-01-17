@@ -279,6 +279,15 @@ footer ul li img {
     margin: 0  0 var(--XL) 0;
 }
 
+@media only screen and (min-width: 300px) and (max-width: 336px) {
+
+    .home h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+}
+
 .home .hero-image {
     position: relative;
 }
@@ -286,6 +295,7 @@ footer ul li img {
 .home .hero-image .hero {
     margin: 100px auto 50px auto;
     width: calc(100% - 64px);
+    max-width: 460px;
     height: auto;
     display: block;
 }
