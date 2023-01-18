@@ -85,6 +85,11 @@ p {
     font-family: 'Unbounded-Light', cursive;
 }
 
+p.large {
+    font-size: 20px;
+    line-height: 28px;
+}
+
 body {
     margin: 0;
     background-color: var(--primary);
