@@ -14,8 +14,17 @@
     </head>
 
     <body>
+        <nav class="nav-overlay">
+            <span class="close" title="Cerrar"></span>
+
+            <div class="cta">
+                <a class="btn btn-primary m-m" href="views/acceso/ingresar.html" target="_self" title="Ingresar">Ingresar</a>
+                <a class="btn btn-primary" href="views/acceso/crear-cuenta.html" target="_self" title="Crear cuenta">Crear cuenta</a>
+            </div>
+        </nav>
+
         <header>
-            <a class="back" href="../../index.html" target="_self" title="Atrás"></a>
+            <nav id="home-menu" class="menu"></nav>
         </header>
 
         <div class="container">
@@ -24,6 +33,18 @@
 
         <script type="text/javascript" src="../../static/js/jquery-3.6.0.min.js"></script>
         <script type="text/javascript" src="../../static/js/inputs.js"></script>
+
+         <script type="text/javascript">
+            $(function() {
+                $('#home-menu').click(function(){
+                    $('.nav-overlay').addClass('active');
+                });
+
+                $('.nav-overlay').click(function(){
+                    $(this).removeClass('active');
+                })
+            });
+        </script>
     </body>
 
 </html>
