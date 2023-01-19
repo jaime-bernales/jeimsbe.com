@@ -2,6 +2,20 @@
 	position: relative;
 }
 
+.input-error {
+	display: inline-block;
+	width: 100%;
+	padding: var(--M) 80px var(--M) var(--M);
+	background-color: rgba(211, 47, 47, 0.1);
+	color: #D32F2F;
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: var(--L);
+	background-image: url(../img/icons/input-error.svg);
+	background-repeat: no-repeat;
+	background-position: right var(--M) top var(--M);
+}
+
 .input-group .input-label {
 	font-size: var(--M);
 	position: absolute;
