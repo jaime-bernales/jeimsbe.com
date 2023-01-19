@@ -93,6 +93,7 @@ p.large {
 body {
     margin: 0;
     background-color: var(--primary);
+    overflow-x: hidden;
 }
 
 body.home {
@@ -312,3 +313,29 @@ footer ul li img {
     background-position: center right 30px;
     background-image: url(../img/icons/arrow-start.svg);
 }
+
+/* 
+==============================
+    Dashboard
+==============================
+*/
+
+.dashboard-menu {
+    list-style: none;
+    width: auto;
+    display: inline-flex;
+    height: 310px;
+    overflow-x: auto;
+}
+
+.dashboard-menu li {
+    float: left;
+    height: 310px;
+    line-height: 310px;
+    width: 170px;
+    margin-right: var(--L);
+    background-color: rgba(225, 220, 207, 0.5);
+    text-align: center;
+    border-radius: 110px;
+}
+
