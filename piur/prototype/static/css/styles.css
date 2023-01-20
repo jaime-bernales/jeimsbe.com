@@ -70,6 +70,8 @@ html {
     user-select: none;
 }
 
+scrollbar-color: transparent;
+
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -352,6 +354,7 @@ footer ul li img {
     text-align: center;
     border-radius: 110px;
     font-family: 'Unbounded-Medium', cursive;
+    font-size: 18px;
 }
 
 .dashboard-menu li .menu-text {
