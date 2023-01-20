@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nueva PawCard: Piur</title>
+        <meta name="application-name" content="Caracol">
+
+        <link rel="stylesheet" type="text/css" href="../../../static/css/styles.css">
+        <link rel="stylesheet" type="text/css" href="../../../static/css/buttons.css">
+        <link rel="stylesheet" type="text/css" href="../../../static/css/inputs.css">
+        <link rel="stylesheet" type="text/css" href="../../../static/css/helpers.css">
+    </head>
+
+    <body>
+        <nav class="nav-overlay">
+            <span class="close" title="Cerrar"></span>
+
+            <div class="cta">
+                <a class="btn btn-primary m-m" href="views/acceso/ingresar.html" target="_self" title="Ingresar">Ingresar</a>
+                <a class="btn btn-primary" href="views/acceso/crear-cuenta.html" target="_self" title="Crear cuenta">Crear cuenta</a>
+            </div>
+        </nav>
+
+        <header>
+            <a class="back" href="../dashboard.html" target="_self" title="Atrás"></a>
+        </header>
+
+        <div class="container">
+            <h1>Seleccioná una opción</h1>
+
+            <div class="pawcard-size-container">
+                <ul class="pawcard-size">
+                    <li class="size-selector big">
+                    </li>
+
+                    <li class="size-selector med">
+                    </li>
+
+                    <li class="size-selector small">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="../../../static/js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="../../../static/js/inputs.js"></script>
+
+         <script type="text/javascript">
+            $(function() {
+                $('#home-menu').click(function(){
+                    $('.nav-overlay').addClass('active');
+                });
+
+                $('.nav-overlay').click(function(){
+                    $(this).removeClass('active');
+                })
+            });
+        </script>
+    </body>
+
+</html>

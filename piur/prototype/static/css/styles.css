@@ -327,12 +327,15 @@ footer ul li img {
 ==============================
 */
 
-.dashboard-menu-container {
-    width: calc(100% + 16px);
+.dashboard-menu-container,
+.pawcard-size-container {
+    width: calc(100% + 32px);
+    margin-left: -16px;
     overflow-x: auto; 
 }
 
-.dashboard-menu {
+.dashboard-menu,
+.pawcard-size {
     list-style: none;
     width: calc(100% + 58px);
     display: block;
@@ -341,11 +344,17 @@ footer ul li img {
     padding-left: var(--L);
 }
 
-.dashboard-menu li {
+.pawcard-size {
+    width: calc(100% + 358px);
+}
+
+.dashboard-menu li a {
     float: left;
     height: 310px;
     line-height: 310px;
     width: 170px;
+    color: var(--black);
+    text-decoration: none;
     margin-right: var(--L);
     background-color: rgba(225, 220, 207, 0.5);
     text-align: center;
@@ -357,5 +366,30 @@ footer ul li img {
 .dashboard-menu li .menu-text {
     line-height: 26px;
     display: inline-block;
+}
+
+.pawcard-size .size-selector {
+    float: left;
+    height: 310px;
+    line-height: 310px;
+    width: 210px;
+    margin-right: var(--L);
+    border-radius: 170px;
+    background-color: var(--black);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.pawcard-size .size-selector.small {
+    background-image: url(../img/pawcard/pc-small.jpg);
+}
+
+.pawcard-size .size-selector.med {
+    background-image: url(../img/pawcard/pc-med.jpg);
+}
+
+.pawcard-size .size-selector.big {
+    background-image: url(../img/pawcard/pc-big.jpg);
 }
 
