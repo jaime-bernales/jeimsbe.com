@@ -28,17 +28,20 @@
         </header>
 
         <div class="container">
-            <h1>Seleccioná una opción</h1>
+            <h1 class="inner">Seleccioná una opción</h1>
 
             <div class="pawcard-size-container">
                 <ul class="pawcard-size">
                     <li class="size-selector big">
+                        <span>Raza grande</span>
                     </li>
 
                     <li class="size-selector med">
+                        <span>Raza mediana</span>
                     </li>
 
-                    <li class="size-selector small">
+                    <li class="size-selector small mr-0">
+                        <span>Raza pequeña</span>
                     </li>
                 </ul>
             </div>
@@ -49,13 +52,7 @@
 
          <script type="text/javascript">
             $(function() {
-                $('#home-menu').click(function(){
-                    $('.nav-overlay').addClass('active');
-                });
-
-                $('.nav-overlay').click(function(){
-                    $(this).removeClass('active');
-                })
+                $('.pawcard-size-container').scrollLeft(170);
             });
         </script>
     </body>

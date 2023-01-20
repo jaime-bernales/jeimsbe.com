@@ -1,11 +1,13 @@
 /* Margin */
-.mt-0 {margin-top: 0}
+.mt-0 {margin-top: 0 !important}
 .mt-s {margin-top: var(--S)}
 .mt-m {margin-top: var(--M)}
 .mt-l {margin-top: var(--L)}
 .mt-xl {margin-top: var(--XL)}
 
-.m-0 {margin-bottom: 0}
+.mr-0 {margin-right: 0 !important}
+
+.m-0 {margin-bottom: 0 !important}
 .m-m {margin-bottom: var(--M)}
 .m-l {margin-bottom: var(--L)}
 .m-xl {margin-bottom: var(--XL)}
