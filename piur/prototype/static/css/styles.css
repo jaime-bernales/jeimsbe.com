@@ -72,6 +72,7 @@ html {
 
 ::-webkit-scrollbar {
   width: 0 !important;
+  display: none;
 }
 
 h1 {
