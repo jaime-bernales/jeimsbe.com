@@ -70,6 +70,14 @@ html {
     user-select: none;
 }
 
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    display: none;
+}
+
 h1 {
     font-size: var(--XL);
     line-height: 36px;
@@ -343,6 +351,7 @@ footer ul li img {
     background-color: rgba(225, 220, 207, 0.5);
     text-align: center;
     border-radius: 110px;
+    font-family: 'Unbounded-Medium', cursive;
 }
 
 .dashboard-menu li .menu-text {
