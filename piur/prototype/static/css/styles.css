@@ -102,15 +102,16 @@ p.large {
 
 body {
     margin: 0;
-    background-color: var(--primary);
     overflow-x: hidden;
+    height: 100vh;
+    background: linear-gradient(144deg, rgba(215,207,185,1) 41%, rgba(178,169,142,1) 100%);
+
 }
 
 body.home {
     background: linear-gradient(-45deg, #D7CFB9, #D7CFB9, #AEA187, #AEA187, #D7CFB9, #D7CFB9, #AEA187, #AEA187);
     background-size: 400% 400%;
     animation: gradientHome 5s ease infinite;
-    height: 100vh;
 }
 
 @keyframes gradientHome {
