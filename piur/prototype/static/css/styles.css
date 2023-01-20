@@ -70,14 +70,9 @@ html {
     user-select: none;
 }
 
-scrollbar-color: transparent;
-
 ::-webkit-scrollbar {
-    width: 12px;
-}
-
-::-webkit-scrollbar-track {
-    display: none;
+  opacity: 0;
+  background-color: transparent;
 }
 
 h1 {
@@ -102,7 +97,7 @@ p.large {
 
 body {
     margin: 0;
-    overflow-x: hidden;
+    overflow: hidden;
     height: 100vmax;
     background: linear-gradient(144deg, rgba(215,207,185,1) 41%, rgba(178,169,142,1) 100%);
 
@@ -111,6 +106,7 @@ body {
 body.home {
     background: linear-gradient(-45deg, #D7CFB9, #D7CFB9, #AEA187, #AEA187, #D7CFB9, #D7CFB9, #AEA187, #AEA187);
     background-size: 400% 400%;
+    overflow-y: auto;
     animation: gradientHome 5s ease infinite;
 }
 
@@ -354,7 +350,7 @@ footer ul li img {
     background-color: rgba(225, 220, 207, 0.5);
     text-align: center;
     border-radius: 110px;
-    font-family: 'Unbounded-Medium', cursive;
+    font-family: 'Unbounded-Regular', cursive;
     font-size: 18px;
 }
 
