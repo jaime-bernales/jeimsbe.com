@@ -320,10 +320,15 @@ footer ul li img {
 ==============================
 */
 
+.dashboard-menu-container {
+    width: calc(100% + 16px);
+    overflow-x: auto; 
+}
+
 .dashboard-menu {
     list-style: none;
-    width: 100%;
-    display: -webkit-box;
+    width: calc(100% + 58px);
+    display: block;
     height: 310px;
     overflow-x: auto;
     padding-left: var(--L);
