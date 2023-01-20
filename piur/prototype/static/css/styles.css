@@ -71,9 +71,6 @@ html {
 }
 
 ::-webkit-scrollbar {
-  opacity: 0;
-  background-color: transparent;
-  display: none;
   width: 0 !important;
 }
 
