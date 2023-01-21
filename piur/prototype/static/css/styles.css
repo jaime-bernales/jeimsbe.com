@@ -342,10 +342,10 @@ footer ul li img {
 .dashboard-menu,
 .pawcard-size {
     list-style: none;
-    width: calc(100% + 58px);
+    width: calc(100% + 110px);
     display: block;
     height: 310px;
-    padding-left: var(--L);
+    margin-left: 60px;
 }
 
 .pawcard-size {
@@ -356,7 +356,7 @@ footer ul li img {
     float: left;
     height: 310px;
     line-height: 310px;
-    width: 170px;
+    width: 210px;
     color: var(--black);
     text-decoration: none;
     margin-right: var(--L);
