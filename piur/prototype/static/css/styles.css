@@ -101,8 +101,8 @@ p.large {
 
 body {
     margin: 0;
-    overflow: hidden;
-    height: 100vmax;
+    overflow-x: hidden;
+    height: 100%;
     -ms-overflow-style: none;
     background: linear-gradient(144deg, rgba(215,207,185,1) 41%, rgba(178,169,142,1) 100%);
     background-attachment: fixed;
