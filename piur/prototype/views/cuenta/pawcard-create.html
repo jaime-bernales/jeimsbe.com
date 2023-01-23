@@ -28,7 +28,7 @@
         </header>
 
         <div class="container">
-            <h1 class="inner">Seleccioná una opción</h1>
+            <h1 class="inner">Tocá para elegir una opción</h1>
 
             <div class="pawcard-size-container">
                 <ul class="pawcard-size">
@@ -61,19 +61,18 @@
 
                     if (didScroll) {
                         didScroll = false;
-                        console.log($('.pawcard-size-container').scrollLeft());
 
                         if($('.pawcard-size-container').scrollLeft() >= 0 && $('.pawcard-size-container').scrollLeft() <= 90) {
                             $('.size-selector').removeClass('active');
                             $('.big').addClass('active');
                         }
 
-                        if($('.pawcard-size-container').scrollLeft() >= 91 && $('.pawcard-size-container').scrollLeft() <= 199) {
+                        if($('.pawcard-size-container').scrollLeft() >= 91 && $('.pawcard-size-container').scrollLeft() <= 256) {
                             $('.size-selector').removeClass('active');
                             $('.med').addClass('active');
                         }
 
-                        if($('.pawcard-size-container').scrollLeft() >= 201) {
+                        if($('.pawcard-size-container').scrollLeft() >= 257) {
                             $('.size-selector').removeClass('active');
                             $('.small').addClass('active');
                         }
