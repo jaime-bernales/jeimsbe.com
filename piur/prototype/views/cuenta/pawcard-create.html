@@ -52,32 +52,7 @@
 
          <script type="text/javascript">
             $(function() {
-
-                var didScroll = false;
                 $('.pawcard-size-container').scrollLeft(200);
-
-                $('.pawcard-size-container').scroll(function() {
-                    didScroll = true;
-
-                    if (didScroll) {
-                        didScroll = false;
-
-                        if($('.pawcard-size-container').scrollLeft() >= 0 && $('.pawcard-size-container').scrollLeft() <= 90) {
-                            $('.size-selector').removeClass('active');
-                            $('.big').addClass('active');
-                        }
-
-                        if($('.pawcard-size-container').scrollLeft() >= 91 && $('.pawcard-size-container').scrollLeft() <= 256) {
-                            $('.size-selector').removeClass('active');
-                            $('.med').addClass('active');
-                        }
-
-                        if($('.pawcard-size-container').scrollLeft() >= 257) {
-                            $('.size-selector').removeClass('active');
-                            $('.small').addClass('active');
-                        }
-                    }
-                });
             });
         </script>
     </body>
