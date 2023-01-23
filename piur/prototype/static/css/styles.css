@@ -346,10 +346,12 @@ footer ul li img {
     display: block;
     height: 310px;
     margin-left: 60px;
+    overflow-y: hidden;
 }
 
 .pawcard-size {
     width: calc(100% + 358px);
+    overflow-y: visible;
 }
 
 .dashboard-menu li a {

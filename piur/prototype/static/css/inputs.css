@@ -42,7 +42,7 @@ input {
 	caret-color: var(--black);
 }
 
-.input-text {
+.input-text, select {
 	width: 100%;
 	height: 56px;
 	line-height: 56px;

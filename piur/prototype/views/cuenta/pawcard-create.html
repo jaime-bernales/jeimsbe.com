@@ -24,26 +24,39 @@
         </nav>
 
         <header>
-            <a class="back" href="dashboard.html" target="_self" title="Atrás"></a>
+            <a class="step-1 back" href="dashboard.html" target="_self" title="Atrás"></a>
+            <span class="step-2 back hidden" title="Atrás"></span>
         </header>
 
         <div class="container">
-            <h1 class="inner">Tocá para elegir una opción</h1>
+            <div class="step-1">
+                <h1 class="inner">Tocá para elegir una opción</h1>
 
-            <div class="pawcard-size-container">
-                <ul class="pawcard-size">
-                    <li class="size-selector big">
-                        <span>Raza grande</span>
-                    </li>
+                <div class="pawcard-size-container">
+                    <ul class="pawcard-size">
+                        <li class="size-selector big">
+                            <span>Raza grande</span>
+                        </li>
 
-                    <li class="size-selector med">
-                        <span>Raza mediana</span>
-                    </li>
+                        <li class="size-selector med">
+                            <span>Raza mediana</span>
+                        </li>
 
-                    <li class="size-selector small mr-0">
-                        <span>Raza pequeña</span>
-                    </li>
-                </ul>
+                        <li class="size-selector small mr-0">
+                            <span>Raza pequeña</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="step-2 hidden">
+                <h1 class="inner m-l">Ubicación</h1>
+                <p class="text-center m-xl">Esta información no se va a <br> mostrar públicamente.</p>
+
+                <select>
+                    <option>Mendoza</option>
+                    <option>San Luis</option>
+                </select>
             </div>
         </div>
 
@@ -53,6 +66,10 @@
          <script type="text/javascript">
             $(function() {
                 $('.pawcard-size-container').scrollLeft(200);
+
+                $('.size-selector, span.step-2').click(function(){
+                    $('.step-1, .step-2').toggleClass('hidden');
+                });
             });
         </script>
     </body>
