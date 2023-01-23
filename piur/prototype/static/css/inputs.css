@@ -51,10 +51,25 @@ input {
 	border-radius: 0;
 	margin-bottom: 24px;
 	font-size: var(--M);
-	background-color: transparent;
+	color: var(--black);
 	border-bottom: 1px solid var(--black);
     font-family: 'Unbounded-Regular', cursive;
     outline: none;
+	background-color: transparent;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	text-indent: 1px;
+	text-overflow: '';
+	background-image: url(../img/icons/arrow-dropdown.svg);
+	background-repeat: no-repeat;
+	background-position: right 16px center;
+}
+
+select.empty {
+	color: #9E957D;
 }
 
 .input-text.password {
