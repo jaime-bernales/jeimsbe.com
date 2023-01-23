@@ -399,6 +399,10 @@ footer ul li img {
     color: rgba(0, 0, 0, 0.4);
 }
 
+.pawcard-size .size-selector.active span {
+    color: rgba(0, 0, 0, 1);
+}
+
 .pawcard-size .size-selector.small {
     background-image: url(../img/pawcard/pc-small.jpg);
 }
