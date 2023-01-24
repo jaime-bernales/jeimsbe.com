@@ -76,6 +76,7 @@ input {
 
 p.helper-text {
 	font-size: 14px;
+	line-height: 20px;
 	color: #9E957D;
 	margin: -12px 0 var(--XL) var(--M);
     font-family: 'Unbounded-Regular', cursive;
