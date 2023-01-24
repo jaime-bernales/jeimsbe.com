@@ -26,6 +26,7 @@
         <header>
             <a class="step-1 back" href="dashboard.html" target="_self" title="Atrás"></a>
             <span class="step-2 back hidden" title="Atrás"></span>
+            <span class="step-3 back hidden" title="Atrás"></span>
         </header>
 
         <div class="container">
@@ -50,6 +51,37 @@
             </div>
 
             <div class="step-2 hidden">
+                <h1 class="inner m-l">Datos</h1>
+                <p class="text-center m-xl">Esta es la información que se va a mostrar en la PawCard.</p>
+
+                <div class="input-group float-left mr-m">
+                    <label class="input-label" for="pawCardName">Nombre</label>
+                    <input class="input-text" type="text" id="pawCardName" name="pawCardName">
+                </div>
+
+                <div class="input-group pawcardemail">
+                    <label class="input-label" for="pawCardAge">Edad</label>
+                    <input class="input-text" type="number" id="pawCardAge" name="pawCardAge">
+                </div>
+
+                <select class="empty" id="select-genero" name="select-genero">
+                    <option selected>Género</option>
+                    <option value="macho">Macho</option>
+                    <option value="hembra">Hembra</option>
+                </select>
+
+                <div class="input-group">
+                    <label class="input-label" for="pawCardContact">Teléfono de contacto</label>
+                    <input class="input-text" type="tel" id="pawCardContact" name="pawCardContact">
+                </div>
+
+                <p class="helper-text">Código de área sin 0.</p>
+
+
+                <button class="btn btn-primary step-3" type="button">Siguiente</button>
+            </div>
+
+            <div class="step-3 hidden">
                 <h1 class="inner m-l">Ubicación</h1>
                 <p class="text-center m-xl">Esta información no se va a <br> mostrar públicamente.</p>
 
@@ -64,6 +96,9 @@
                     <option value="mendoza">Godoy cruz</option>
                     <option value="sanluis">Luján de cuyo</option>
                 </select>
+
+                <span class="btn btn-primary mr-m">Siguiente</span>
+                <span class="btn btn-secondary">Omitir</span>
             </div>
         </div>
 
@@ -76,8 +111,19 @@
                 // Elegir Raza
                 $('.pawcard-size-container').scrollLeft(200);
 
+                // Steps
                 $('.size-selector, span.step-2').click(function(){
                     $('.step-1, .step-2').toggleClass('hidden');
+                });
+
+                $('button.step-3').click(function(){
+                    $('.step-1, .step-2').addClass('hidden');
+                    $('.step-3').removeClass('hidden');
+                });
+
+                $('.step-3.back').click(function(){
+                    $('.step-2').removeClass('hidden');
+                    $('div.step-3, span.step-3').addClass('hidden');
                 });
 
                 // Select

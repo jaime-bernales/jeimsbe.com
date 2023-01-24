@@ -6,6 +6,16 @@
 .mt-xl {margin-top: var(--XL)}
 
 .mr-0 {margin-right: 0 !important}
+.mr-s {margin-right: var(--S)}
+.mr-m {margin-right: var(--M)}
+.mr-l {margin-right: var(--L)}
+.mr-xl {margin-right: var(--XL)}
+
+.ml-0 {margin-left: 0 !important}
+.ml-s {margin-left: var(--S)}
+.ml-m {margin-left: var(--M)}
+.ml-l {margin-left: var(--L)}
+.ml-xl {margin-left: var(--XL)}
 
 .m-0 {margin-bottom: 0 !important}
 .m-m {margin-bottom: var(--M)}
@@ -28,8 +38,6 @@
 /* Floating */
 .float-right {float: right}
 .float-left {float: left}
-
-.bg-transparent {background-color: transparent}
 
 .text-center {text-align: center}
 .text-left {text-align: left}

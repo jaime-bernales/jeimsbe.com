@@ -20,7 +20,7 @@
 }
 
 .btn-secondary {
-    background-color: var(--primary);
+    background-color: transparent;
     color: var(--black);
 }
 
