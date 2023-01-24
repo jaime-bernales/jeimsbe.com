@@ -4,7 +4,12 @@
 
 .input-group.pawcardemail {
 	float: left;
-	width: 102px;
+	width: 82px;
+}
+
+.input-group.pawcardname {
+	float: left;
+	width: calc(100% - 98px);
 }
 
 .input-error {
@@ -63,6 +68,19 @@ input {
 	background-color: transparent;
 }
 
+.input-text.password {
+	background-image: url(../img/icons/pass-hide.svg);
+	background-repeat: no-repeat;
+	background-position: right 16px center;
+}
+
+p.helper-text {
+	font-size: 14px;
+	color: #9E957D;
+	margin: -12px 0 var(--XL) var(--M);
+    font-family: 'Unbounded-Regular', cursive;
+}
+
 select {
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -75,18 +93,5 @@ select {
 
 select.empty {
 	color: #9E957D;
-}
-
-.input-text.password {
-	background-image: url(../img/icons/pass-hide.svg);
-	background-repeat: no-repeat;
-	background-position: right 16px center;
-}
-
-p.helper-text {
-	font-size: 14px;
-	color: #9E957D;
-	margin: -16px 0 var(--XL) var(--M);
-    font-family: 'Unbounded-Regular', cursive;
 }
 

@@ -24,13 +24,16 @@
         </nav>
 
         <header>
-            <a class="step-1 back" href="dashboard.html" target="_self" title="Atrás"></a>
-            <span class="step-2 back hidden" title="Atrás"></span>
-            <span class="step-3 back hidden" title="Atrás"></span>
+            <a class="back step-size" href="dashboard.html" target="_self" title="Atrás"></a>
+            <span class="back step-data hidden" title="Atrás"></span>
+            <span class="back step-photo hidden" title="Atrás"></span>
+            <span class="back step-location hidden" title="Atrás"></span>
         </header>
 
         <div class="container">
-            <div class="step-1">
+
+            <!-- Size -->
+            <div id="step-size">
                 <h1 class="inner">Tocá para elegir una opción</h1>
 
                 <div class="pawcard-size-container">
@@ -50,11 +53,12 @@
                 </div>
             </div>
 
-            <div class="step-2 hidden">
+            <!-- Data -->
+            <div id="step-data" class="hidden">
                 <h1 class="inner m-l">Datos</h1>
                 <p class="text-center m-xl">Esta es la información que se va a mostrar en la PawCard.</p>
 
-                <div class="input-group float-left mr-m">
+                <div class="input-group pawcardname mr-m">
                     <label class="input-label" for="pawCardName">Nombre</label>
                     <input class="input-text" type="text" id="pawCardName" name="pawCardName">
                 </div>
@@ -64,7 +68,7 @@
                     <input class="input-text" type="number" id="pawCardAge" name="pawCardAge">
                 </div>
 
-                <select class="empty" id="select-genero" name="select-genero">
+                <select class="empty" id="select-gen" name="select-gen">
                     <option selected>Género</option>
                     <option value="macho">Macho</option>
                     <option value="hembra">Hembra</option>
@@ -75,13 +79,20 @@
                     <input class="input-text" type="tel" id="pawCardContact" name="pawCardContact">
                 </div>
 
-                <p class="helper-text">Código de área sin 0.</p>
 
-
-                <button class="btn btn-primary step-3" type="button">Siguiente</button>
+                <button class="btn btn-primary btn-next" type="button">Siguiente</button>
             </div>
 
-            <div class="step-3 hidden">
+            <!-- Foto -->
+            <div id="step-photo" class="hidden">
+                <h1 class="inner m-l">Foto</h1>
+                <p class="text-center m-xl">¡Ahora si! <br> Subí un retrato de tu mascota.</p>
+
+                <span class="btn btn-primary btn-next">Siguiente</span>
+            </div>
+
+            <!-- Ubicación -->
+            <div id="step-location" class="hidden">
                 <h1 class="inner m-l">Ubicación</h1>
                 <p class="text-center m-xl">Esta información no se va a <br> mostrar públicamente.</p>
 
@@ -97,8 +108,8 @@
                     <option value="sanluis">Luján de cuyo</option>
                 </select>
 
-                <span class="btn btn-primary mr-m">Siguiente</span>
-                <span class="btn btn-secondary">Omitir</span>
+                <span class="btn btn-primary btn-next mr-m">Siguiente</span>
+                <span class="btn btn-secondary pl-s pr-s">Omitir</span>
             </div>
         </div>
 
@@ -112,18 +123,34 @@
                 $('.pawcard-size-container').scrollLeft(200);
 
                 // Steps
-                $('.size-selector, span.step-2').click(function(){
-                    $('.step-1, .step-2').toggleClass('hidden');
+                $('.size-selector').click(function(){
+                    $('#step-size, header .step-size').addClass('hidden');
+                    $('#step-data, header .step-data').removeClass('hidden');
                 });
 
-                $('button.step-3').click(function(){
-                    $('.step-1, .step-2').addClass('hidden');
-                    $('.step-3').removeClass('hidden');
+                $('header .step-data').click(function(){
+                    $('#step-size, header .step-size').removeClass('hidden');
+                    $('#step-data, header .step-data').addClass('hidden');
                 });
 
-                $('.step-3.back').click(function(){
-                    $('.step-2').removeClass('hidden');
-                    $('div.step-3, span.step-3').addClass('hidden');
+                $('#step-data .btn-next').click(function(){
+                    $('#step-data, header .step-data').addClass('hidden');
+                    $('#step-photo, header .step-photo').removeClass('hidden');
+                });
+
+                $('header .step-photo').click(function(){
+                    $('#step-data, header .step-data').removeClass('hidden');
+                    $('#step-photo, header .step-photo').addClass('hidden');
+                });
+
+                $('#step-photo .btn-next').click(function(){
+                    $('#step-photo, header .step-photo').addClass('hidden');
+                    $('#step-location, header .step-location').removeClass('hidden');
+                });
+
+                $('header .step-location').click(function(){
+                    $('#step-photo, header .step-photo').removeClass('hidden');
+                    $('#step-location, header .step-location').addClass('hidden');
                 });
 
                 // Select

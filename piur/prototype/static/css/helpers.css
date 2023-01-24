@@ -29,6 +29,18 @@
 .pt-l {padding-top: var(--L)}
 .pt-xl {padding-top: var(--XL)}
 
+.pl-0 {padding-left: 0} 
+.pl-s {padding-left: var(--S)}
+.pl-m {padding-left: var(--M)}
+.pl-l {padding-left: var(--L)}
+.pl-xl {padding-left: var(--XL)}
+
+.pr-0 {padding-right: 0} 
+.pr-s {padding-right: var(--S)}
+.pr-m {padding-right: var(--M)}
+.pr-l {padding-right: var(--L)}
+.pr-xl {padding-right: var(--XL)}
+
 /* Display */
 .block {display: block}
 .inline {display: inline}
