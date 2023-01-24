@@ -24,6 +24,12 @@
     color: var(--black);
 }
 
+.btn:disabled,
+.btn[disabled]{
+  color: #837D73;
+  background-color: rgba(31, 31, 31, 0.12);
+}
+
 .btn-link {
     text-transform: none;
     text-decoration: underline;

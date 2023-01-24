@@ -5,12 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nueva PawCard: Piur</title>
-        <meta name="application-name" content="Caracol">
+        <meta name="application-name" content="Piur">
 
         <link rel="stylesheet" type="text/css" href="../../static/css/styles.css">
         <link rel="stylesheet" type="text/css" href="../../static/css/buttons.css">
         <link rel="stylesheet" type="text/css" href="../../static/css/inputs.css">
         <link rel="stylesheet" type="text/css" href="../../static/css/helpers.css">
+
+        <meta name="theme-color" content="D7CFB9">
     </head>
 
     <body class="background-plain">
@@ -114,8 +116,13 @@
                     <option value="sanluis">Luján de cuyo</option>
                 </select>
 
-                <span class="btn btn-primary btn-next mr-m">Siguiente</span>
+                <button class="btn btn-primary btn-next mr-m" type="button">Siguiente</button>
                 <span class="btn btn-secondary pl-s pr-s">Omitir</span>
+            </div>
+
+            <!-- Resumen -->
+            <div id="confirmation" class="hidden">
+                <h1 class="inner m-l">¡Coca ya tiene su PawCard lista!</h1>
             </div>
         </div>
 
@@ -157,6 +164,11 @@
                 $('header .step-location').click(function(){
                     $('#step-photo, header .step-photo').removeClass('hidden');
                     $('#step-location, header .step-location').addClass('hidden');
+                });
+
+                $('#step-location .btn-next').click(function(){
+                    $('#step-location, header .step-location').addClass('hidden');
+                    $('#confirmation').removeClass('hidden');
                 });
 
                 // Select
