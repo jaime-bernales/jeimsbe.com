@@ -1,33 +1,33 @@
 /* Margin */
 .mt-0 {margin-top: 0 !important}
-.mt-s {margin-top: var(--S)}
-.mt-m {margin-top: var(--M)}
-.mt-l {margin-top: var(--L)}
-.mt-xl {margin-top: var(--XL)}
+.mt-s {margin-top: var(--S) !important}
+.mt-m {margin-top: var(--M) !important}
+.mt-l {margin-top: var(--L) !important}
+.mt-xl {margin-top: var(--XL) !important}
 
 .mr-0 {margin-right: 0 !important}
-.mr-s {margin-right: var(--S)}
-.mr-m {margin-right: var(--M)}
-.mr-l {margin-right: var(--L)}
-.mr-xl {margin-right: var(--XL)}
+.mr-s {margin-right: var(--S) !important}
+.mr-m {margin-right: var(--M) !important}
+.mr-l {margin-right: var(--L) !important}
+.mr-xl {margin-right: var(--XL) !important}
 
 .ml-0 {margin-left: 0 !important}
-.ml-s {margin-left: var(--S)}
-.ml-m {margin-left: var(--M)}
-.ml-l {margin-left: var(--L)}
-.ml-xl {margin-left: var(--XL)}
+.ml-s {margin-left: var(--S) !important}
+.ml-m {margin-left: var(--M) !important}
+.ml-l {margin-left: var(--L) !important}
+.ml-xl {margin-left: var(--XL) !important}
 
 .m-0 {margin-bottom: 0 !important}
-.m-m {margin-bottom: var(--M)}
-.m-l {margin-bottom: var(--L)}
-.m-xl {margin-bottom: var(--XL)}
+.m-m {margin-bottom: var(--M) !important}
+.m-l {margin-bottom: var(--L) !important}
+.m-xl {margin-bottom: var(--XL) !important}
 
 /* Padding */
-.pt-0 {padding-top: 0} 
-.pt-s {padding-top: var(--S)}
-.pt-m {padding-top: var(--M)}
-.pt-l {padding-top: var(--L)}
-.pt-xl {padding-top: var(--XL)}
+.pt-0 {padding-top: 0 !important} 
+.pt-s {padding-top: var(--S) !important}
+.pt-m {padding-top: var(--M) !important}
+.pt-l {padding-top: var(--L) !important}
+.pt-xl {padding-top: var(--XL) !important}
 
 .pl-0 {padding-left: 0} 
 .pl-s {padding-left: var(--S)}
