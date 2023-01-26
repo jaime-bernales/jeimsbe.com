@@ -445,7 +445,8 @@ footer ul li img {
 
 .uploaded-mask .photo {
     z-index: 1;
-    background-color: red;
+    background-color: #C8BFA4;
+    background-size: cover;
 }
 
 .confirmation-name {
