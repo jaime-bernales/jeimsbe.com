@@ -423,7 +423,7 @@ footer ul li img {
 .uploaded-mask {
     width: 236px;
     height: 332px;
-    margin: 40px auto 0  auto;
+    margin: 0 auto;
     position: relative;
 }
 
