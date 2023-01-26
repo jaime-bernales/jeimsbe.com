@@ -16,14 +16,6 @@
     </head>
 
     <body class="background-plain">
-        <nav class="nav-overlay">
-            <span class="close" title="Cerrar"></span>
-
-            <div class="cta">
-                <a class="btn btn-primary m-m" href="views/acceso/ingresar.html" target="_self" title="Ingresar">Ingresar</a>
-                <a class="btn btn-primary" href="views/acceso/crear-cuenta.html" target="_self" title="Crear cuenta">Crear cuenta</a>
-            </div>
-        </nav>
 
         <header>
             <a class="back step-size" href="dashboard.html" target="_self" title="Atrás"></a>
@@ -116,24 +108,8 @@
                     <option value="sanluis">Luján de cuyo</option>
                 </select>
 
-                <button class="btn btn-primary btn-next mr-m" type="button">Siguiente</button>
-                <span class="btn btn-secondary pl-s pr-s">Omitir</span>
-            </div>
-
-            <!-- Resumen -->
-            <div id="confirmation" class="hidden">
-                <h1 class="inner m-xl">¡Todo listo!</h1>
-
-                <div class="uploaded-mask">
-                    <span class="mask"></span>
-                    <span class="photo"></span>
-                </div>
-
-                <p class="confirmation-name">Igor</p>
-
-                <div class="bottom text-center">
-                    <a class="btn btn-primary m-l" href="#" target="_self">Abrir pawcard</a>
-                </div>
+                <a class="btn btn-primary btn-next mr-m" href="pawcard-exito.html" target="_self">Siguiente</a>
+                <a class="btn btn-secondary pl-s pr-s" href="pawcard-exito.html" target="_self">Omitir</a>
             </div>
         </div>
 
@@ -175,11 +151,6 @@
                 $('header .step-location').click(function(){
                     $('#step-photo, header .step-photo').removeClass('hidden');
                     $('#step-location, header .step-location').addClass('hidden');
-                });
-
-                $('#step-location .btn-next').click(function(){
-                    $('#step-location, header .step-location').addClass('hidden');
-                    $('#confirmation').removeClass('hidden');
                 });
 
                 // Select
