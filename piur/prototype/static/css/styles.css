@@ -311,14 +311,39 @@ footer ul li img {
 
 .home .hero-image {
     position: relative;
+    margin: 100px auto 50px auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.home .hero-image .hero-placeholder,
+.home .hero-image .hero {
+    width: calc(100% - 64px);
+    max-width: 400px;
+    height: auto;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../img/hero-background.png);
+    animation: spin 4s linear infinite;
 }
 
 .home .hero-image .hero {
-    margin: 100px auto 50px auto;
-    width: calc(100% - 64px);
-    max-width: 460px;
-    height: auto;
-    display: block;
+    position: absolute;
+    background-image: url(../img/hero-image.png);
+    animation: none;
+    z-index: 1;
+}
+
+@keyframes spin {
+   0% {
+      transform: rotate(0deg);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
 }
 
 .home .btn.start {
