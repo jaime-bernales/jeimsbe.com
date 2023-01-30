@@ -319,7 +319,7 @@ footer ul li img {
 
 .home .hero-image .hero-placeholder,
 .home .hero-image .hero {
-    width: calc(100% - 64px);
+    width: calc(100% - 32px);
     max-width: 400px;
     height: auto;
     display: block;
