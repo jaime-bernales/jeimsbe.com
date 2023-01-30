@@ -262,12 +262,12 @@ footer {
 
 footer ul li {
     list-style: none;
-    background-color: #BFB49B;
+    background-color: var(--black);
     margin-bottom: 1px;
 }
 
 footer ul li a {
-    color: var(--black);
+    color: var(--white);
     text-decoration: none;
     display: inline-block;
     padding: var(--M);
