@@ -276,7 +276,9 @@ footer ul li a {
 }
 
 footer ul li a span {
-    display: inline-block;
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 footer ul li img {
