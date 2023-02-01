@@ -304,22 +304,18 @@ body.background-plain {
     margin: 0  0 var(--XL) 0;
 }
 
-@media only screen and (min-width: 300px) and (max-width: 400px) {
-
+@media only screen and (min-width: 0px) and (max-width: 379px) {
     .home h1 {
-        font-size: 36px;
-        line-height: 48px;
+        font-size: 32px;
+        line-height: 46px;
     }
-
 }
 
-@media only screen and (min-width: 400px) and (max-width: 500px) {
-
+@media only screen and (min-width: 380px) and (max-width: 500px) {
     .home h1 {
         font-size: 40px;
         line-height: 52px;
     }
-
 }
 
 .home .hero-image {
