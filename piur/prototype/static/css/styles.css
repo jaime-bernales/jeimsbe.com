@@ -222,13 +222,13 @@ header .back {
 
 footer {
     padding: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.85);
 }
 
 footer ul li {
     list-style: none;
     background-color: var(--black);
-    margin-bottom: 1px;
+    margin-bottom: 2px;
 }
 
 footer ul li a {
@@ -304,11 +304,20 @@ body.background-plain {
     margin: 0  0 var(--XL) 0;
 }
 
-@media only screen and (min-width: 300px) and (max-width: 336px) {
+@media only screen and (min-width: 300px) and (max-width: 400px) {
 
     .home h1 {
         font-size: 36px;
         line-height: 48px;
+    }
+
+}
+
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+
+    .home h1 {
+        font-size: 40px;
+        line-height: 52px;
     }
 
 }
