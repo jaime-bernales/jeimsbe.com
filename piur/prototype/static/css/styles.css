@@ -258,6 +258,7 @@ header .back {
 
 footer {
     padding: 0;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 footer ul li {
@@ -270,8 +271,9 @@ footer ul li a {
     color: var(--white);
     text-decoration: none;
     display: inline-block;
-    padding: var(--M);
-    height: 53px;
+    padding: 0 var(--M);
+    height: 60px;
+    line-height: 60px;
     width: 100%;
 }
 
@@ -284,7 +286,7 @@ footer ul li a span {
 footer ul li img {
     display: block;
     float: right;
-    margin-left: 4px;
+    margin: 20px 0 0 0;
 }
 
 /* 
