@@ -231,6 +231,14 @@ footer ul li {
     margin-bottom: 2px;
 }
 
+footer ul li:first-child {
+    padding-top: var(--S);
+}
+
+footer ul li:last-child {
+    padding-bottom: var(--XL);
+}
+
 footer ul li a {
     color: var(--white);
     text-decoration: none;
