@@ -108,6 +108,10 @@ body {
     background-attachment: fixed;
 }
 
+body.background-plain {
+    background: #D7CFB9;
+}
+
 /* Wrappers */
 .container {
     padding: var(--M);
@@ -136,6 +140,7 @@ header nav.menu {
     height: 54px;
     z-index: 2;
     position: relative;
+    cursor: pointer;
     background-image: url(../img/icons/nav-menu.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -193,6 +198,7 @@ header .back {
     top: -300px;
     left: 16px;
     display: block;
+    cursor: pointer;
     transition: all 1s ease;
     background-repeat: no-repeat;
     background-image: url(../img/icons/overlay-close.svg);
@@ -270,14 +276,10 @@ footer ul li img {
 body.home {
     background: linear-gradient(-45deg, #D7CFB9, #D7CFB9, #AEA187, #AEA187, #D7CFB9, #D7CFB9, #AEA187, #AEA187);
     background-size: 400% 400%;
-    animation: gradientHome 5s ease infinite;
+    animation: gradientHomeAnimation 5s ease infinite;
 }
 
-body.background-plain {
-    background: #D7CFB9;
-}
-
-@keyframes gradientHome {
+@keyframes gradientHomeAnimation {
     0% {
         background-position: 0% 50%;
     }
@@ -326,13 +328,32 @@ body.background-plain {
     }
 }
 
+body.home h1 .pawcard {
+    display: inline-block;
+    position: relative;
+    margin-right: var(--L);
+}
+
+body.home h1 sup {
+    top: var(--S);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: 3px;
+    overflow: hidden;
+    text-indent: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/reg.svg);
+}
+
 .home .hero-image {
     position: relative;
 }
 
 .home .hero-image .hero {
     margin: 100px auto 50px auto;
-    width: calc(100% - 64px);
+    width: calc(100% - 32px);
     max-width: 460px;
     height: auto;
     display: block;
