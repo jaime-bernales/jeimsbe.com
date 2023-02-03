@@ -261,10 +261,22 @@ footer ul li a span {
     margin: 0 auto;
 }
 
-footer ul li img {
+footer ul li a span .icon {
     display: block;
     float: right;
     margin: 20px 0 0 0;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+footer ul li a span .arrow-next {
+    background-image: url(../img/icons/arrow-next.svg);
+}
+
+footer ul li a span .open-ext {
+    background-image: url(../img/icons/open-ext.svg);
 }
 
 /* 
