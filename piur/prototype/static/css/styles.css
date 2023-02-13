@@ -286,9 +286,11 @@ footer ul li a span .open-ext {
 */
 
 body.home {
+    /*
     background: linear-gradient(-45deg, #D7CFB9, #D7CFB9, #AEA187, #AEA187, #D7CFB9, #D7CFB9, #AEA187, #AEA187);
     background-size: 400% 400%;
     animation: gradientHomeAnimation 5s ease infinite;
+    */
 }
 
 @keyframes gradientHomeAnimation {
@@ -301,6 +303,11 @@ body.home {
     100% {
         background-position: 0% 50%;
     }
+}
+
+.home-pawcard {
+    margin: 50px auto 100px auto;
+    display: block;
 }
 
 .home-gradient {
