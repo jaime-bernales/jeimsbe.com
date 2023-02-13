@@ -72,7 +72,7 @@
 
                 <div class="input-group pawcardemail">
                     <label class="input-label" for="pawCardAge">Edad</label>
-                    <input class="input-text" type="number" id="pawCardAge" name="pawCardAge">
+                    <input class="input-text" type="tel" id="pawCardAge" name="pawCardAge">
                 </div>
 
                 <select class="empty" id="select-gen" name="select-gen">
@@ -101,7 +101,10 @@
                     <img class="photo-placeholder" src="../../static/img/pawcard/photo/photo-placeholder.png" alt="">
                 </div>
 
-                <a class="btn btn-link bottom" href="#" target="_self">Abrir cámara</a>
+                <div class="text-center">
+                    <a class="btn btn-primary m-m" href="#" target="_self">Abrir cámara</a>
+                    <span class="btn btn-link">Dejar para después</span>
+                </div>
 
             </div>
 
@@ -123,6 +126,7 @@
                 </select>
 
                 <a class="btn btn-primary btn-next mr-m" href="pawcard-exito.html" target="_self">Siguiente</a>
+                <span class="btn-link">Omitir</span>
             </div>
         </div>
 
@@ -156,7 +160,7 @@
                     $('#step-photo, header .step-photo').addClass('hidden');
                 });
 
-                $('#upload-photo').click(function(){
+                $('#upload-photo, #step-photo .btn-link').click(function(){
                     $('#step-photo, header .step-photo').addClass('hidden');
                     $('#step-location, header .step-location').removeClass('hidden');
                 });
