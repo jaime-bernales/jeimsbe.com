@@ -306,7 +306,7 @@ body.home {
 }
 
 .home-pawcard {
-    margin: 50px auto 100px auto;
+    margin: 0 auto 50px auto;
     display: block;
 }
 
@@ -322,6 +322,36 @@ body.home {
     width: 100%;
     position: absolute;
     z-index: -1;
+}
+
+.product-features {
+    list-style: none;
+    display: inline-block;
+    margin-bottom: var(--XL);
+}
+
+.product-features li {
+    height: 80px;
+    margin-bottom: var(--XL);
+}
+
+.product-features li p {
+    font-family: 'Unbounded-Regular';
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+}
+
+.product-features li span {
+    display: block;
+    background-color: var(--black);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    float: left;
+    margin-right: var(--M);
 }
 
 .home h1 {
