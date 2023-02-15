@@ -342,7 +342,7 @@ body.home {
     margin: 0;
 }
 
-.product-features li span {
+.product-features li .icon {
     display: block;
     background-color: var(--black);
     background-repeat: no-repeat;
@@ -352,6 +352,18 @@ body.home {
     border-radius: 40px;
     float: left;
     margin-right: var(--M);
+}
+
+.product-features li .paw {
+    background-image: url(../img/icons/home-icon_paw.png);
+}
+
+.product-features li .qr {
+    background-image: url(../img/icons/home-icon_qr.png);
+}
+
+.product-features li .warning {
+    background-image: url(../img/icons/home-icon_warning.png);
 }
 
 .home h1 {
