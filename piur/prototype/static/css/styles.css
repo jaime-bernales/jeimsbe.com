@@ -444,7 +444,7 @@ body.home h1 sup {
 .dashboard-menu,
 .pawcard-size {
     list-style: none;
-    width: calc(100% + 320px);
+    width: calc(100% + 360px);
     display: block;
     height: 310px;
     margin-left: 60px;
@@ -452,7 +452,6 @@ body.home h1 sup {
 }
 
 .pawcard-size {
-    width: calc(100% + 358px);
     overflow-y: visible;
 }
 
