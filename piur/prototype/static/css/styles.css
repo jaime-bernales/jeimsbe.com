@@ -312,7 +312,7 @@ body.home {
 
 .home-gradient {
     display: block;
-    background-image: url(../img/home-gradient.png);
+    background-image: url(../img/home/home-gradient.png);
     background-repeat: no-repeat;
     background-position: left top;
     background-size: 100% auto;
@@ -534,43 +534,9 @@ body.home h1 sup {
 ==============================
 */
 
-
-.uploaded-mask {
-    width: 236px;
-    height: 332px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.uploaded-mask span {
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.uploaded-mask .mask {
-    z-index: 2;
-    background-image: url(../img/pawcard/uploaded-photo-mask.png);
-}
-
-.uploaded-mask .photo {
-    z-index: 1;
-}
-
-/* 
-==============================
-    Upload photo
-==============================
-*/
-
 .photo-image {
     position: relative;
-    margin: var(--XL) auto 40px auto;
+    margin: 56px auto 40px auto;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -603,4 +569,39 @@ body.home h1 sup {
    100% {
       transform: rotate(360deg);
    }
+}
+
+/* 
+==============================
+    PawCard success
+==============================
+*/
+
+.uploaded-mask {
+    width: 310px;
+    height: 310px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.uploaded-mask span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.uploaded-mask .mask {
+    z-index: 2;
+    background-image: url(../img/pawcard/uploaded-photo-mask.png);
+}
+
+.uploaded-mask .photo {
+    z-index: 1;
+    width: 300px;
+    height: 300px;
 }
