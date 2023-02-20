@@ -333,9 +333,42 @@ body.home {
     font-family: 'Unbounded-Medium', cursive;
 }
 
+/*
+    Progress bar
+    ------------
+*/
+
 .home-pawcard-counter {
-    display: block;
     margin: 0 auto 50px auto;
+    text-align: center;
+    height: 60px;
+    width: 218px;
+    position: relative;
+}
+
+.home-pawcard-counter img {
+    margin: 0 auto;
+}
+
+.home-pawcard-counter .progress-bar {
+    display: block;
+    position: absolute;
+    left: 58px;
+    top: 28px;
+    height: 3px;
+    width: 102px;
+    border-radius: 4px;
+    background-color: var(--black);
+    animation: progressBar 6s linear;
+}
+
+@keyframes progressBar {
+   0% {
+      width: 0;
+   }
+   100% {
+      width: 102px;
+   }
 }
 
 .home h1 {
