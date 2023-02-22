@@ -39,7 +39,7 @@
                     <a class="btn btn-primary" href="../../index.html" target="_self">Si, salir</a>
                     <button class="btn btn-secondary" type="button">Volver</button>
                 </div>
-                
+
             </div>
         </section>
 
@@ -71,11 +71,23 @@
         <script type="text/javascript">
             $(function() {
                 $('.back').click(function(){
-                    $('.nav-overlay').addClass('active');
+                    $('.modal').addClass('active');
                 });
 
                 $('.nav-overlay').click(function(){
                     $(this).removeClass('active');
+                });
+
+                var scrolled = false;
+
+                $(window).scroll(function() {
+                    if($(window).scrollTop() > 10 && scrolled == false){
+                        $('.overlay-content').addClass('scrolled');
+                        scrolled = true;
+                    } else if($(window).scrollTop() == 0) {
+                        $('.overlay-content').removeClass('scrolled');
+                        scrolled = false;
+                    }
                 })
             });
         </script>
