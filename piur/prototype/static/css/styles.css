@@ -241,9 +241,9 @@ header .back {
 .modal .overlay-content {
     background-color: var(--primary);
     border-radius: 40px;
-    margin-top: 38px;
+    margin-top: 0;
     margin-bottom: var(--L);
-    top: 0;
+    top: 64px;
     z-index: 1;
     padding: var(--L);
     min-height: 400px;
