@@ -79,7 +79,7 @@
                     if($(window).scrollTop() > 0 && scrolled == false){
                         $('.overlay-content').addClass('scrolled');
                         scrolled = true;
-                    } else if($(window).scrollTop() < 50) {
+                    } else if($(window).scrollTop() == 0) {
                         $('.overlay-content').removeClass('scrolled');
                         scrolled = false;
                     }
