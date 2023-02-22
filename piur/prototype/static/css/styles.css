@@ -325,13 +325,12 @@ footer ul li a span .open-ext {
 
 .slider {
     display: grid;
-    margin:  var(--XL) auto;
+    margin: var(--XL) auto;
 }
 
 .slider .slide {
     float: left;
     width: 330px;
-    overflow: hidden;
     margin: 0 auto;
     text-align: center;
     position: relative;
@@ -344,8 +343,8 @@ footer ul li a span .open-ext {
 
 .slider .slide-gratis {
     position: absolute;
-    right: -20px;
-    top: -30px;
+    left: 6px;
+    top: -32px;
     animation: spin 6s linear infinite;
 }
 
