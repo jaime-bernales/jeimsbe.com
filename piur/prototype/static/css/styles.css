@@ -239,8 +239,6 @@ header .back {
 }
 
 .modal .overlay-content {
-    position: relative;
-    width: 100%;
     background-color: var(--primary);
     border-radius: 40px;
     margin-top: 38px;
@@ -258,8 +256,7 @@ header .back {
 }
 
 .modal .cta {
-    position: relative;
-    margin: 74px auto 0 auto;
+    bottom: -84px;
     display: flex;
     justify-content: center;
 }
