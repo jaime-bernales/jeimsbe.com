@@ -118,7 +118,6 @@ body.background-plain {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
-    display: inline-block;
 }
 
 /* Headers */
@@ -160,7 +159,11 @@ header .back {
     background-position: center;
 }
 
-/* Navigation */
+/*
+    Navigation
+    ----------
+*/
+
 .nav-overlay {
     height: 100vh;
     width: 100%;
@@ -225,7 +228,10 @@ header .back {
     text-align: center;
 }
 
-/* Footer */
+/* 
+    Footer
+    ------
+*/
 
 footer {
     padding: 0;
@@ -286,14 +292,6 @@ footer ul li a span .open-ext {
 ==============================
 */
 
-body.home {
-    /*
-    background: linear-gradient(-45deg, #D7CFB9, #D7CFB9, #AEA187, #AEA187, #D7CFB9, #D7CFB9, #AEA187, #AEA187);
-    background-size: 400% 400%;
-    animation: gradientHomeAnimation 5s ease infinite;
-    */
-}
-
 @keyframes gradientHomeAnimation {
     0% {
         background-position: 0% 50%;
@@ -326,8 +324,8 @@ body.home {
 */
 
 .slider {
-    display: inline-block;
-    margin: var(--XL) auto;
+    display: grid;
+    margin: 70px auto var(--XL) auto;
 }
 
 .slider .slide {
