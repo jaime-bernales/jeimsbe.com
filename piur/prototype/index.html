@@ -32,7 +32,7 @@
     <body class="home overflow-y-auto">
 
         <!-- Acceder -->
-        <nav class="nav-overlay">
+        <nav id="access-menu" class="nav-overlay">
             <span class="close" title="Cerrar"></span>
 
             <div class="cta">
@@ -129,7 +129,7 @@
         <script type="text/javascript">
             $(function() {
                 $('#home-menu').click(function(){
-                    $('.nav-overlay').addClass('active');
+                    $('#access-menu').addClass('active');
                 });
 
                 $('.nav-overlay').click(function(){
