@@ -325,7 +325,7 @@ footer ul li a span .open-ext {
 
 .slider {
     display: grid;
-    margin: 70px auto var(--XL) auto;
+    margin:  var(--XL) auto;
 }
 
 .slider .slide {
