@@ -239,8 +239,6 @@ header .back {
 }
 
 .modal .overlay-content {
-    position: relative;
-    width: 100%;
     background-color: var(--primary);
     border-radius: 40px;
     margin-top: 68px;
@@ -251,7 +249,7 @@ header .back {
     min-height: 400px;
 }
 
-.modal .overlay-content {
+.modal .overlay-content.scrolled {
     margin-top: 38px;
 }
 
