@@ -241,16 +241,15 @@ header .back {
 .modal .overlay-content {
     background-color: var(--primary);
     border-radius: 40px;
-    margin-top: 68px;
+    margin-top: 38px;
     margin-bottom: var(--L);
-    top: auto;
+    top: 0;
     z-index: 1;
     padding: var(--L);
     min-height: 400px;
 }
 
 .modal .overlay-content.scrolled {
-    margin-top: 38px;
 }
 
 .modal .overlay-content h1.small {
