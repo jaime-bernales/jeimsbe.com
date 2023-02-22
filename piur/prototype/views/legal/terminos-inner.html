@@ -35,6 +35,11 @@
                 <h1 class="small">Estás por salir del registro.</h1>
                 <p>¿Querés salir?</p>
 
+                <div class="cta">
+                    <a class="btn btn-primary" href="../../index.html" target="_self">Si, salir</a>
+                    <button class="btn btn-secondary" type="button">Volver</button>
+                </div>
+
             </div>
         </section>
 
@@ -67,6 +72,7 @@
             $(function() {
                 $('.back').click(function(){
                     $('.modal').addClass('active');
+                    $(window).scrollTop(0);
                 });
 
                 $('.nav-overlay').click(function(){
