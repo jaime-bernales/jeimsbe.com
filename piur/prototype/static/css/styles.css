@@ -332,9 +332,10 @@ body.home {
 
 .slider .slide {
     float: left;
+    width: 330px;
+    margin: 0 auto;
     text-align: center;
     position: relative;
-    width: calc(100% - 16px);
 }
 
 .slider .slide-image {
