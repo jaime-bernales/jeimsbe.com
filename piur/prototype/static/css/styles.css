@@ -359,7 +359,7 @@ body.home {
     overflow-x: auto;
     position: relative;
     margin: 0 auto 0 16px;
-    width: 100%;
+    width: calc(100% - var(--M));
     height: 737px;
 }
 
