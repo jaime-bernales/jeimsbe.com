@@ -216,7 +216,7 @@ header .back {
 }
 
 .nav-overlay .overlay-content {
-    position: fixed;
+    position: absolute;
     width: calc(100% - var(--XL));
     top: 50%;
     margin-top: -25%;
@@ -239,6 +239,7 @@ header .back {
 }
 
 .modal .overlay-content {
+    position: fixed;
     background-color: var(--primary);
     border-radius: 40px;
     margin-top: 38px;
