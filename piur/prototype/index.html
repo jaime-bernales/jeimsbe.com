@@ -45,7 +45,7 @@
         <section id="cookies-content" class="nav-overlay modal">
             <span class="close" title="Cerrar"></span>
 
-            <div class="overlay-content scrolled">
+            <div class="overlay-content">
                 <h1>Uso de<br> cookies</h1>
                 <p class="small">
                     Este acuerdo, tal como su nombre lo indica, describe los Términos y Condiciones Generales que regirán la utilización de los servicios que ofrece LA PERLA (los "Servicios") dentro del sitio LA PERLA (en adelante el "Sitio Web"). Cualquier persona que pretenda hacer uso del Sitio Web o los Servicios podrá hacerlo sujetándose a los presentes Términos y Condiciones (las "Condiciones Gen
@@ -124,6 +124,7 @@
         </footer>
         
         <script type="text/javascript" src="static/js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="static/js/overlay.js"></script>
 
         <script type="text/javascript">
             $(function() {
@@ -134,7 +135,6 @@
                 $('.nav-overlay').click(function(){
                     $(this).removeClass('active');
                 })
-
 
                 $('#open-cookies').click(function(){
                     $('#cookies-content').addClass('active');
