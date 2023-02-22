@@ -160,7 +160,7 @@ header .back {
 }
 
 /*
-    Navigation
+    Overlay
     ----------
 */
 
@@ -199,6 +199,7 @@ header .back {
 
 .nav-overlay .close {
     position: fixed;
+    z-index: 2;
     top: -300px;
     left: 16px;
     display: block;
@@ -226,6 +227,41 @@ header .back {
     font-size: 20px;
     line-height: var(--XL);
     text-align: center;
+}
+
+/* 
+    Modal
+    ------
+*/
+
+.modal {
+    background-color: rgba(205, 196, 172, 0.9);
+}
+
+.modal .overlay-content {
+    position: relative;
+    width: 100%;
+    background-color: var(--primary);
+    border-radius: 40px;
+    margin-top: 38px;
+    margin-bottom: var(--L);
+    top: auto;
+    z-index: 1;
+    padding: var(--L);
+    min-height: 400px;
+}
+
+.modal .overlay-content h1.small {
+    font-size: 26px;
+    line-height: 32px;
+    margin-top: 70px;
+}
+
+.modal .cta {
+    position: relative;
+    margin: 74px auto 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 /* 
@@ -403,7 +439,7 @@ body.home h1 sup {
 }
 
 .home .hero-image .hero {
-    margin: 100px auto var(--M) auto;
+    margin: 100px auto var(--XL) auto;
     width: calc(100% - 32px);
     max-width: 460px;
     height: auto;
