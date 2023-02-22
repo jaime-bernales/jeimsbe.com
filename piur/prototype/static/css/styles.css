@@ -245,8 +245,8 @@ header .back {
     border-radius: 40px;
     margin-top: 0;
     margin-bottom: var(--L);
-    top: 38px;
-    bottom: auto;
+    top: auto;
+    bottom: -30px;
     z-index: 1;
     padding: var(--L);
     min-height: 400px;
