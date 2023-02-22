@@ -331,6 +331,7 @@ footer ul li a span .open-ext {
 .slider .slide {
     float: left;
     width: 330px;
+    overflow: hidden;
     margin: 0 auto;
     text-align: center;
     position: relative;
