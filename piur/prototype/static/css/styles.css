@@ -216,7 +216,7 @@ header .back {
 }
 
 .nav-overlay .overlay-content {
-    position: absolute;
+    position: fixed;
     width: calc(100% - var(--XL));
     top: 50%;
     margin-top: -25%;
