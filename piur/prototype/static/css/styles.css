@@ -345,7 +345,7 @@ footer ul li a span .open-ext {
     position: absolute;
     left: 6px;
     top: -32px;
-    animation: spin 6s linear infinite;
+    animation: spin 4s linear infinite;
 }
 
 .slider .slide-details {
