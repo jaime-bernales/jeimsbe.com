@@ -246,7 +246,7 @@ header .back {
     margin: 0;
     top: 132px;
     z-index: 1;
-    padding: var(--L);
+    padding: var(--M) var(--M) var(--XL) var(--M);
     min-height: 400px;
 }
 
@@ -254,10 +254,26 @@ header .back {
     top: 32px;
 }
 
+.modal .overlay-content h1 {
+    font-size: 32px;
+    line-height: 36px;
+    margin-top: 60px;
+    text-align: center;
+}
+
 .modal .overlay-content h1.small {
     font-size: 26px;
     line-height: 32px;
-    margin-top: 70px;
+    margin-top: 60px;
+}
+
+.modal .overlay-content p {
+    text-align: left;
+}
+
+.modal .overlay-content p.small {
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .modal .cta {
