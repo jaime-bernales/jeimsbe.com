@@ -239,11 +239,14 @@ header .back {
 }
 
 .modal .overlay-content {
+    position: relative;
+    width: 100%;
     background-color: var(--primary);
     border-radius: 40px;
-    margin-top: 0;
+    margin-top: 38px;
     margin-bottom: var(--L);
-    top: 64px;
+    top: 0;
+    bottom: auto;
     z-index: 1;
     padding: var(--L);
     min-height: 400px;
