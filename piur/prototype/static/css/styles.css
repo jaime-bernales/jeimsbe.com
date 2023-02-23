@@ -183,6 +183,7 @@ header .back {
     bottom: -100vh;
     transition: all 0.5s ease;
     overflow: hidden;
+    border-radius: 40px;
 }
 
 .nav-overlay.active {
