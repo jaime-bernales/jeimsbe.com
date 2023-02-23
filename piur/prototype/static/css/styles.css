@@ -172,7 +172,7 @@ header .back {
     height: 100vh;
     width: 100%;
     padding: 16px;
-    background-color: rgba(215, 207, 185, 0.8);
+    background-color: transparent;
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
     -o-backdrop-filter: blur(50px);
@@ -187,6 +187,7 @@ header .back {
 
 .nav-overlay.active {
     bottom: 0;
+    background-color: rgba(215, 207, 185, 0.8);
     transition: all 0.5s ease;
 }
 
@@ -238,7 +239,7 @@ header .back {
     ------
 */
 
-.modal {
+.modal.active {
     background-color: rgba(205, 196, 172, 0.9);
 }
 
