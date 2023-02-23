@@ -255,6 +255,8 @@ header .back {
     min-height: 400px;
     max-height: 90vh;
     overflow-y: auto;
+    border-top: 36px solid var(--primary);
+    border-bottom: 36px solid var(--primary);
 }
 
 .modal.active .overlay-content.scrolled {
