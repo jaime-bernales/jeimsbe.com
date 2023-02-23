@@ -32,7 +32,7 @@
     <body class="home overflow-y-auto">
 
         <!-- Acceder -->
-        <nav id="access-menu" class="nav-overlay">
+        <nav id="menu-content" class="nav-overlay">
             <span class="close" title="Cerrar"></span>
 
             <div class="cta">
@@ -48,7 +48,31 @@
             <div class="overlay-content">
                 <h1>Uso de<br> cookies</h1>
                 <p class="small">
-                    Este acuerdo, tal como su nombre lo indica, describe los Términos y Condiciones Generales que regirán la utilización de los servicios que ofrece LA PERLA (los "Servicios") dentro del sitio LA PERLA (en adelante el "Sitio Web"). Cualquier persona que pretenda hacer uso del Sitio Web o los Servicios podrá hacerlo sujetándose a los presentes Términos y Condiciones (las "Condiciones Gen
+                    Usamos cookies para recordar accesos y conocer hábitos de navegación, por ejemplo:
+                </p>
+
+                <p class="small ml-l mr-l">
+                    <span class="light">Si sabemos que el dashboard es la página más visitada, vamos a poder hacer mejoras basados en esa información.</span>
+                </p>
+
+                <p class="small">
+                    Las cookies hacen que la página o app pueda identificar tu ordenador, y por lo tanto, si volvés a entrar pueden recordar quién sos y qué has hecho antes. Si no existieran, cada vez que entrás en la página tendrías que iniciar sesión.
+                </p>
+
+                <p class="small">
+                    No almacenamos cookies para comercialización o publicidad externa ni interna, si no más bien para funcionalidad y mejoras.
+                </p>
+            </div>
+        </section>
+
+        <!-- Reportar un problema -->
+        <section id="report-content" class="nav-overlay modal">
+            <span class="close" title="Cerrar"></span>
+
+            <div class="overlay-content">
+                <h1>Reportar un problema</h1>
+                <p class="small">
+                    Contanos como podemos ayudarte.
                 </p>
             </div>
         </section>
@@ -114,7 +138,7 @@
                 </li>
 
                  <li>
-                    <a href="#" target="_self">
+                    <a id="report-problem" title="Ver detalles">
                         <span>
                             Reportar un problema <span class="icon open-ext"></span>
                         </span>
@@ -129,16 +153,20 @@
         <script type="text/javascript">
             $(function() {
                 $('#home-menu').click(function(){
-                    $('#access-menu').addClass('active');
+                    $('#menu-content').addClass('active');
+                });
+
+                $('#open-cookies').click(function(){
+                    $('#cookies-content').addClass('active');
+                });
+
+                $('#report-problem').click(function(){
+                    $('#report-content').addClass('active');
                 });
 
                 $('.nav-overlay').click(function(){
                     $(this).removeClass('active');
                 })
-
-                $('#open-cookies').click(function(){
-                    $('#cookies-content').addClass('active');
-                });
             });
         </script>
     </body>
