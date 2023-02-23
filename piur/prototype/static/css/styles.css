@@ -631,7 +631,7 @@ body.home h1 sup {
 
 /* 
 ==============================
-    PawCard success
+    PawCard creation success
 ==============================
 */
 
@@ -640,6 +640,7 @@ body.home h1 sup {
     height: 310px;
     margin: 0 auto;
     position: relative;
+    margin-bottom: var(--L);
 }
 
 .uploaded-mask span {
