@@ -692,6 +692,7 @@ body.home h1 sup {
 .pawcard .uploaded-mask {
     margin-top: 54px;
 }
+
 .pawcard .pet-name {
     font-size: 30px;
     line-height: 30px;
@@ -701,3 +702,34 @@ body.home h1 sup {
     color: #777264;
 }
 
+.pawcard .info-container {
+    border: 2px solid #9C9681;
+    border-radius: 20px;
+    width: calc(100% - 36*2);
+    padding: 0 20px;
+}
+
+.pawcard .info-container .info-age {
+    font-family: 'Unbounded-Medium', cursive;
+    height: 90px;
+    padding: 20px 0;
+    display: inline-block;
+    border-right: 2px solid #9C9681;
+    padding-right: 20px;
+}
+
+.pawcard .info-container .info-age label {
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 10px;
+    display: inline-block;
+    color: #9C9681;
+    font-family: 'Unbounded-Medium', cursive;
+}
+
+.pawcard .info-container .info-age p {
+    font-size: 18px;
+    line-height: 18px;
+    margin: 0;
+    color: #777264;
+}
