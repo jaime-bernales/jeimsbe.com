@@ -691,15 +691,7 @@ body.home h1 sup {
 
 .pawcard .uploaded-mask {
     margin-top: 54px;
-    width: 280px;
-    height: 280px;
 }
-
-.pawcard .uploaded-mask .photo {
-    width: 270px;
-    height: 270px;
-}
-
 .pawcard .pet-name {
     font-size: 30px;
     line-height: 30px;
