@@ -707,10 +707,10 @@ body.home h1 sup {
     border-radius: 20px;
     width: calc(100% - 36*2);
     padding: 0 20px;
+    font-family: 'Unbounded-Medium', cursive;
 }
 
 .pawcard .info-container .info-age {
-    font-family: 'Unbounded-Medium', cursive;
     height: 90px;
     padding: 20px 0;
     display: inline-block;
@@ -724,7 +724,6 @@ body.home h1 sup {
     margin-bottom: 10px;
     display: inline-block;
     color: #9C9681;
-    font-family: 'Unbounded-Medium', cursive;
 }
 
 .pawcard .info-container .info-age p {
@@ -732,4 +731,5 @@ body.home h1 sup {
     line-height: 18px;
     margin: 0;
     color: #777264;
+    font-family: 'Unbounded-Medium', cursive;
 }
