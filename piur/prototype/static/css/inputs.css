@@ -27,6 +27,7 @@
 }
 
 .input-group .input-label {
+	cursor: pointer;
 	font-size: var(--M);
 	position: absolute;
 	bottom: 24px;
@@ -40,6 +41,7 @@
 }
 
 .input-group.active .input-label {
+	cursor: default;
 	font-size: 12px;
 	height: 12px;
 	line-height: 12px;

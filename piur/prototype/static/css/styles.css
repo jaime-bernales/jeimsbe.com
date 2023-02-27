@@ -140,6 +140,7 @@ header {
 }
 
 header nav.menu {
+    cursor: pointer;
     width: 54px;
     height: 54px;
     z-index: 2;
@@ -537,6 +538,17 @@ body.home h1 sup {
 .dashboard-menu li .menu-text {
     line-height: 26px;
     display: inline-block;
+}
+
+.dashboard-menu .item {
+    font-size: 18px;
+    line-height: 80px;
+    height: 80px;
+    text-align: center;
+    border-radius: 40px;
+    display: inline-block;
+    width: 250px;
+    background-color: #C8BFA4;
 }
 
 .pawcard-size .size-selector {
