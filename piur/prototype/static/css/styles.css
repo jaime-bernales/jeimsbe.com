@@ -113,7 +113,7 @@ body {
 }
 
 body.background-plain {
-    background: #D7CFB9;
+    background: rgba(215, 207, 185, 1);
 }
 
 /* Wrappers */
@@ -690,7 +690,7 @@ body.home h1 sup {
 */
 
 .pawcard .uploaded-mask {
-    margin-top: 40px;
+    margin-top: 46px;
 }
 
 .pawcard .pet-name {
