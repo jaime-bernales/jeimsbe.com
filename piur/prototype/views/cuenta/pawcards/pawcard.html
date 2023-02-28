@@ -9,7 +9,6 @@
 
         <link rel="stylesheet" type="text/css" href="../../../static/css/styles.css">
         <link rel="stylesheet" type="text/css" href="../../../static/css/buttons.css">
-        <link rel="stylesheet" type="text/css" href="../../../static/css/inputs.css">
         <link rel="stylesheet" type="text/css" href="../../../static/css/helpers.css">
 
         <!-- Iconos -->
@@ -56,12 +55,28 @@
             </div>
 
             <div class="contact-phone">
-                <button class="btn btn-primary w-100" type="button">Contactarse</button>
+                <button id="contact-user" class="btn btn-primary w-100" type="button">Contactarse</button>
             </div>
         </div>
 
+
+        <section class="contact-user-container">
+            
+        </section>
+
         <script type="text/javascript" src="../../../static/js/jquery-3.6.0.min.js"></script>
-        <script type="text/javascript" src="../../../static/js/inputs.js"></script>
+
+        <script type="text/javascript">
+            $(function() {
+                $('#contact-user').click(function(){
+                    $('.contact-user-container').addClass('active');
+                });
+
+                $('.contact-user-container').click(function(){
+                    $(this).removeClass('active');
+                });
+            });
+        </script>
     </body>
 
 </html>
