@@ -690,7 +690,7 @@ body.home h1 sup {
 */
 
 .pawcard .uploaded-mask {
-    margin-top: 54px;
+    margin-top: 40px;
 }
 
 .pawcard .pet-name {
@@ -702,13 +702,20 @@ body.home h1 sup {
     color: #777264;
 }
 
-.pawcard .info-container {
+.pawcard .info-container,
+.pawcard .contact-phone {
     border: 2px solid #9C9681;
     border-radius: 20px 20px 0 0;
     width: calc(100% - 40px);
     margin: 0 auto;
     padding: 0 20px;
     font-family: 'Unbounded-Medium', cursive;
+}
+
+.pawcard .contact-phone {
+    border-radius: 0 0 20px 20px;
+    border-top: 0;
+    padding: 16px;
 }
 
 .pawcard .info-container .pet-age,
