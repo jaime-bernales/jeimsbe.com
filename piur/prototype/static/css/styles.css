@@ -705,20 +705,26 @@ body.home h1 sup {
 .pawcard .info-container {
     border: 2px solid #9C9681;
     border-radius: 20px;
-    width: calc(100% - 36*2);
+    width: calc(100% - 40px);
+    margin: 0 auto;
     padding: 0 20px;
     font-family: 'Unbounded-Medium', cursive;
 }
 
-.pawcard .info-container .info-age {
+.pawcard .info-container .pet-age,
+.pawcard .info-container .contact-department {
     height: 90px;
-    padding: 20px 0;
+    padding: 20px;
     display: inline-block;
     border-right: 2px solid #9C9681;
-    padding-right: 20px;
 }
 
-.pawcard .info-container .info-age label {
+.pawcard .info-container .contact-department {
+    border-right: 0;
+}
+
+.pawcard .info-container .pet-age label,
+.pawcard .info-container .contact-department label {
     font-size: 14px;
     line-height: 14px;
     margin-bottom: 10px;
@@ -726,7 +732,8 @@ body.home h1 sup {
     color: #9C9681;
 }
 
-.pawcard .info-container .info-age p {
+.pawcard .info-container .pet-age p,
+.pawcard .info-container .contact-department p {
     font-size: 18px;
     line-height: 18px;
     margin: 0;
