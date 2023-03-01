@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Elliot: PawCard</title>
+        <meta name="application-name" content="PawCard">
+
+        <link rel="stylesheet" type="text/css" href="../../../static/css/styles.css">
+        <link rel="stylesheet" type="text/css" href="../../../static/css/buttons.css">
+        <link rel="stylesheet" type="text/css" href="../../../static/css/helpers.css">
+
+        <!-- Iconos -->
+        <link rel="icon" sizes="192x192" href="../../../static/img/favicon/icon.png">
+
+        <link rel="apple-touch-icon" href="../../../static/img/favicon/ios-icon.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../../../static/img/favicon/touch-icon-ipad.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../../../static/img/favicon/touch-icon-iphone-retina.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../../../static/img/favicon/touch-icon-ipad-retina.png">
+
+        <meta name="msapplication-wide310x150logo" content="../../../static/img/favicon/icon_widetile.png">
+        <meta name="msapplication-square310x310logo" content="../../../static/img/favicon/icon_largetile.png">
+        <meta name="msapplication-square70x70logo" content="../../../static/img/favicon/icon_smalltile.png">
+        <meta name="msapplication-square150x150logo" content="../../../static/img/favicon/icon_mediumtile.png">
+
+        <meta name="theme-color" content="D7CFB9">
+    </head>
+
+    <body class="pawcard">
+
+        <header>
+            <nav id="home-menu" class="menu"></nav>
+        </header>
+
+        <div class="container">
+
+            <div class="uploaded-mask">
+                <span class="photo" style="background-image: url(https://images.unsplash.com/photo-1530041686259-53d26f863313?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1638&q=80)"></span>
+                <span class="photo-border"></span>
+            </div>
+
+            <h1 class="pet-name">Elliot</h1>
+
+            <div class="info-container">
+                <div class="pet-age pl-0">
+                    <label>Edad</label>
+                    <p><span>5</span> años</p>
+                </div>
+
+                <div class="contact-department pr-0">
+                    <label>Vive en</label>
+                    <p>Godoy Cruz</p>
+                </div>
+            </div>
+
+            <div class="contact-phone">
+                <button id="contact-user" class="btn btn-primary w-100" type="button">Contactarse</button>
+            </div>
+        </div>
+
+
+        <section class="contact-user-container">
+            
+        </section>
+
+        <script type="text/javascript" src="../../../static/js/jquery-3.6.0.min.js"></script>
+
+        <script type="text/javascript">
+            $(function() {
+                $('#contact-user').click(function(){
+                    $('.contact-user-container').addClass('active');
+                });
+
+                $('.contact-user-container').click(function(){
+                    $(this).removeClass('active');
+                });
+            });
+        </script>
+    </body>
+
+</html>
