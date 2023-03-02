@@ -312,7 +312,6 @@ header .back {
     overflow: hidden;
     position: fixed;
     height: 0;
-    transition: all 0ms ease;
 }
 
 .nav-overlay.active .menu-container {
@@ -329,6 +328,7 @@ header .back {
 .nav-overlay.active ul.menu {
     margin-top: 160px;
     opacity: 1;
+    transition: all 700ms ease 300ms;
 }
 
 .nav-overlay ul.menu li a {
