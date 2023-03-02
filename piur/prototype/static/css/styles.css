@@ -311,6 +311,7 @@ header .back {
 .nav-overlay .menu-container {
     overflow: hidden;
     position: fixed;
+    top: 0;
     height: 0;
 }
 
@@ -318,20 +319,19 @@ header .back {
     height: auto;
 }
 
-.nav-overlay ul.menu {
+.nav-overlay .menu {
     list-style: none;
     opacity: 0;
     margin-top: 260px;
-    transition: all 700ms ease 300ms;
+    transition: all 900ms ease 600ms;
 }
 
-.nav-overlay.active ul.menu {
-    margin-top: 160px;
+.nav-overlay.active .menu {
+    margin-top: 190px;
     opacity: 1;
-    transition: all 700ms ease 300ms;
 }
 
-.nav-overlay ul.menu li a {
+.nav-overlay .menu li a {
     font-family: 'Unbounded-Medium', cursive;
     display: block;
     font-size: 38px;
@@ -339,11 +339,11 @@ header .back {
     margin-bottom: 70px;
     text-decoration: none;
     color: var(--black);
-    transition: all 700ms ease 200ms;
+    transition: all 900ms ease 600ms;
 
 }
 
-.nav-overlay.active ul.menu li a {
+.nav-overlay.active .menu li a {
     margin-bottom: 40px;
 }
 
