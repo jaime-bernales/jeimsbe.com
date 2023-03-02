@@ -313,14 +313,16 @@ header .back {
     width: 100%;
     list-style: none;
     top: 300px;
-    transition: all 700ms ease 300ms;
     overflow: hidden;
     height: 0;
+    opacity: 0;
+    transition: all 700ms ease 300ms;
 }
 
 .nav-overlay.active ul.menu {
     top: 160px;
     height: auto;
+    opacity: 1;
 }
 
 .nav-overlay ul.menu li a {
