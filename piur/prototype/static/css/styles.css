@@ -309,17 +309,13 @@ header .back {
 */
 
 .nav-overlay .menu {
-    position: absolute;
-    width: 100%;
     list-style: none;
-    opacity: 0;
-    top: 260px;
-    transition: all 900ms ease 700ms;
+    margin-top: 260px;
+    transition: all 900ms ease 300ms;
 }
 
 .nav-overlay.active .menu {
-    top: 190px;
-    opacity: 1;
+    margin-top: 190px;
 }
 
 .nav-overlay .menu li a {
@@ -327,9 +323,11 @@ header .back {
     display: block;
     font-size: 38px;
     line-height: 38px;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
     text-decoration: none;
     color: var(--black);
+    transition: all 600ms ease 300ms;
+
 }
 
 .nav-overlay.active .menu li a {
