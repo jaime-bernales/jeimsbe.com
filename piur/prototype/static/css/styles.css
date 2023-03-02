@@ -308,16 +308,6 @@ header .back {
     --------------
 */
 
-.nav-overlay .menu-container {
-    overflow: hidden;
-    position: fixed;
-    top: 110%;
-}
-
-.nav-overlay.active .menu-container {
-    top: 0;
-}
-
 .nav-overlay .menu {
     position: relative;
     list-style: none;
@@ -339,7 +329,6 @@ header .back {
     margin-bottom: 70px;
     text-decoration: none;
     color: var(--black);
-
 }
 
 .nav-overlay.active .menu li a {
