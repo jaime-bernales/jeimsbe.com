@@ -308,12 +308,12 @@ header .back {
     --------------
 */
 
-.nav-overlay ul.menu {
+.nav-overlay .menu-container {
     height: 0;
     transition: all 0ms ease;
 }
 
-.nav-overlay.active ul.menu {
+.nav-overlay.active .menu-container {
     height: auto;
 }
 
