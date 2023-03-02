@@ -170,6 +170,7 @@ header .back {
 */
 
 .nav-overlay {
+    height: 100vh;
     width: 100%;
     padding: 16px;
     background-color: transparent;
@@ -183,11 +184,9 @@ header .back {
     bottom: -100vh;
     transition: all 0.5s ease;
     overflow: hidden;
-    height: 0;
 }
 
 .nav-overlay.active {
-    height: 100vh;
     bottom: 0;
     background-color: rgba(219, 208, 185, 0.8);
     transition: all 0.5s ease;
@@ -307,14 +306,15 @@ header .back {
 
 .nav-overlay ul.menu {
     list-style: none;
-    width: 100%;
-    position: fixed;
-    top: 300px;
+    margin-top: 300px;
     transition: all 700ms ease 300ms;
+    overflow: hidden;
+    height: 0;
 }
 
 .nav-overlay.active ul.menu {
-    top: 160px;
+    margin-top: 160px;
+    height: auto;
 }
 
 .nav-overlay ul.menu li a {
