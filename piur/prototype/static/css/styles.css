@@ -170,7 +170,6 @@ header .back {
 */
 
 .nav-overlay {
-    height: 100vh;
     width: 100%;
     padding: 16px;
     background-color: transparent;
@@ -184,9 +183,11 @@ header .back {
     bottom: -100vh;
     transition: all 0.5s ease;
     overflow: hidden;
+    height: 0;
 }
 
 .nav-overlay.active {
+    height: 100vh;
     bottom: 0;
     background-color: rgba(219, 208, 185, 0.8);
     transition: all 0.5s ease;
