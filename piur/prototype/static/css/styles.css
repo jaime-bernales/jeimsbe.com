@@ -49,6 +49,10 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+a {
+    cursor: pointer;
+}
+
 b {
     font-family: 'Unbounded-Medium', cursive;
 }
@@ -305,15 +309,17 @@ header .back {
 */
 
 .nav-overlay ul.menu {
+    position: fixed;
+    width: 100%;
     list-style: none;
-    margin-top: 300px;
+    top: 300px;
     transition: all 700ms ease 300ms;
     overflow: hidden;
     height: 0;
 }
 
 .nav-overlay.active ul.menu {
-    margin-top: 160px;
+    top: 160px;
     height: auto;
 }
 
