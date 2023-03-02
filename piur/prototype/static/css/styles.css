@@ -309,15 +309,16 @@ header .back {
 */
 
 .nav-overlay .menu {
-    position: relative;
+    position: absolute;
+    width: 100%;
     list-style: none;
     opacity: 0;
-    margin-top: 260px;
+    top: 260px;
     transition: all 900ms ease 700ms;
 }
 
 .nav-overlay.active .menu {
-    margin-top: 190px;
+    top: 190px;
     opacity: 1;
 }
 
