@@ -309,6 +309,15 @@ header .back {
 */
 
 .nav-overlay ul.menu {
+    height: 0;
+    transition: all 0ms ease;
+}
+
+.nav-overlay.active ul.menu {
+    height: auto;
+}
+
+.nav-overlay ul.menu {
     position: fixed;
     width: 100%;
     list-style: none;
@@ -321,14 +330,6 @@ header .back {
 .nav-overlay.active ul.menu {
     top: 160px;
     opacity: 1;
-}
-
-.nav-overlay ul.menu {
-    height: 0;
-}
-
-.nav-overlay.active ul.menu {
-    height: auto;
 }
 
 .nav-overlay ul.menu li a {
