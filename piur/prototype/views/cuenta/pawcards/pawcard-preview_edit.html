@@ -28,6 +28,27 @@
     </head>
 
     <body class="pawcard">
+        <nav class="nav-overlay">
+            <span class="close" title="Cerrar"></span>
+
+            <ul class="menu">
+                <li>
+                    <a href="" title="Home" target="_self">Home</a>
+                </li>
+
+                <li>
+                    <a href="../dashboard.html" title="Dashboard" target="_self">Dashboard</a>
+                </li>
+
+                <li>
+                    <a href="" title="PawCards" target="_self">PawCards</a>
+                </li>
+
+                <li>
+                    <a href="" title="Ajustes" target="_self">Ajustes</a>
+                </li>
+            </ul>            
+        </nav>
 
         <header>
             <nav id="home-menu" class="menu"></nav>
@@ -75,6 +96,14 @@
                 $('.contact-user-container').click(function(){
                     $(this).removeClass('active');
                 });
+
+                $('#home-menu').click(function(){
+                    $('.nav-overlay').addClass('active');
+                });
+
+                $('.nav-overlay').click(function(){
+                    $(this).removeClass('active');
+                })
             });
         </script>
     </body>

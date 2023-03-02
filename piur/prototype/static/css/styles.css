@@ -300,6 +300,37 @@ header .back {
 }
 
 /* 
+    Overlay - Menu
+    --------------
+*/
+
+.nav-overlay ul.menu {
+    list-style: none;
+    margin-top: 300px;
+    transition: all 700ms ease 300ms;
+}
+
+.nav-overlay.active ul.menu {
+    margin-top: 160px;
+}
+
+.nav-overlay ul.menu li a {
+    font-family: 'Unbounded-Medium', cursive;
+    display: block;
+    font-size: 38px;
+    line-height: 38px;
+    margin-bottom: 70px;
+    text-decoration: none;
+    color: var(--black);
+    transition: all 700ms ease 200ms;
+
+}
+
+.nav-overlay.active ul.menu li a {
+    margin-bottom: 40px;
+}
+
+/* 
     Footer
     ------
 */
@@ -693,7 +724,7 @@ body.home h1 sup {
 */
 
 .pawcard .uploaded-mask {
-    margin-top: 34px;
+    margin-top: 36px;
 }
 
 .pawcard .pet-name {
