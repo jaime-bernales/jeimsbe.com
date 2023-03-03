@@ -318,6 +318,11 @@ header .back {
     margin-top: 260px;
 }
 
+.nav-overlay .menu li {
+    position: relative;
+    display: inline-block;
+}
+
 .nav-overlay .menu li a {
     font-family: 'Unbounded-Medium', cursive;
     display: block;
@@ -327,11 +332,20 @@ header .back {
     text-decoration: none;
     color: var(--black);
     transition: all 600ms ease 300ms;
-
 }
 
 .nav-overlay.active .menu li a {
     margin-bottom: 40px;
+}
+
+.nav-overlay.active .menu li.active .active-bar {
+    position: absolute;
+    left: -6px;
+    bottom: 26px;
+    width: calc(100% + 12px);
+    height: 8px;
+    background-color: var(--black);
+    opacity: 0.5;
 }
 
 /* 
@@ -573,17 +587,6 @@ body.home h1 sup {
 .dashboard-menu li .menu-text {
     line-height: 26px;
     display: inline-block;
-}
-
-.dashboard-menu .item {
-    font-size: 18px;
-    line-height: 80px;
-    height: 80px;
-    text-align: center;
-    border-radius: 40px;
-    display: inline-block;
-    width: 250px;
-    background-color: rgba(225, 220, 207, 0.5);
 }
 
 .pawcard-size .size-selector {
