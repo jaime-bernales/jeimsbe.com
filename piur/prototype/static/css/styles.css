@@ -174,7 +174,7 @@ header .back {
 */
 
 .nav-overlay {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     padding: 16px;
     background-color: transparent;
@@ -321,6 +321,7 @@ header .back {
 .nav-overlay .menu li {
     position: relative;
     display: inline-block;
+    opacity: 0.4;
 }
 
 .nav-overlay .menu li a {
@@ -338,14 +339,18 @@ header .back {
     margin-bottom: 40px;
 }
 
+.nav-overlay.active .menu li.active {
+    opacity: 1;
+}
+
 .nav-overlay.active .menu li.active .active-bar {
     position: absolute;
     left: -6px;
-    bottom: 26px;
+    bottom: 28px;
     width: calc(100% + 12px);
-    height: 8px;
+    height: 6px;
     background-color: var(--black);
-    opacity: 0.5;
+    display: none;
 }
 
 /* 
