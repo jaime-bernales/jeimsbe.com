@@ -10,7 +10,7 @@
     font-size: var(--M);
     border: 0;
     text-decoration: none;
-    font-family: 'Unbounded-Medium', cursive;
+    font-family: 'Unbounded-Medium', sans-serif;
     cursor: pointer;
 }
 

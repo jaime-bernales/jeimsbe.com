@@ -22,7 +22,7 @@
 }
 
 :root {
-    font-family: 'Unbounded-Regular', cursive;
+    font-family: 'Unbounded-Regular', sans-serif;
 
     /* Colors */
     --primary: #D7CFB9;
@@ -54,11 +54,11 @@ a {
 }
 
 b {
-    font-family: 'Unbounded-Medium', cursive;
+    font-family: 'Unbounded-Medium', sans-serif;
 }
 
 .light {
-    font-family: 'Unbounded-Light', cursive;
+    font-family: 'Unbounded-Light', sans-serif;
 }
 
 img:focus,
@@ -99,7 +99,7 @@ p {
     font-size: var(--M);
     line-height: var(--L);
     margin: 0 0 var(--M) 0;
-    font-family: 'Unbounded-Light', cursive;
+    font-family: 'Unbounded-Light', sans-serif;
 }
 
 p.large {
@@ -233,7 +233,7 @@ header .back {
 }
 
 .nav-overlay .overlay-content p {
-    font-family: 'Unbounded-Regular', cursive;
+    font-family: 'Unbounded-Regular', sans-serif;
     font-size: 20px;
     line-height: var(--XL);
     text-align: center;
@@ -325,7 +325,7 @@ header .back {
 }
 
 .nav-overlay .menu li a {
-    font-family: 'Unbounded-Medium', cursive;
+    font-family: 'Unbounded-Medium', sans-serif;
     display: block;
     font-size: 38px;
     line-height: 38px;
@@ -478,7 +478,7 @@ footer ul li a span .open-ext {
     line-height: 26px;
     color: #6B675C;
     margin-bottom: var(--L);
-    font-family: 'Unbounded-Medium', cursive;
+    font-family: 'Unbounded-Medium', sans-serif;
 }
 
 .home h1 {
@@ -581,7 +581,7 @@ body.home h1 sup {
     background-color: rgba(225, 220, 207, 0.5);
     text-align: center;
     border-radius: 110px;
-    font-family: 'Unbounded-Medium', cursive;
+    font-family: 'Unbounded-Medium', sans-serif;
     font-size: 20px;
 }
 
@@ -634,7 +634,7 @@ body.home h1 sup {
 }
 
 .confirmation-name {
-    font-family: 'Unbounded-Regular', cursive;
+    font-family: 'Unbounded-Regular', sans-serif;
     color: rgba(0, 0, 0, 0.4);
     line-height: 20px;
     text-align: center;
@@ -742,7 +742,7 @@ body.home h1 sup {
 .pawcard .pet-name {
     font-size: 30px;
     line-height: 30px;
-    font-family: 'Unbounded-Medium', cursive;
+    font-family: 'Unbounded-Medium', sans-serif;
     text-align: center;
     margin: var(--L) 0;
     color: #777264;
@@ -755,7 +755,7 @@ body.home h1 sup {
     width: calc(100% - 40px);
     margin: 0 auto;
     padding: 0 20px;
-    font-family: 'Unbounded-Medium', cursive;
+    font-family: 'Unbounded-Medium', sans-serif;
 }
 
 .pawcard .contact-phone {
@@ -791,7 +791,7 @@ body.home h1 sup {
     line-height: 18px;
     margin: 0;
     color: #777264;
-    font-family: 'Unbounded-Medium', cursive;
+    font-family: 'Unbounded-Medium', sans-serif;
 }
 
 /*
@@ -803,7 +803,7 @@ body.home h1 sup {
     position: fixed;
     z-index: 4;
     bottom: -100%;
-    height: 400px;
+    height: 490px;
     width: 100%;
     border-radius: 40px 40px 0 0;
     background-color: rgba(219, 208, 185, 0.6);
@@ -819,3 +819,18 @@ body.home h1 sup {
     bottom: 0;
     box-shadow: 0px -5px 20px -15px rgb(0 0 0 / 30%);
 }
+
+.contact-user-container h2 {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 90px 0 0 0;
+    font-family: 'Unbounded-Medium', sans-serif;
+    transition: all 300ms ease 300ms;
+}
+
+.contact-user-container.active h2 {
+    margin: 50px 0 0 0;
+}
+
+

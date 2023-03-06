@@ -65,7 +65,7 @@ input {
 	font-size: var(--M);
 	color: var(--black);
 	border-bottom: 1px solid var(--black);
-    font-family: 'Unbounded-Regular', cursive;
+    font-family: 'Unbounded-Regular', sans-serif;
     outline: none;
 	background-color: transparent;
 }
@@ -81,7 +81,7 @@ p.helper-text {
 	line-height: 20px;
 	color: #9E957D;
 	margin: 0 0 var(--L) 0;
-    font-family: 'Unbounded-Regular', cursive;
+    font-family: 'Unbounded-Regular', sans-serif;
 }
 
 select {
