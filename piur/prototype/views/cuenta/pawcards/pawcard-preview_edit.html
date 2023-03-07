@@ -89,12 +89,14 @@
 
         <script type="text/javascript">
             $(function() {
-                $('#contact-user').click(function(){
-                    $('.contact-user-container').addClass('active');
+                $(document).click(function(event) {
+                    if (!$(event.target).closest(".contact-user-container, #contact-user").length) {
+                        $('.contact-user-container').removeClass('active');
+                    }
                 });
 
-                $('.contact-user-container').click(function(){
-                    $(this).removeClass('active');
+                $('#contact-user').click(function(){
+                    $('.contact-user-container').addClass('active');
                 });
 
                 $('#home-menu').click(function(){
