@@ -844,11 +844,6 @@ body.home h1 sup {
     float: left;
     background-size: auto;
     transition: all 600ms ease 400ms;
-    opacity: 0;
-}
-
-.contact-user-container.active .item {
-    opacity: 1;
 }
 
 .contact-user-container .item.call {
