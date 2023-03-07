@@ -64,12 +64,12 @@
             <h2>Contacto</h2>
 
             <div class="contact-cta">
-                <a class="item-call" href="#" title="Llamar">
-                    <img src="">
+                <a class="item call" href="tel:123-456-7890" title="LLamar por teléfono">
+                    LLamar por teléfono.
                 </a>
 
-                <a class="item-wapp" href="#" title="Whatsapp">
-                    <img src="">
+                <a class="item wapp" href="#" title="Enviar mensaje por Whatsapp">
+                    Enviar mensaje por Whatsapp.
                 </a>
             </div>
         </section>
@@ -78,12 +78,15 @@
 
         <script type="text/javascript">
             $(function() {
-                $('#contact-user').click(function(){
-                    $('.contact-user-container').addClass('active');
+
+                $(document).click(function(event) {
+                    if (!$(event.target).closest(".contact-user-container, #contact-user").length) {
+                        $('.contact-user-container').removeClass('active');
+                    }
                 });
 
-                $('.contact-user-container').click(function(){
-                    $(this).removeClass('active');
+                $('#contact-user').click(function(){
+                    $('.contact-user-container').addClass('active');
                 });
             });
         </script>
