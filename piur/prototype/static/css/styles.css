@@ -810,17 +810,20 @@ body.home h1 sup {
 
 .contact-user-container .header {
     position: relative;
-    margin: 100px 40px 0 40px;
     text-align: left;
     transition: all 400ms ease 380ms;
 }
 
+.contact-user-container .header .text-container {
+    margin: 30px 40px 0 40px;
+    float: left;
+}
+
 .contact-user-container .header .close {
-    position: fixed;
-    z-index: 2;
-    top: 16px;
+    margin: 16px 16px 0 0;
     right: 16px;
     display: block;
+    float: right;
     cursor: pointer;
     transition: all 1s ease;
     background-repeat: no-repeat;
@@ -859,7 +862,7 @@ body.home h1 sup {
 }
 
 .contact-user-container .item {
-    width: 170px;
+    width: 160px;
     height: 200px;
     line-height: 240px;
     display: block;
