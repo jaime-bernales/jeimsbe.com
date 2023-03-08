@@ -85,7 +85,7 @@
 
            <div class="header">
                 <span class="close" title="Cerrar"></span>
-                
+
                 <div class="text-container">
                     <p>Contactarse</p>
                     <h2>Elegí una opción</h2>
@@ -115,8 +115,8 @@
                     }
                 });
 
-                $('#contact-user').click(function(){
-                    $('.contact-user-container').addClass('active');
+                $('#contact-user, .contact-user-container .close').click(function(){
+                    $('.contact-user-container').toggleClass('active');
                 });
 
                 $('#home-menu').click(function(){
