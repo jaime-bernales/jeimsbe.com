@@ -874,6 +874,11 @@ body.home h1 sup {
     transition: all 600ms ease 300ms;
 }
 
+.contact-user-container .item:focus,
+.contact-user-container .item:active {
+    background-color: var(--black);
+}
+
 .contact-user-container .item.call {
     margin-right: 16px;
 }
