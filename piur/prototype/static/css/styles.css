@@ -582,13 +582,17 @@ body.home h1 sup {
     display: inline-block;
 }
 
+.pawcard-size {
+    display: flex;
+    gap: var(--L);
+}
+
 .pawcard-size .size-selector {
     float: left;
     position: relative;
     height: 310px;
     line-height: 310px;
     width: 210px;
-    margin-right: var(--L);
     margin-bottom: 60px;
     border-radius: 170px;
     background-color: #C8BFA4;
