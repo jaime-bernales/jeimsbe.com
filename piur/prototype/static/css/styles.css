@@ -320,7 +320,6 @@ header .back {
 
 .nav-overlay .menu li {
     position: relative;
-    display: inline-block;
     opacity: 1;
 }
 
@@ -340,17 +339,7 @@ header .back {
 }
 
 .nav-overlay.active .menu li.active {
-    opacity: 0.6;
-}
-
-.nav-overlay.active .menu li.active .active-bar {
-    position: absolute;
-    left: -6px;
-    bottom: 28px;
-    width: calc(100% + 12px);
-    height: 6px;
-    background-color: var(--black);
-    display: none;
+    opacity: 0.4;
 }
 
 /* 
