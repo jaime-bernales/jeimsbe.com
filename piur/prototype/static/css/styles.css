@@ -584,6 +584,7 @@ body.home h1 sup {
 
 .pawcard-size {
     display: flex;
+    height: 370px;
     gap: var(--L);
 }
 
