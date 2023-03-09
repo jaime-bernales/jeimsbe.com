@@ -811,7 +811,7 @@ body.home h1 sup {
 }
 
 .contact-user-container .header .text-container {
-    margin: 30px var(--L) 0 var(--L);
+    margin: var(--S) var(--L) 0 var(--L);
     float: left;
     width: 100%;
 }
