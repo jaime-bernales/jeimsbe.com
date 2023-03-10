@@ -33,7 +33,7 @@
         <header>
             <a class="back step-size" href="../../dashboard.html" target="_self" title="Atrás"></a>
             <span class="back step-data hidden" title="Atrás"></span>
-            <span class="back step-photo hidden" title="Atrás"></span>
+            <span class="back step-contact hidden" title="Atrás"></span>
             <span class="back step-location hidden" title="Atrás"></span>
         </header>
 
@@ -66,7 +66,7 @@
                 <p class="text-center m-xl">Esta es la información que se va a mostrar en la PawCard.</p>
 
                 <div class="input-group pawcardname mr-m">
-                    <label class="input-label" for="pawCardName">Nombre *</label>
+                    <label class="input-label" for="pawCardName">Nombre</label>
                     <input class="input-text" type="text" id="pawCardName" name="pawCardName">
                 </div>
 
@@ -81,36 +81,19 @@
                     <option value="hembra">Hembra</option>
                 </select>
 
-                <div class="input-group m-s">
-                    <label class="input-label" for="pawCardContact">Teléfono de contacto *</label>
+                <button class="btn btn-primary btn-next" type="button">Siguiente</button>
+                <button class="btn btn-secondary btn-back" type="button">Volver</button>
+            </div>
+
+
+            <!-- Contacto -->
+            <div id="step-contact" class="hidden">
+                <h1 class="inner m-l">Contacto</h1>
+
+                <div class="input-group">
+                    <label class="input-label" for="pawCardContact">Número</label>
                     <input class="input-text" type="tel" id="pawCardContact" name="pawCardContact">
                 </div>
-
-                <p class="helper-text">(*) Campos requeridos para continuar.</p>
-
-                <button class="btn btn-primary btn-next" type="button">Siguiente</button>
-            </div>
-
-            <!-- Foto -->
-            <div id="step-photo" class="hidden">
-                <h1 class="inner m-l">Foto de perfil</h1>
-
-                <div class="photo-image" id="upload-photo">
-                    <img class="photo" src="../../../../static/img/pawcard/photo/photo-placeholder.png" alt="Foto de perro de frente">
-                    <img class="photo-placeholder" src="../../../../static/img/pawcard/photo/photo-placeholder.png" alt="">
-                </div>
-
-                <div class="text-center">
-                    <a class="btn btn-primary m-m" href="#" target="_self">Abrir cámara</a>
-                    <span class="btn btn-link">Dejar para después</span>
-                </div>
-
-            </div>
-
-            <!-- Ubicación -->
-            <div id="step-location" class="hidden">
-                <h1 class="inner m-l">Ubicación</h1>
-                <p class="text-center m-xl">Esta información no se va a <br> mostrar públicamente.</p>
 
                 <select class="empty" id="select-provincia" name="select-provincia">
                     <option selected>Provincia</option>
@@ -124,8 +107,23 @@
                     <option value="sanluis">Luján de cuyo</option>
                 </select>
 
-                <a class="btn btn-primary btn-next mr-m" href="pawcard-exito.html" target="_self">Siguiente</a>
-                <span class="btn-link">Omitir</span>
+                <span class="btn btn-primary btn-next">Siguiente</span>
+                <button class="btn btn-secondary btn-back" type="button">Volver</button>
+            </div>
+
+            <!-- Foto -->
+            <div id="step-photo" class="hidden">
+                <h1 class="inner m-l">Foto de perfil</h1>
+
+                <div class="photo-image" id="upload-photo">
+                    <img class="photo" src="../../../../static/img/pawcard/photo/photo-placeholder.png" alt="Foto de perro de frente">
+                    <img class="photo-placeholder" src="../../../../static/img/pawcard/photo/photo-placeholder.png" alt="">
+                </div>
+
+                <div class="text-center">
+                    <span class="btn btn-primary m-m">Abrir cámara</span>
+                    <a class="btn btn-link" href="pawcard-exito.html" target="_self">Dejar para después</a>
+                </div>
             </div>
         </div>
 
@@ -145,30 +143,26 @@
                     $('#step-data, header .step-data').removeClass('hidden');
                 });
 
-                $('header .step-data').click(function(){
+                $('header .step-data, #step-data .btn-back').click(function(){
                     $('#step-size, header .step-size').removeClass('hidden');
                     $('#step-data, header .step-data').addClass('hidden');
                 });
 
                 $('#step-data .btn-next').click(function(){
                     $('#step-data, header .step-data').addClass('hidden');
-                    $('#step-photo, header .step-photo').removeClass('hidden');
+                    $('#step-contact, header .step-contact').removeClass('hidden');
                 });
 
-                $('header .step-photo').click(function(){
+                $('header .step-contact, #step-contact .btn-back').click(function(){
                     $('#step-data, header .step-data').removeClass('hidden');
-                    $('#step-photo, header .step-photo').addClass('hidden');
+                    $('#step-contact, header .step-contact').addClass('hidden');
                 });
 
-                $('#upload-photo, #step-photo .btn-link').click(function(){
-                    $('#step-photo, header .step-photo').addClass('hidden');
-                    $('#step-location, header .step-location').removeClass('hidden');
-                });
-
-                $('header .step-location').click(function(){
+                $('#step-contact .btn-next').click(function(){
+                    $('#step-contact, header .step-contact').addClass('hidden');
                     $('#step-photo, header .step-photo').removeClass('hidden');
-                    $('#step-location, header .step-location').addClass('hidden');
                 });
+
 
                 // Select
                 $('#select-provincia').on('change', function() {

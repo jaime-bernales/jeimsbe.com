@@ -76,7 +76,7 @@
             </div>
 
             <div class="contact-phone">
-                <button id="contact-user" class="btn btn-primary w-100" type="button">Editar datos</button>
+                <a class="btn btn-primary w-100" href="crear/pawcard-crear.html">Editar datos</a>
             </div>
         </div>
 
@@ -93,10 +93,6 @@
                     if (!$(event.target).closest(".contact-user-container, #contact-user").length) {
                         $('.contact-user-container').removeClass('active');
                     }
-                });
-
-                $('#contact-user').click(function(){
-                    $('.contact-user-container').addClass('active');
                 });
 
                 $('#home-menu').click(function(){
