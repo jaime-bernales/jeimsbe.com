@@ -642,7 +642,7 @@ body.home h1 sup {
 
 .photo-image {
     position: relative;
-    margin: 70px auto;
+    margin: 60px auto 40px auto;
     width: 100%;
     display: flex;
     justify-content: center;
