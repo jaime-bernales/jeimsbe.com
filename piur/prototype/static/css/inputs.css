@@ -1,5 +1,7 @@
 .input-group {
 	position: relative;
+	display: inline-block;
+	width: 100%;
 }
 
 .input-group.pawcardemail {
@@ -92,6 +94,12 @@ select {
 	background-image: url(../img/icons/arrow-dropdown.svg);
 	background-repeat: no-repeat;
 	background-position: right 16px center;
+}
+
+select.teltype {
+	width: 130px;
+	margin-right: 16px;
+	float: left;
 }
 
 select.empty {

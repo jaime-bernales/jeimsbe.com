@@ -35,6 +35,7 @@
             <span class="back step-data hidden" title="Atrás"></span>
             <span class="back step-contact hidden" title="Atrás"></span>
             <span class="back step-location hidden" title="Atrás"></span>
+            <span class="back step-photo hidden" title="Atrás"></span>
         </header>
 
         <div class="container">
@@ -81,7 +82,7 @@
                     <option value="hembra">Hembra</option>
                 </select>
 
-                <button class="btn btn-primary btn-next" type="button">Siguiente</button>
+                <button class="btn btn-primary btn-next mt-l" type="button">Siguiente</button>
                 <button class="btn btn-secondary btn-back" type="button">Volver</button>
             </div>
 
@@ -90,10 +91,21 @@
             <div id="step-contact" class="hidden">
                 <h1 class="inner m-l">Contacto</h1>
 
-                <div class="input-group">
+                <h2>Teléfono</h2>
+                <select class="teltype empty" id="select-telType" name="select-telType">
+                    <option selected>Tipo</option>
+                    <option value="mendoza">Fijo</option>
+                    <option value="sanluis">Celular</option>
+                </select>
+
+                <div class="input-group" style="width: calc(100% - 146px)">
                     <label class="input-label" for="pawCardContact">Número</label>
                     <input class="input-text" type="tel" id="pawCardContact" name="pawCardContact">
                 </div>
+
+                <p>El teléfono debe ser ingresado con código de área sin 0, y sin espacios.</p>
+
+                <h2>Ubicación</h2>
 
                 <select class="empty" id="select-provincia" name="select-provincia">
                     <option selected>Provincia</option>
@@ -107,7 +119,7 @@
                     <option value="sanluis">Luján de cuyo</option>
                 </select>
 
-                <span class="btn btn-primary btn-next">Siguiente</span>
+                <span class="btn btn-primary btn-next mt-l">Siguiente</span>
                 <button class="btn btn-secondary btn-back" type="button">Volver</button>
             </div>
 
@@ -121,9 +133,9 @@
                 </div>
 
                 <div class="text-center">
-                    <span class="btn btn-primary m-m">Abrir cámara</span>
-                    <a class="btn btn-link" href="pawcard-exito.html" target="_self">Dejar para después</a>
+                    <a class="btn btn-primary" href="pawcard-exito.html" target="_self">Usar cámara</a>
                 </div>
+
             </div>
         </div>
 
@@ -161,6 +173,11 @@
                 $('#step-contact .btn-next').click(function(){
                     $('#step-contact, header .step-contact').addClass('hidden');
                     $('#step-photo, header .step-photo').removeClass('hidden');
+                });
+
+                $('header .step-photo').click(function(){
+                    $('#step-contact, header .step-contact').removeClass('hidden');
+                    $('#step-photo, header .step-photo').addClass('hidden');
                 });
 
 

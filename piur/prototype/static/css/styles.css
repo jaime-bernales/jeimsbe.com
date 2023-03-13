@@ -94,6 +94,13 @@ h1.inner {
     margin-top: 80px;
 }
 
+h2 {
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    margin: 50px 0;
+    font-family: 'Unbounded-Medium', sans-serif;
+}
 
 p {
     font-size: var(--M);
@@ -635,7 +642,7 @@ body.home h1 sup {
 
 .photo-image {
     position: relative;
-    margin: 40px auto;
+    margin: 70px auto;
     width: 100%;
     display: flex;
     justify-content: center;
