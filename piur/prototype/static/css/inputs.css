@@ -81,9 +81,8 @@ input {
 p.helper-text {
 	font-size: 14px;
 	line-height: 20px;
-	color: #9E957D;
+	color: rgba(0, 0, 0, 0.6);
 	margin: 0 0 var(--L) 0;
-    font-family: 'Unbounded-Regular', sans-serif;
 }
 
 select {

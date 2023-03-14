@@ -63,8 +63,7 @@
 
             <!-- Data -->
             <div id="step-data" class="hidden">
-                <h1 class="inner m-l">Datos</h1>
-                <p class="text-center m-xl">Contános acerca de tu mascota.</p>
+                <h1 class="inner">Acerca de tu mascota</h1>
 
                 <div class="input-group pawcardname mr-m">
                     <label class="input-label" for="pawCardName">Nombre</label>
@@ -89,11 +88,10 @@
 
             <!-- Contacto -->
             <div id="step-contact" class="hidden">
-                <h1 class="inner m-l">Contacto</h1>
-                <p class="text-center mt-0">Te pedimos nos compartás algunos datos para la PawCard.</p>
+                <h1 class="inner">Contacto</h1>
 
 
-                <h2>¿Dónde vive tu mascota?</h2>
+                <p class="text-center m-xl">¿Dónde vive tu mascota?</p>
 
                 <select class="" id="select-provincia" name="select-provincia">
                     <option selected>Provincia</option>
@@ -107,7 +105,8 @@
                     <option value="sanluis">Luján de cuyo</option>
                 </select>
 
-                <h2>Teléfono de contacto</h2>
+                <p class="text-center mt-l m-xl">Teléfono de emergencia</p>
+
                 <select class="teltype empty" id="select-telType" name="select-telType">
                     <option selected>Tipo</option>
                     <option value="mendoza">Fijo</option>
@@ -119,7 +118,7 @@
                     <input class="input-text" type="tel" id="pawCardContact" name="pawCardContact" value="261">
                 </div>
 
-                <p>El teléfono debe ser ingresado con código de área sin 0, y sin espacios.</p>
+                <p class="helper-text">El teléfono debe ser ingresado con código de área sin 0, y sin espacios.</p>
 
                 <span class="btn btn-primary btn-next mt-l m-m">Siguiente</span>
                 <button class="btn btn-secondary btn-back" type="button">Volver</button>

@@ -94,14 +94,6 @@ h1.inner {
     margin-top: 80px;
 }
 
-h2 {
-    font-size: 18px;
-    line-height: 18px;
-    text-align: center;
-    margin: 40px 0;
-    font-family: 'Unbounded-Medium', sans-serif;
-}
-
 p {
     font-size: var(--M);
     line-height: var(--L);
