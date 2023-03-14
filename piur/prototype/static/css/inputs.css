@@ -80,7 +80,7 @@ input {
 
 p.helper-text {
 	font-size: 14px;
-	line-height: 20px;
+	line-height: 22px;
 	color: rgba(0, 0, 0, 0.6);
 	margin: 0 0 var(--L) 0;
 }
