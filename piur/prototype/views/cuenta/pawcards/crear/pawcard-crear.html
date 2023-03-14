@@ -91,25 +91,11 @@
             <div id="step-contact" class="hidden">
                 <h1 class="inner m-l">Contacto</h1>
 
-                <h2>Teléfono</h2>
-                <select class="teltype empty" id="select-telType" name="select-telType">
-                    <option selected>Tipo</option>
-                    <option value="mendoza">Fijo</option>
-                    <option value="sanluis">Celular</option>
-                </select>
+                <h2>¿Dónde vive tu mascota?</h2>
 
-                <div class="input-group" style="width: calc(100% - 146px)">
-                    <label class="input-label" for="pawCardContact">Número</label>
-                    <input class="input-text" type="tel" id="pawCardContact" name="pawCardContact">
-                </div>
-
-                <p>El teléfono debe ser ingresado con código de área sin 0, y sin espacios.</p>
-
-                <h2>Ubicación</h2>
-
-                <select class="empty" id="select-provincia" name="select-provincia">
+                <select class="" id="select-provincia" name="select-provincia">
                     <option selected>Provincia</option>
-                    <option value="mendoza">Mendoza</option>
+                    <option value="mendoza" selected>Mendoza</option>
                     <option value="sanluis">San Luis</option>
                 </select>
 
@@ -118,6 +104,20 @@
                     <option value="mendoza">Godoy cruz</option>
                     <option value="sanluis">Luján de cuyo</option>
                 </select>
+
+                <h2>Teléfono de contacto</h2>
+                <select class="teltype empty" id="select-telType" name="select-telType">
+                    <option selected>Tipo</option>
+                    <option value="mendoza">Fijo</option>
+                    <option value="sanluis">Celular</option>
+                </select>
+
+                <div class="input-group active" style="width: calc(100% - 146px)">
+                    <label class="input-label" for="pawCardContact">Número</label>
+                    <input class="input-text" type="tel" id="pawCardContact" name="pawCardContact" value="261">
+                </div>
+
+                <p>El teléfono debe ser ingresado con código de área sin 0, y sin espacios.</p>
 
                 <span class="btn btn-primary btn-next mt-l m-m">Siguiente</span>
                 <button class="btn btn-secondary btn-back" type="button">Volver</button>
