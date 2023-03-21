@@ -75,7 +75,7 @@ input {
 .input-text.password {
 	background-image: url(../img/icons/pass-hide.svg);
 	background-repeat: no-repeat;
-	background-position: right 16px center;
+	background-position: right 10px center;
 }
 
 p.helper-text {
@@ -87,6 +87,8 @@ p.helper-text {
 
 .select-container {
 	position: relative;
+	display: inline-block;
+	width: 100%;
 }
 
 .select-container .select-label {
@@ -120,7 +122,7 @@ select {
 	text-overflow: '';
 	background-image: url(../img/icons/arrow-dropdown.svg);
 	background-repeat: no-repeat;
-	background-position: right 16px center;
+	background-position: right 10px center;
 }
 
 .select-container.teltype {
