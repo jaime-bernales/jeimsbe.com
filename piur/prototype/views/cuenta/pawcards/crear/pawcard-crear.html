@@ -94,7 +94,7 @@
                 <p class="text-center m-xl">¿Dónde vive tu mascota?</p>
 
                 <div class="select-container">
-                    <label class="select-label" for="select-provincia">Provincia</label>
+                    <label class="select-label">Provincia</label>
                     <select id="select-provincia" name="select-provincia">
                         <option selected>Provincia</option>
                         <option value="mendoza" selected>Mendoza</option>
@@ -102,19 +102,25 @@
                     </select>
                 </div>
 
-                <select class="empty" id="select-localidad" name="select-localidad">
-                    <option selected>Localidad</option>
-                    <option value="mendoza">Godoy cruz</option>
-                    <option value="sanluis">Luján de cuyo</option>
-                </select>
-
+                <div class="select-container empty">
+                    <label class="select-label">Localidad</label>
+                    <select class="empty" id="select-localidad" name="select-localidad">
+                        <option selected>Localidad</option>
+                        <option value="mendoza">Godoy cruz</option>
+                        <option value="sanluis">Luján de cuyo</option>
+                    </select>
+                </div>
+                
                 <p class="text-center mt-l m-xl">Teléfono de emergencia</p>
 
-                <select class="teltype empty" id="select-telType" name="select-telType">
-                    <option selected>Tipo</option>
-                    <option value="mendoza">Fijo</option>
-                    <option value="sanluis">Celular</option>
-                </select>
+                <div class="select-container">
+                    <label class="select-label">Tipo</label>
+                    <select class="teltype empty" id="select-telType" name="select-telType">
+                        <option selected>Tipo</option>
+                        <option value="mendoza">Fijo</option>
+                        <option value="sanluis">Celular</option>
+                    </select>
+                </div>
 
                 <div class="input-group active" style="width: calc(100% - 146px)">
                     <label class="input-label" for="pawCardContact">Número</label>
@@ -186,12 +192,13 @@
 
 
                 // Select
-                $('#select-provincia').on('change', function() {
-                    if ($(this).val() == 'Provincia'){
-                        $(this).addClass('empty');
+                $('.select-container select').on('change', function() {
+                    if ($(this)[0].selectedIndex == '0') {
+                        $(this).closest('.select-container').addClass('empty');
+                    }
 
-                    } else {
-                        $(this).removeClass('empty');
+                    else {
+                        $(this).closest('.select-container').removeClass('empty');
                     }
                 });
             });
