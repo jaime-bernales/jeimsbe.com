@@ -116,7 +116,7 @@ body {
 }
 
 body.background-plain {
-    background: rgba(219, 208, 185, 1);
+    background: var(--primary);
 }
 
 /* Wrappers */
