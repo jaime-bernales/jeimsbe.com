@@ -156,6 +156,7 @@ header nav.menu {
 
 header .back {
     display: block;
+    cursor: pointer;
     width: 54px;
     height: 54px;
     display: block;
@@ -580,6 +581,7 @@ body.home h1 sup {
 
 .pawcard-size .size-selector {
     float: left;
+    cursor: pointer;
     position: relative;
     height: 310px;
     line-height: 310px;
