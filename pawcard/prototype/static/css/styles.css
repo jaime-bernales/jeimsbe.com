@@ -298,9 +298,10 @@ header .back {
 }
 
 .modal .cta {
-    bottom: -84px;
+    bottom: -56px;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 /* 
