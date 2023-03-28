@@ -39,132 +39,128 @@
             <span class="back step-photo hidden" title="Atrás"></span>
         </header>
 
-        <div class="container">
+        <!-- Tipo -->
+        <div id="step-type">
+            <h1 class="inner">Tocá una opción para elegirla</h1>
 
-            <!-- Clase -->
-            <div id="step-class">
-                <h1 class="inner">Tocá una opción para elegirla</h1>
+            <div class="bubble-container">
+                <ul class="bubble-list">
+                    <li class="item type-dog">
+                    </li>
 
-                <div class="pawcard-class-container">
-                    <ul class="pawcard-class">
-                        <li class="class-selector dog">
-                        </li>
+                    <li class="item type-cat">
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-                        <li class="class-selector cat">
-                        </li>
-                    </ul>
-                </div>
+        <!-- Tamaño -->
+        <div id="step-size" class="hidden">
+            <h1 class="inner">¿Qué tipo de <br>raza es?</h1>
+
+            <div class="bubble-container">
+                <ul class="bubble-list size-selector">
+                    <li class="item size-big">
+                        <span class="description">Raza grande</span>
+                    </li>
+
+                    <li class="item size-med">
+                        <span class="description">Raza mediana</span>
+                    </li>
+
+                    <li class="item size-small">
+                        <span class="description">Raza pequeña</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Información -->
+        <div id="step-data" class="hidden">
+            <h1 class="inner">Acerca de<br> tu mascota</h1>
+
+            <div class="input-group pawcardname mr-m">
+                <label class="input-label" for="pawCardName">Nombre</label>
+                <input class="input-text" type="text" id="pawCardName" name="pawCardName">
             </div>
 
-            <!-- Tamaño -->
-            <div id="step-size" class="hidden">
-                <h1 class="inner">¿Qué tipo de <br>raza es?</h1>
-
-                <div class="pawcard-size-container">
-                    <ul class="pawcard-size">
-                        <li class="size-selector big">
-                            <span>Raza grande</span>
-                        </li>
-
-                        <li class="size-selector med">
-                            <span>Raza mediana</span>
-                        </li>
-
-                        <li class="size-selector small mr-0">
-                            <span>Raza pequeña</span>
-                        </li>
-                    </ul>
-                </div>
+            <div class="input-group pawcardemail">
+                <label class="input-label" for="pawCardAge">Edad</label>
+                <input class="input-text" type="tel" id="pawCardAge" name="pawCardAge">
             </div>
 
-            <!-- Información -->
-            <div id="step-data" class="hidden">
-                <h1 class="inner">Acerca de<br> tu mascota</h1>
-
-                <div class="input-group pawcardname mr-m">
-                    <label class="input-label" for="pawCardName">Nombre</label>
-                    <input class="input-text" type="text" id="pawCardName" name="pawCardName">
-                </div>
-
-                <div class="input-group pawcardemail">
-                    <label class="input-label" for="pawCardAge">Edad</label>
-                    <input class="input-text" type="tel" id="pawCardAge" name="pawCardAge">
-                </div>
-
-                <div class="select-container empty">
-                    <label class="select-label">Género</label>
-                    <select id="select-gen" name="select-gen">
-                        <option selected>Género</option>
-                        <option value="macho">Macho</option>
-                        <option value="hembra">Hembra</option>
-                    </select>
-                </div>
-
-                <button class="btn btn-primary btn-next mt-l" type="button">Siguiente</button>
-                <button class="btn btn-secondary btn-back" type="button">Volver</button>
+            <div class="select-container empty">
+                <label class="select-label">Género</label>
+                <select id="select-gen" name="select-gen">
+                    <option selected>Género</option>
+                    <option value="macho">Macho</option>
+                    <option value="hembra">Hembra</option>
+                </select>
             </div>
 
+            <button class="btn btn-primary btn-next mt-l" type="button">Siguiente</button>
+            <button class="btn btn-secondary btn-back" type="button">Volver</button>
+        </div>
 
-            <!-- Contacto -->
-            <div id="step-contact" class="hidden">
-                <h1 class="inner">Contacto</h1>
+
+        <!-- Contacto -->
+        <div id="step-contact" class="hidden">
+            <h1 class="inner">Contacto</h1>
 
 
-                <p class="text-center m-xl">¿Dónde vive tu mascota?</p>
+            <p class="text-center m-xl">¿Dónde vive tu mascota?</p>
 
-                <div class="select-container">
-                    <label class="select-label">Provincia</label>
-                    <select id="select-provincia" name="select-provincia">
-                        <option selected>Provincia</option>
-                        <option value="mendoza" selected>Mendoza</option>
-                        <option value="sanluis">San Luis</option>
-                    </select>
-                </div>
-
-                <div class="select-container empty">
-                    <label class="select-label">Localidad</label>
-                    <select id="select-localidad" name="select-localidad">
-                        <option selected>Localidad</option>
-                        <option value="mendoza">Godoy Cruz</option>
-                        <option value="sanluis">Luján de Cuyo</option>
-                    </select>
-                </div>
-                
-                <p class="text-center mt-l m-xl">Teléfono de emergencia</p>
-
-                <div class="select-container empty teltype">
-                    <label class="select-label">Tipo</label>
-                    <select id="select-telType" name="select-telType">
-                        <option selected>Tipo</option>
-                        <option value="mendoza">Fijo</option>
-                        <option value="sanluis">Celular</option>
-                    </select>
-                </div>
-
-                <div class="input-group active" style="width: calc(100% - 146px)">
-                    <label class="input-label" for="pawCardContact">Número</label>
-                    <input class="input-text" type="tel" id="pawCardContact" name="pawCardContact" value="261">
-                </div>
-
-                <p class="helper-text">El teléfono debe ser ingresado con código de área sin 0, y sin espacios.</p>
-
-                <span class="btn btn-primary btn-next mt-l m-m">Siguiente</span>
-                <button class="btn btn-secondary btn-back" type="button">Volver</button>
+            <div class="select-container">
+                <label class="select-label">Provincia</label>
+                <select id="select-provincia" name="select-provincia">
+                    <option selected>Provincia</option>
+                    <option value="mendoza" selected>Mendoza</option>
+                    <option value="sanluis">San Luis</option>
+                </select>
             </div>
 
-            <!-- Foto -->
-            <div id="step-photo" class="hidden">
-                <h1 class="inner m-l">Foto de perfil</h1>
+            <div class="select-container empty">
+                <label class="select-label">Localidad</label>
+                <select id="select-localidad" name="select-localidad">
+                    <option selected>Localidad</option>
+                    <option value="mendoza">Godoy Cruz</option>
+                    <option value="sanluis">Luján de Cuyo</option>
+                </select>
+            </div>
+            
+            <p class="text-center mt-l m-xl">Teléfono de emergencia</p>
 
-                <div class="photo-image" id="upload-photo">
-                    <img class="photo" src="../../../../static/img/pawcard/photo/photo-placeholder.png" alt="Foto de perro de frente">
-                    <img class="photo-placeholder" src="../../../../static/img/pawcard/photo/photo-placeholder.png" alt="">
-                </div>
+            <div class="select-container empty teltype">
+                <label class="select-label">Tipo</label>
+                <select id="select-telType" name="select-telType">
+                    <option selected>Tipo</option>
+                    <option value="mendoza">Fijo</option>
+                    <option value="sanluis">Celular</option>
+                </select>
+            </div>
 
-                <div class="text-center">
-                    <a class="btn btn-primary" href="pawcard-exito.html" target="_self">Usar cámara</a>
-                </div>
+            <div class="input-group active" style="width: calc(100% - 146px)">
+                <label class="input-label" for="pawCardContact">Número</label>
+                <input class="input-text" type="tel" id="pawCardContact" name="pawCardContact" value="261">
+            </div>
 
+            <p class="helper-text">El teléfono debe ser ingresado con código de área sin 0, y sin espacios.</p>
+
+            <span class="btn btn-primary btn-next mt-l m-m">Siguiente</span>
+            <button class="btn btn-secondary btn-back" type="button">Volver</button>
+        </div>
+
+        <!-- Foto -->
+        <div id="step-photo" class="hidden">
+            <h1 class="inner m-l">Foto de perfil</h1>
+
+            <div class="photo-image" id="upload-photo">
+                <img class="photo" src="../../../../static/img/pawcard/photo/photo-placeholder.png" alt="Foto de perro de frente">
+                <img class="photo-placeholder" src="../../../../static/img/pawcard/photo/photo-placeholder.png" alt="">
+            </div>
+
+            <div class="text-center">
+                <a class="btn btn-primary" href="pawcard-exito.html" target="_self">Usar cámara</a>
             </div>
         </div>
 
@@ -176,7 +172,7 @@
             $(function() {
 
                 // Elegir Raza
-                $('.pawcard-size-container').scrollLeft(200);
+                //$('.pawcard-size-container').scrollLeft(200);
 
                 // Steps
                 $('.size-selector').click(function(){
