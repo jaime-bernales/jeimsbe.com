@@ -40,7 +40,7 @@
 
         <!-- Tipo -->
         <div id="step-type">
-            <h1 class="">Tocá una opción para elegirla</h1>
+            <h1 class="inner">Tocá una opción para elegirla</h1>
 
             <div class="bubble-container">
                 <ul class="bubble-list">
@@ -176,9 +176,9 @@
                     $('#step-size, header .step-size').removeClass('hidden');
                 });
 
-                $('header .step-data, #step-data .btn-back').click(function(){
-                    $('#step-size, header .step-size').removeClass('hidden');
-                    $('#step-data, header .step-data').addClass('hidden');
+                $('header .step-size, #step-size .btn-back').click(function(){
+                    $('#step-type, header .step-type').removeClass('hidden');
+                    $('#step-size, header .step-size').addClass('hidden');
                 });
 
                 $('#step-data .btn-next').click(function(){
