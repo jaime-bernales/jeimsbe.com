@@ -31,7 +31,8 @@
     <body class="background-plain">
 
         <header>
-            <a class="back step-size" href="../../dashboard.html" target="_self" title="Atrás"></a>
+            <a class="back step-class" href="../../dashboard.html" target="_self" title="Atrás"></a>
+            <span class="back step-size hidden" title="Atrás"></span>
             <span class="back step-data hidden" title="Atrás"></span>
             <span class="back step-contact hidden" title="Atrás"></span>
             <span class="back step-location hidden" title="Atrás"></span>
@@ -40,9 +41,24 @@
 
         <div class="container">
 
-            <!-- Size -->
-            <div id="step-size">
+            <!-- Clase -->
+            <div id="step-class">
                 <h1 class="inner">Tocá una opción para elegirla</h1>
+
+                <div class="pawcard-class-container">
+                    <ul class="pawcard-class">
+                        <li class="class-selector dog">
+                        </li>
+
+                        <li class="class-selector cat">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tamaño -->
+            <div id="step-size" class="hidden">
+                <h1 class="inner">¿Qué tipo de <br>raza es?</h1>
 
                 <div class="pawcard-size-container">
                     <ul class="pawcard-size">
@@ -61,7 +77,7 @@
                 </div>
             </div>
 
-            <!-- Data -->
+            <!-- Información -->
             <div id="step-data" class="hidden">
                 <h1 class="inner">Acerca de<br> tu mascota</h1>
 

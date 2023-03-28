@@ -528,6 +528,7 @@ body.home h1 sup {
 */
 
 .dashboard-menu-container,
+.pawcard-class-container,
 .pawcard-size-container {
     width: calc(100% + 32px);
     margin-left: -16px;
@@ -541,7 +542,7 @@ body.home h1 sup {
     display: flex;
     gap: var(--L);
     height: 310px;
-    margin-left: 60px;
+    padding: 0 60px;
     overflow-y: hidden;
 }
 
@@ -549,38 +550,13 @@ body.home h1 sup {
     overflow-y: visible;
     margin-left: 0;
     justify-content: center;
-}
-
-.dashboard-menu li a {
-    float: left;
-    height: 310px;
-    line-height: 310px;
-    width: 210px;
-    color: var(--black);
-    text-decoration: none;
-    background-color: rgba(225, 220, 207, 0.5);
-    text-align: center;
-    border-radius: 110px;
-    font-family: 'Unbounded-Medium', sans-serif;
-    font-size: 20px;
-}
-
-.dashboard-menu li a.two-lines {
-    line-height: 336px;
-}
-
-.dashboard-menu li .menu-text {
-    line-height: 26px;
-    display: inline-block;
-}
-
-.pawcard-size {
     display: flex;
     height: 370px;
     gap: var(--L);
 }
 
-.pawcard-size .size-selector {
+.pawcard-size .size-selector,
+.pawcard-class .class-selector {
     float: left;
     cursor: pointer;
     position: relative;
@@ -619,6 +595,25 @@ body.home h1 sup {
     background-image: url(../img/pawcard/pc-big.jpg);
 }
 
+.pawcard-class {
+    list-style: none;
+    width: 420px;
+    display: flex;
+    gap: var(--L);
+    height: 310px;
+    margin: 0 60px;
+    overflow-y: hidden;
+}
+
+.pawcard-class .class-selector.dog {
+    background-image: url(../img/pawcard/pc-dog.jpg);
+}
+
+.pawcard-class .class-selector.cat {
+    background-image: url(../img/pawcard/pc-cat.jpg);
+}
+
+
 .confirmation-name {
     font-family: 'Unbounded-Regular', sans-serif;
     color: rgba(0, 0, 0, 0.4);
@@ -627,6 +622,29 @@ body.home h1 sup {
     font-size: 20px;
     width: 100%;
     margin-top: var(--L);
+}
+
+.dashboard-menu li a {
+    float: left;
+    height: 310px;
+    line-height: 310px;
+    width: 210px;
+    color: var(--black);
+    text-decoration: none;
+    background-color: rgba(225, 220, 207, 0.5);
+    text-align: center;
+    border-radius: 110px;
+    font-family: 'Unbounded-Medium', sans-serif;
+    font-size: 20px;
+}
+
+.dashboard-menu li a.two-lines {
+    line-height: 336px;
+}
+
+.dashboard-menu li .menu-text {
+    line-height: 26px;
+    display: inline-block;
 }
 
 /* 
