@@ -31,17 +31,16 @@
     <body class="background-plain">
 
         <header>
-            <a class="back step-class" href="../../dashboard.html" target="_self" title="Atrás"></a>
+            <a class="back step-type" href="../../dashboard.html" target="_self" title="Atrás"></a>
             <span class="back step-size hidden" title="Atrás"></span>
             <span class="back step-data hidden" title="Atrás"></span>
             <span class="back step-contact hidden" title="Atrás"></span>
-            <span class="back step-location hidden" title="Atrás"></span>
             <span class="back step-photo hidden" title="Atrás"></span>
         </header>
 
         <!-- Tipo -->
         <div id="step-type">
-            <h1 class="inner">Tocá una opción para elegirla</h1>
+            <h1 class="">Tocá una opción para elegirla</h1>
 
             <div class="bubble-container">
                 <ul class="bubble-list">
@@ -56,7 +55,7 @@
 
         <!-- Tamaño -->
         <div id="step-size" class="hidden">
-            <h1 class="inner">¿Qué tipo de <br>raza es?</h1>
+            <h1 class="">¿Qué tipo de <br>raza es?</h1>
 
             <div class="bubble-container">
                 <ul class="bubble-list size-selector">
@@ -171,13 +170,10 @@
          <script type="text/javascript">
             $(function() {
 
-                // Elegir Raza
-                //$('.pawcard-size-container').scrollLeft(200);
-
                 // Steps
-                $('.size-selector').click(function(){
-                    $('#step-size, header .step-size').addClass('hidden');
-                    $('#step-data, header .step-data').removeClass('hidden');
+                $('#step-type .item').click(function(){
+                    $('#step-type, header .step-type').addClass('hidden');
+                    $('#step-size, header .step-size').removeClass('hidden');
                 });
 
                 $('header .step-data, #step-data .btn-back').click(function(){
