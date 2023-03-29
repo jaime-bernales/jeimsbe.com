@@ -535,9 +535,12 @@ body.home h1 sup {
 
 .bubble-container {
     overflow-x: auto;
-    width: 100vw;
-    border:0;
+    width: 100%;
     display: grid;
+}
+
+.bubble-container fieldset {
+    border:0;
 }
 
 .bubble-container .bubble-list {
