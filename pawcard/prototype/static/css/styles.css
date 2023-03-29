@@ -529,7 +529,12 @@ body.home h1 sup {
     margin-bottom: 40px;
     background-repeat: no-repeat;
     background-position: center right 30px;
-    background-image: url(../img/icons/arrow-start.svg);
+    background-image: url(../img/icons/arrow-start_white.svg);
+    transition: ease-out 0.3s;
+}
+
+.home .btn.start:hover {
+    padding: 0 32px;
 }
 
 /* 
@@ -567,6 +572,10 @@ body.home h1 sup {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+}
+
+.bubble-container .bubble-list .item input {
+    cursor: pointer;
 }
 
 .bubble-container .bubble-list .item a {
