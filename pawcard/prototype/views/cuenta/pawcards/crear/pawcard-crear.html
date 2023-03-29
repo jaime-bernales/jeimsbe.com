@@ -108,7 +108,7 @@
                 </div>
 
                 <button class="btn btn-primary btn-next mt-l" type="button">Siguiente</button>
-                <button class="btn btn-secondary btn-back" type="button">Volver</button>
+                <button class="btn btn-secondary btn-back-type" type="button">Volver</button>
             </div>
         </div>
 
@@ -182,9 +182,13 @@
          <script type="text/javascript">
             $(function() {
 
-                $('.btn-next, header .back, .bubble-list .item').click(function(){
+                $('.btn-next, header .back, .bubble-list .item, .btn-back').click(function(){
                     $('header .back').addClass('hidden');
-                    console.log('pppp');
+                });
+
+                $('.btn-back-type').click(function(){
+                    $('header .back, #step-data').addClass('hidden');
+                    $('#step-type, header .step-type').removeClass('hidden');
                 });
 
                 // Tipo
