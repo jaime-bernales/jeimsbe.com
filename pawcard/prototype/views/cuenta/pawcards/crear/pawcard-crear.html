@@ -40,65 +40,72 @@
 
         <!-- Tipo -->
         <div id="step-type">
-            <h1 class="inner">Tocá una opción para elegirla</h1>
+            <h1 class="">¿Para quién es?</h1>
 
-            <div class="bubble-container">
+            <fieldset class="bubble-container" id="pet-type">
                 <ul class="bubble-list">
                     <li class="item type-dog">
+                        <input type="radio" name="pet-type">perro</input>
                     </li>
 
                     <li class="item type-cat">
+                        <input type="radio" name="pet-type">gato</input>
                     </li>
                 </ul>
-            </div>
+            </fieldset>
         </div>
 
         <!-- Tamaño -->
         <div id="step-size" class="hidden">
-            <h1 class="inner">¿Qué tipo de <br>raza es?</h1>
+            <h1 class="inner">¿Qué tipo de<br>raza es?</h1>
 
-            <div class="bubble-container">
+            <fieldset class="bubble-container" id="pet-size">
                 <ul class="bubble-list size-selector">
                     <li class="item size-big">
                         <span class="description">Raza grande</span>
+                        <input type="radio" name="pet-size">grande</input>
                     </li>
 
                     <li class="item size-med">
                         <span class="description">Raza mediana</span>
+                        <input type="radio" name="pet-size">mediano</input>
                     </li>
 
                     <li class="item size-small">
                         <span class="description">Raza pequeña</span>
+                        <input type="radio" name="pet-size">chica</input>
                     </li>
                 </ul>
-            </div>
+            </fieldset>
         </div>
 
         <!-- Información -->
         <div id="step-data" class="hidden">
             <h1 class="inner">Acerca de<br> tu mascota</h1>
 
-            <div class="input-group pawcardname mr-m">
-                <label class="input-label" for="pawCardName">Nombre</label>
-                <input class="input-text" type="text" id="pawCardName" name="pawCardName">
-            </div>
+            <div class="container">
+                <div class="input-group pawcardname mr-m">
+                    <label class="input-label" for="pawCardName">Nombre</label>
+                    <input class="input-text" type="text" id="pawCardName" name="pawCardName">
+                </div>
 
-            <div class="input-group pawcardemail">
-                <label class="input-label" for="pawCardAge">Edad</label>
-                <input class="input-text" type="tel" id="pawCardAge" name="pawCardAge">
-            </div>
+                <div class="input-group pawcardemail">
+                    <label class="input-label" for="pawCardAge">Edad</label>
+                    <input class="input-text" type="tel" id="pawCardAge" name="pawCardAge">
+                </div>
 
-            <div class="select-container empty">
-                <label class="select-label">Género</label>
-                <select id="select-gen" name="select-gen">
-                    <option selected>Género</option>
-                    <option value="macho">Macho</option>
-                    <option value="hembra">Hembra</option>
-                </select>
-            </div>
+                <div class="select-container empty">
+                    <label class="select-label">Género</label>
+                    <select id="select-gen" name="select-gen">
+                        <option selected>Género</option>
+                        <option value="macho">Macho</option>
+                        <option value="hembra">Hembra</option>
+                    </select>
+                </div>
 
-            <button class="btn btn-primary btn-next mt-l" type="button">Siguiente</button>
-            <button class="btn btn-secondary btn-back" type="button">Volver</button>
+                <button class="btn btn-primary btn-next mt-l" type="button">Siguiente</button>
+                <button class="btn btn-secondary btn-back" type="button">Volver</button>
+            </div>
         </div>
 
 
@@ -106,47 +113,48 @@
         <div id="step-contact" class="hidden">
             <h1 class="inner">Contacto</h1>
 
+            <div class="container">
+                <p class="text-center m-xl">¿Dónde vive tu mascota?</p>
 
-            <p class="text-center m-xl">¿Dónde vive tu mascota?</p>
+                <div class="select-container">
+                    <label class="select-label">Provincia</label>
+                    <select id="select-provincia" name="select-provincia">
+                        <option selected>Provincia</option>
+                        <option value="mendoza" selected>Mendoza</option>
+                        <option value="sanluis">San Luis</option>
+                    </select>
+                </div>
 
-            <div class="select-container">
-                <label class="select-label">Provincia</label>
-                <select id="select-provincia" name="select-provincia">
-                    <option selected>Provincia</option>
-                    <option value="mendoza" selected>Mendoza</option>
-                    <option value="sanluis">San Luis</option>
-                </select>
+                <div class="select-container empty">
+                    <label class="select-label">Localidad</label>
+                    <select id="select-localidad" name="select-localidad">
+                        <option selected>Localidad</option>
+                        <option value="mendoza">Godoy Cruz</option>
+                        <option value="sanluis">Luján de Cuyo</option>
+                    </select>
+                </div>
+                
+                <p class="text-center mt-l m-xl">Teléfono de emergencia</p>
+
+                <div class="select-container empty teltype">
+                    <label class="select-label">Tipo</label>
+                    <select id="select-telType" name="select-telType">
+                        <option selected>Tipo</option>
+                        <option value="mendoza">Fijo</option>
+                        <option value="sanluis">Celular</option>
+                    </select>
+                </div>
+
+                <div class="input-group active" style="width: calc(100% - 146px)">
+                    <label class="input-label" for="pawCardContact">Número</label>
+                    <input class="input-text" type="tel" id="pawCardContact" name="pawCardContact" value="261">
+                </div>
+
+                <p class="helper-text">El teléfono debe ser ingresado con código de área sin 0, y sin espacios.</p>
+
+                <span class="btn btn-primary btn-next mt-l m-m">Siguiente</span>
+                <button class="btn btn-secondary btn-back" type="button">Volver</button>
             </div>
-
-            <div class="select-container empty">
-                <label class="select-label">Localidad</label>
-                <select id="select-localidad" name="select-localidad">
-                    <option selected>Localidad</option>
-                    <option value="mendoza">Godoy Cruz</option>
-                    <option value="sanluis">Luján de Cuyo</option>
-                </select>
-            </div>
-            
-            <p class="text-center mt-l m-xl">Teléfono de emergencia</p>
-
-            <div class="select-container empty teltype">
-                <label class="select-label">Tipo</label>
-                <select id="select-telType" name="select-telType">
-                    <option selected>Tipo</option>
-                    <option value="mendoza">Fijo</option>
-                    <option value="sanluis">Celular</option>
-                </select>
-            </div>
-
-            <div class="input-group active" style="width: calc(100% - 146px)">
-                <label class="input-label" for="pawCardContact">Número</label>
-                <input class="input-text" type="tel" id="pawCardContact" name="pawCardContact" value="261">
-            </div>
-
-            <p class="helper-text">El teléfono debe ser ingresado con código de área sin 0, y sin espacios.</p>
-
-            <span class="btn btn-primary btn-next mt-l m-m">Siguiente</span>
-            <button class="btn btn-secondary btn-back" type="button">Volver</button>
         </div>
 
         <!-- Foto -->
@@ -170,35 +178,57 @@
          <script type="text/javascript">
             $(function() {
 
-                // Steps
+                $('.btn-next, header .back, .bubble-list .item').click(function(){
+                    $('header .back').addClass('hidden');
+                    console.log('pppp');
+                });
+
+                // Tipo
                 $('#step-type .item').click(function(){
-                    $('#step-type, header .step-type').addClass('hidden');
+                    $('#step-type').addClass('hidden');
                     $('#step-size, header .step-size').removeClass('hidden');
+                });
+
+                $('#step-type .type-cat').click(function(){
+                    $('#step-type, #step-size').addClass('hidden');
+                    $('#step-data, header .step-size').removeClass('hidden');
                 });
 
                 $('header .step-size, #step-size .btn-back').click(function(){
                     $('#step-type, header .step-type').removeClass('hidden');
-                    $('#step-size, header .step-size').addClass('hidden');
+                    $('#step-size, #step-data').addClass('hidden');
                 });
 
-                $('#step-data .btn-next').click(function(){
+                // Tamaño raza
+                $('#step-size .item').click(function(){
+                    $('#step-size').addClass('hidden');
+                    $('#step-data, header .step-data').removeClass('hidden');
+                });
+
+                $('header .step-data, #step-data .btn-back').click(function(){
+                    $('#step-size, header .step-size').removeClass('hidden');
                     $('#step-data, header .step-data').addClass('hidden');
+                });
+
+                // Acerca de la mascota
+                $('#step-data .btn-next').click(function(){
+                    $('#step-data').addClass('hidden');
                     $('#step-contact, header .step-contact').removeClass('hidden');
                 });
 
                 $('header .step-contact, #step-contact .btn-back').click(function(){
                     $('#step-data, header .step-data').removeClass('hidden');
-                    $('#step-contact, header .step-contact').addClass('hidden');
+                    $('#step-contact').addClass('hidden');
                 });
 
                 $('#step-contact .btn-next').click(function(){
-                    $('#step-contact, header .step-contact').addClass('hidden');
+                    $('#step-contact').addClass('hidden');
                     $('#step-photo, header .step-photo').removeClass('hidden');
                 });
 
                 $('header .step-photo').click(function(){
                     $('#step-contact, header .step-contact').removeClass('hidden');
-                    $('#step-photo, header .step-photo').addClass('hidden');
+                    $('#step-photo').addClass('hidden');
                 });
 
 
