@@ -86,7 +86,7 @@ html {
 fieldset {
     border:0;
     box-shadow: 0;
-    background: transparent;
+    outline: none;
 }
 
 fieldset input {
