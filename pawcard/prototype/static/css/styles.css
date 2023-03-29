@@ -83,6 +83,12 @@ html {
   display: none;
 }
 
+fieldset {
+    border:0;
+    box-shadow: 0;
+    background: transparent;
+}
+
 fieldset input {
     width: 100%;
     height: 100%;
@@ -537,10 +543,6 @@ body.home h1 sup {
     overflow-x: auto;
     width: 100%;
     display: grid;
-}
-
-.bubble-container fieldset {
-    border:0;
 }
 
 .bubble-container .bubble-list {
