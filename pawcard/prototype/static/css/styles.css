@@ -196,7 +196,7 @@ header .back {
     position: fixed;
     left: 0;
     z-index: 11;
-    bottom: -100vh;
+    bottom: -100svh;
     transition: all 0.5s ease;
     overflow: hidden;
 }
@@ -426,7 +426,7 @@ footer ul li a span .open-ext {
     background-size: 100% auto;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100svh;
     width: 100%;
     position: absolute;
     z-index: -1;
