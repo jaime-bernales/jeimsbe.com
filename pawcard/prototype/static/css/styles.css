@@ -553,10 +553,12 @@ body.home h1 sup {
     list-style: none;
     width: fit-content;
     display: flex;
-    gap: var(--L);
     height: 310px;
     padding: 0 60px;
     overflow-y: hidden;
+    margin: 0 auto;
+    grid-auto-flow: column;
+    grid-column-gap: var(--L);
 }
 
 .bubble-container .bubble-list .item {
