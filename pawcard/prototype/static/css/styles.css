@@ -1,8 +1,27 @@
 @charset "UTF-8";
 
+
 /* 
-==============================
-	Bases
+
+    INDICE
+    --------------------------
+
+    1. Bases
+        Wrappers
+        Headers
+        Overlay
+        Modal
+        Footer
+
+    2. Home
+
+*/
+
+
+
+
+/* 
+	1. Bases
 ==============================
 */
 
@@ -130,7 +149,11 @@ body.background-plain {
     background: var(--primary);
 }
 
-/* Wrappers */
+/* 
+    Wrappers
+    --------
+*/
+
 .container {
     padding: var(--M);
     width: 100%;
@@ -138,7 +161,11 @@ body.background-plain {
     margin: 0 auto;
 }
 
-/* Headers */
+/* 
+    Headers
+    -------
+*/
+
 header {
     height: 54px;
     width: 100%;
@@ -181,7 +208,7 @@ header .back {
 
 /*
     Overlay
-    ----------
+    -------
 */
 
 .nav-overlay {
@@ -413,8 +440,7 @@ footer ul li a span .open-ext {
 }
 
 /* 
-==============================
-	Home
+    2. Home
 ==============================
 */
 
@@ -918,6 +944,7 @@ body.home h1 sup {
 */
 
 @media only screen and (min-width: 1000px) {
+
     html {
         background-color: #CAC3AE;
         overflow: hidden;
@@ -930,13 +957,45 @@ body.home h1 sup {
         position: relative;
         border-radius: 40px;
         max-width: calc(100% - 360px);
+        background-attachment: local;
     }
 
-    /* Headers */
+    /* 
+        Headers
+        -------
+    */
+
     header {
         width: calc(100% - 360px);
+        height: 90px;
+        padding: 30px 40px 10px 40px;
         top: auto;
         left: auto;
         border-radius: 40px 40px 0 0;
+    }
+
+    /*
+        Overlay
+        -------
+    */
+
+    .nav-overlay {
+        height: calc(100vh - 80px);
+        width: calc(100% - 360px);
+        left: auto;
+        padding: 40px;
+        border-radius: 40px;
+    }
+
+    .nav-overlay.active {
+        bottom: 40px;
+    }
+
+    .nav-overlay .close {
+        left: 40px;
+    }
+
+    .nav-overlay.active .close {
+        top: 40px;
     }
 }
