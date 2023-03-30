@@ -910,3 +910,33 @@ body.home h1 sup {
     margin-right: 16px;
 }
 
+
+/* 
+==============================
+    Responsive
+==============================
+*/
+
+@media only screen and (min-width: 1000px) {
+    html {
+        background-color: #CAC3AE;
+        overflow: hidden;
+    }
+
+    body {
+        margin: 40px auto;
+        overflow-y: scroll;
+        height: calc(100vh - 80px);
+        position: relative;
+        border-radius: 40px;
+        max-width: calc(100% - 360px);
+    }
+
+    /* Headers */
+    header {
+        width: calc(100% - 360px);
+        top: auto;
+        left: auto;
+        border-radius: 40px 40px 0 0;
+    }
+}
