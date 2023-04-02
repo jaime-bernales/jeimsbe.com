@@ -68,7 +68,6 @@
 ==============================
 */
 
-
 .input-group {
     position: relative;
     display: inline-block;
@@ -113,6 +112,10 @@
     transition: all 0.3s ease;
 }
 
+.input-group .input-label:hover {
+    color: var(--black);
+}
+
 .input-group.active .input-label {
     cursor: default;
     font-size: 12px;
@@ -127,7 +130,8 @@ input {
     caret-color: var(--black);
 }
 
-.input-text, select {
+.input-text, 
+select {
     width: 100%;
     height: 56px;
     line-height: 56px;
@@ -141,6 +145,13 @@ input {
     font-family: 'Unbounded-Regular', sans-serif;
     outline: none;
     background-color: transparent;
+}
+
+.input-text:hover,
+.input-text:focus, 
+select:hover
+select:focus {
+    border-width: 2px;
 }
 
 .input-text.password {

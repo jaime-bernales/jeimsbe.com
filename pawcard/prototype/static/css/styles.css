@@ -454,7 +454,7 @@ footer ul li a span .open-ext {
     background-size: 100% auto;
     top: 0;
     left: 0;
-    height: 100svh;
+    height: 100vh;
     width: 100%;
     position: absolute;
     z-index: -1;
@@ -974,7 +974,7 @@ footer ul li a span .open-ext {
         max-width: 1000px;
     }
 
-    .container.w-inputs {
+    .container.mw-500 {
         max-width: 500px;
     }
 
