@@ -956,7 +956,13 @@ footer ul li a span .open-ext {
         padding-top: 110px;
         border-radius: 40px;
         max-width: calc(100% - 360px);
+        background: var(--primary);
         background-attachment: local;
+    }
+
+    h1,
+    h1.inner {
+        margin-top: 70px;
     }
 
     /* 
@@ -967,6 +973,11 @@ footer ul li a span .open-ext {
     .container {
         max-width: 1000px;
     }
+
+    .container.w-inputs {
+        max-width: 500px;
+    }
+
 
     /* 
         Headers
@@ -1008,12 +1019,33 @@ footer ul li a span .open-ext {
     }
 
     /* 
+        Overlay - Menu
+        --------------
+    */
+
+    .nav-overlay .menu,
+    .nav-overlay.active .menu {
+        margin-top: 200px;
+    }
+
+    .nav-overlay .menu li a {
+        text-align: center;
+        font-size: 50px;
+        line-height: 64px;
+    }
+
+    /* 
         Modal
         ------
     */
 
+    .modal,
     .modal.active {
-        background-color: rgba(202, 195, 174, 0.6);
+        background-color: var(--primary);
+    }
+
+    .modal .overlay-content {
+        top: 0;
     }
 
     /* 
@@ -1045,6 +1077,7 @@ footer ul li a span .open-ext {
     }
 }
 
+/* Ajustes Home */
 @media only screen and (min-width: 1400px) {
     .home {
         padding-top: 200px;

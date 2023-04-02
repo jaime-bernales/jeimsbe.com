@@ -189,6 +189,7 @@ p.helper-text {
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
+    cursor: pointer;
     text-indent: 1px;
     text-overflow: '';
     background-image: url(../img/icons/arrow-dropdown.svg);
