@@ -1076,7 +1076,10 @@ footer ul li a span .open-ext {
     }
 }
 
-/* Ajustes Home */
+/* 
+    Ajustes Home 
+*/
+
 @media only screen and (min-width: 1400px) {
     .home {
         padding-top: 200px;
