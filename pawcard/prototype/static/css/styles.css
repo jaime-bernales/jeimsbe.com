@@ -45,7 +45,7 @@
     font-family: 'Unbounded-Regular', sans-serif;
 
     /* Colors */
-    --primary: #D7CFB9;
+    --primary: rgba(219, 208, 185, 1);
     --black: #000000;
     --white: #FFFFFF;
 

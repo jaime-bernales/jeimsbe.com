@@ -147,13 +147,6 @@ select {
     background-color: transparent;
 }
 
-.input-text:hover,
-.input-text:focus, 
-select:hover
-select:focus {
-    border-width: 2px;
-}
-
 .input-text.password {
     background-image: url(../img/icons/pass-hide.svg);
     background-repeat: no-repeat;
@@ -197,11 +190,16 @@ p.helper-text {
     cursor: pointer;
 }
 
+.select-container:hover .select-label {
+    color: var(--blck);
+}
+
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
     cursor: pointer;
     text-indent: 1px;
+    margin-bottom: 0;
     text-overflow: '';
     background-image: url(../img/icons/arrow-dropdown.svg);
     background-repeat: no-repeat;
@@ -216,5 +214,12 @@ select {
 
 option.option-default {
     color: transparent;
+}
+
+.input-text:hover,
+.input-text:focus, 
+select:hover,
+select:focus {
+    border-width: 2px;
 }
 
