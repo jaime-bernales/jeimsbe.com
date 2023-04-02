@@ -30,18 +30,34 @@
     <body>
 
        <div class="container mw-500">
-            <h1>Te enviamos un código de validación</h1>
+            <h1>Te enviamos <br>un código</h1>
 
             <div class="text-center">
                 <p class="large">
                     Revisá tu correo e ingresá el <b>código</b> para validar tu cuenta. 
                 </p>
-                <a class="btn btn-primary mt-xl" href="ingresar.html" target="_self" title="Verificar">Verificar</a>
+
+                <div class="verification-codes">
+                    <input class="input-code" type="tel" maxlength="1" name="val1" id="val1" autofocus="true">
+                    <input class="input-code" type="tel" maxlength="1" name="val2" id="val2">
+                    <input class="input-code" type="tel" maxlength="1" name="val3" id="val3">
+                    <input class="input-code" type="tel" maxlength="1" name="val4" id="val4">
+                </div>
+
+                <a class="btn btn-primary" href="ingresar.html" target="_self" title="Verificar">Verificar código</a>
             </div>
        </div>
 
         <script type="text/javascript" src="../../static/js/jquery-3.6.0.min.js"></script>
         <script type="text/javascript" src="../../static/js/inputs.js"></script>
+
+        <script type="text/javascript">
+            $('.input-code').keyup(function () {
+                if (this.value.length == this.maxLength) {
+                  $(this).next('input').focus();
+                }
+            });
+        </script>
     </body>
 
 </html>

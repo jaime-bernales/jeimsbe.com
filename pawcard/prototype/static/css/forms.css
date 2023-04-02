@@ -1,6 +1,5 @@
 /* 
-==============================
-    Buttons
+    1. Buttons
 ==============================
 */
 
@@ -52,7 +51,11 @@
     margin: 0 auto;
 }
 
-/* Recuperar contraseña */
+/* 
+    Recuperar contraseña
+    --------------------
+*/
+
 .bottom {
     position: absolute;
     bottom: var(--L);
@@ -63,8 +66,7 @@
 }
 
 /* 
-==============================
-    Inputs
+    2. Inputs
 ==============================
 */
 
@@ -159,6 +161,55 @@ p.helper-text {
     color: rgba(0, 0, 0, 0.6);
     margin: 0 0 var(--L) 0;
 }
+
+/* 
+    Verification code
+    -----------------
+*/
+
+.verification-codes {
+    width: fit-content;
+    margin: 40px auto;
+    height: 76px;
+}
+
+.verification-codes .input-code {
+    display: grid;
+    width: 70px;
+    height: 76px;
+    text-align: center;
+    font-size: var(--L);
+    font-family: 'Unbounded-Regular', sans-serif;
+    outline: none;
+    border: 0;
+    margin: 0 10px;
+    float: left;
+    border-radius: var(--M);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.verification-codes .input-code:focus {
+    border: 2px solid var(--black);
+}
+
+@media only screen and (min-width: 0px) and (max-width: 410px) {
+    .verification-codes {
+        height: 66px;
+    }
+
+    .verification-codes .input-code {
+        border-radius: 12px;
+        margin: 0 6px;
+        width: 54px;
+        height: 66px;
+        font-size: 20px;
+    }
+}
+
+/* 
+    3. Select (Dropdown)
+==============================
+*/
 
 .select-container {
     position: relative;

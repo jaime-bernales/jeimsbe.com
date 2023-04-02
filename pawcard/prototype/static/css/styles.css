@@ -570,13 +570,12 @@ footer ul li a span .open-ext {
 .bubble-container {
     overflow-x: auto;
     width: 100%;
-    display: grid;
 }
 
 .bubble-container .bubble-list {
     list-style: none;
     width: fit-content;
-    display: flex;
+    display: grid;
     height: 310px;
     padding: 0 60px;
     overflow-y: hidden;
