@@ -34,7 +34,7 @@
 
             <div class="text-center">
                 <p>
-                    Revisá tu correo e ingresá el <b>código</b> para validar tu cuenta. 
+                    Ya podés revisar tu correo para ingresar el <b>código</b> de validación. 
                 </p>
 
                 <div class="verification-codes">
@@ -56,6 +56,8 @@
             $('.input-code').keyup(function () {
                 if (this.value.length == this.maxLength) {
                   $(this).next('input').focus();
+                } else {
+                    $(this).prev('input').focus();
                 }
             });
         </script>
