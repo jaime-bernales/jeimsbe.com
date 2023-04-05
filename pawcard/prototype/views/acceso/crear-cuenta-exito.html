@@ -38,7 +38,7 @@
                 </p>
 
                 <div class="verification-codes">
-                    <input class="input-code" type="tel" maxlength="1" name="val1" id="val1" autofocus="true">
+                    <input class="input-code" type="tel" maxlength="1" name="val1" id="val1">
                     <input class="input-code" type="tel" maxlength="1" name="val2" id="val2">
                     <input class="input-code" type="tel" maxlength="1" name="val3" id="val3">
                     <input class="input-code" type="tel" maxlength="1" name="val4" id="val4">
@@ -53,12 +53,16 @@
         <script type="text/javascript" src="../../static/js/inputs.js"></script>
 
         <script type="text/javascript">
+            $('#val1').focus();
+
             $('.input-code').keyup(function () {
+                $(document).scrollTop(0);
+
+
                 if (this.value.length == this.maxLength) {
                   $(this).next('input').focus();
                 } else {
                     $(this).prev('input').focus();
-                    $(this).prev('input').select();
                 }
             });
         </script>
