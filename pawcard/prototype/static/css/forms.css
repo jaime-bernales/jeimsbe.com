@@ -283,3 +283,34 @@ select:focus {
     border-width: 2px;
 }
 
+.password-requirements {
+    list-style: none;
+    margin: var(--S) 0 var(--XL) 0;
+}
+
+.password-requirements li {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: var(--M);
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.password-requirements li.checked {
+    color: var(--black);
+}
+
+.password-requirements li .icon-ckeck {
+    display: block;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-right: var(--S);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    background-image: url(../img/icons/radiobutton-empty.svg);
+}
+
+.password-requirements li.checked .icon-ckeck {
+    background-image: url(../img/icons/radiobutton-filled.svg);
+}
