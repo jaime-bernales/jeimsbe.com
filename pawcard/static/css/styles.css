@@ -1074,6 +1074,15 @@ footer ul li a span .open-ext {
     .slider {
         width: 100%;
     }
+
+    /*
+        Contact
+        -------
+    */
+
+    .contact-user-container {
+        max-width: calc(100% - 360px);
+    }
 }
 
 /* 
