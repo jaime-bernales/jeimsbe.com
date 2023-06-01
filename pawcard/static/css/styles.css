@@ -616,6 +616,32 @@ footer ul li a span .open-ext {
     font-size: 20px;
 }
 
+.bubble-container .bubble-list .new-pawcard {
+    height: 220px;
+    width: 150px;
+    background-image: url(../img/pawcard/icon-add-pawcard.svg);
+    background-size: 44px;
+}
+
+.bubble-container .bubble-list .pet {
+    background-color: transparent;
+    width: 150px;
+    padding: 4px;
+}
+
+.bubble-container .bubble-list .pet a {
+    background-color: black;
+    width: 140px;
+    height: 140px;
+    border-radius: 140px;
+    line-height: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 0 4px #C8BFA4;
+    border: 10px solid var(--primary);
+}
+
 /*
     Texto dentro
     ------------
