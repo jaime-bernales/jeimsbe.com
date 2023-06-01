@@ -623,6 +623,11 @@ footer ul li a span .open-ext {
     background-size: 44px;
 }
 
+#new-pawcard img {
+    margin: var(--L) auto 0 auto;
+    display: block;
+}
+
 .bubble-container .bubble-list .pet {
     background-color: transparent;
     width: 150px;
