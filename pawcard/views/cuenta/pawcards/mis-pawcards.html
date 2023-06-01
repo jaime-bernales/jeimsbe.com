@@ -21,19 +21,28 @@
         <meta name="msapplication-square150x150logo" content="../../../static/img/favicon/icon_mediumtile.png">
 
         <link rel="stylesheet" type="text/css" href="../../../static/css/styles.css">
+        <link rel="stylesheet" type="text/css" href="../../../static/css/forms.css">
         <link rel="stylesheet" type="text/css" href="../../../static/css/helpers.css">
 
         <meta name="theme-color" content="D7CFB9">
     </head>
 
     <body>
-        <nav class="nav-overlay">
+        <!-- Mis PawCards -->
+        <section id="new-pawcard" class="nav-overlay modal">
             <span class="close" title="Cerrar"></span>
 
-            <div class="cta">
-                <a class="btn btn-primary" href="../../../index.html" target="_self" title="Cerrar sesión">Cerrar sesión</a>
+            <div class="overlay-content scrolled">
+                <h1>Nueva<br> PawCard</h1>
+                <p class="small text-center">
+                    Comprar nueva PawCard.
+                </p>
             </div>
-        </nav>
+
+            <div class="cta">
+                <a class="btn btn-primary" href="../../../index.html">Comprar por $1.500</a>
+            </div>
+        </section>
 
         <header>
             <a class="back step-size" href="../dashboard.html" target="_self" title="Atrás"></a>
@@ -45,13 +54,13 @@
             <div class="bubble-container">
                 <ul class="bubble-list pl-0 pr-0">
                     <li class="item pet">
-                        <a href="#" target="_self" style="background-image: url(https://images.unsplash.com/photo-1530041686259-53d26f863313?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1638&q=80)">
+                        <a href="pawcard-preview.html" target="_self" style="background-image: url(https://images.unsplash.com/photo-1530041686259-53d26f863313?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1638&q=80)">
                             Elliot
                         </a>
                     </li>
 
                     
-                    <li class="item new-pawcard">
+                    <li class="item open-new-pawcard">
                         <span class="hidden">Agregar nueva pawcard</span>
                     </li>
                 </ul>
@@ -104,6 +113,10 @@
 
                 $('.nav-overlay').click(function(){
                     $(this).removeClass('active');
+                });
+
+                $('.open-new-pawcard').click(function(){
+                    $('#new-pawcard').addClass('active');
                 })
             });
         </script>

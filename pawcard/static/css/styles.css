@@ -616,7 +616,7 @@ footer ul li a span .open-ext {
     font-size: 20px;
 }
 
-.bubble-container .bubble-list .new-pawcard {
+.bubble-container .bubble-list .open-new-pawcard {
     height: 220px;
     width: 150px;
     background-image: url(../img/pawcard/icon-add-pawcard.svg);
