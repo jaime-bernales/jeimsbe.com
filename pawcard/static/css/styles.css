@@ -866,6 +866,14 @@ footer ul li a span .open-ext {
     cursor: pointer;
 }
 
+.qr-container {
+    background-color: var(--white);
+    width: 250px;
+    height: 250px;
+    border-radius: var(--L);
+    margin: 0 auto;
+}
+
 /*
     Contact
     -------
