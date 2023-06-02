@@ -1019,10 +1019,6 @@ footer ul li a span .open-ext {
     background-image: url(../img/icons/nav-menu-white.svg);
 }
 
-.missing .uploaded-mask .photo-border {
-    border-color: var(--black);
-}
-
 .missing .pet-name,
 .missing .info-container .pet-age p,
 .missing .info-container .contact-department p {
@@ -1040,6 +1036,45 @@ footer ul li a span .open-ext {
     border-color: rgba(0, 0, 0, 0.3);
 }
 
+.missing-alert {
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    top: 10px;
+    height: 310px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/pawcard/label-extraviado.svg);
+    background-size: 280px;
+    animation: rotateText 25s linear infinite;
+}
+
+@keyframes rotateText {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.missing .uploaded-mask .photo-border {
+    border-color: var(--black);
+}
+
+.missing .uploaded-mask .photo {
+    width: 260px;
+    height: 260px;
+    margin: 35px 0 0 35px;
+    clip-path: circle(116px at center);
+}
+
+.missing .contact-user-container {
+    color: var(--white);
+}
+
+.missing .contact-user-container.active {
+    background-color: rgba(187, 78, 31, 0.9);
+    color: var(--white);
+}
 
 /* 
 ==============================
