@@ -3,7 +3,7 @@
 
 /* 
 
-    INDICE
+    INDEX
     --------------------------
 
     1. Bases
@@ -786,9 +786,9 @@ footer ul li a span .open-ext {
 
 .uploaded-mask .photo-border {
     z-index: 1;
-    width: 320px;
-    height: 320px;
-    margin: 5px;
+    width: 316px;
+    height: 316px;
+    margin: 8px;
     border: 5px solid #C8BFA4;
     border-radius: 100%;
 }
@@ -856,6 +856,14 @@ footer ul li a span .open-ext {
     margin: 0;
     color: #777264;
     font-family: 'Unbounded-Medium', sans-serif;
+}
+
+.uploaded-mask .qr-icon {
+    position: absolute;
+    z-index: 3;
+    top: var(--XL);
+    right: 5px;
+    cursor: pointer;
 }
 
 /*
