@@ -858,7 +858,7 @@ footer ul li a span .open-ext {
     font-family: 'Unbounded-Medium', sans-serif;
 }
 
-.uploaded-mask .qr-icon {
+.uploaded-mask .open-qr-details {
     position: absolute;
     z-index: 3;
     top: var(--XL);

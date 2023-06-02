@@ -50,6 +50,19 @@
             </ul>            
         </nav>
 
+        <!-- Código QR -->
+        <section id="qr-details" class="nav-overlay modal">
+            <span class="close" title="Cerrar"></span>
+
+            <div class="overlay-content scrolled">
+                <h1>Código QR</h1>
+            </div>
+
+            <div class="cta">
+                <a class="btn btn-primary" href="../../../index.html" title="Descargar PDF">Descargar PDF</a>
+            </div>
+        </section>
+
         <header>
             <nav id="home-menu" class="menu"></nav>
         </header>
@@ -57,7 +70,7 @@
         <div class="container mw-500">
             <div class="uploaded-mask">
 
-                <img class="qr-icon" src="../../../static/img/pawcard/icon-qr.svg" title="Ver código QR" alt="Ver código QR">
+                <img class="open-qr-details" src="../../../static/img/pawcard/icon-qr.svg" title="Ver código QR" alt="Ver código QR">
 
                 <span class="photo" style="background-image: url(https://images.unsplash.com/photo-1530041686259-53d26f863313?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1638&q=80)"></span>
                 <span class="photo-border"></span>
@@ -103,6 +116,10 @@
 
                 $('.nav-overlay').click(function(){
                     $(this).removeClass('active');
+                });
+
+                $('.open-qr-details').click(function(){
+                    $('#qr-details').addClass('active');
                 })
             });
         </script>
