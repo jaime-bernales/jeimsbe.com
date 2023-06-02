@@ -48,6 +48,7 @@
     --primary: rgba(219, 208, 185, 1);
     --black: #000000;
     --white: #FFFFFF;
+    --red: #F46426;
 
     /* Sizing */
     --S: 8px;
@@ -886,8 +887,13 @@ footer ul li a span .open-ext {
     background-color: var(--white);
     width: 250px;
     height: 250px;
+    padding: 30px;
     border-radius: var(--L);
     margin: 0 auto var(--L) auto;
+}
+
+.qr-container img {
+    background-color: #CAC3AE;
 }
 
 /*
@@ -994,6 +1000,44 @@ footer ul li a span .open-ext {
 
 .contact-user-container .item.call {
     margin-right: 16px;
+}
+
+/*
+    Missing
+    -------
+*/
+
+.missing {
+    background: var(--red);
+}
+
+.missing header {
+    background-color: rgba(244, 100, 38, 0.8);
+}
+
+.missing header nav.menu {
+    background-image: url(../img/icons/nav-menu-white.svg);
+}
+
+.missing .uploaded-mask .photo-border {
+    border-color: var(--black);
+}
+
+.missing .pet-name,
+.missing .info-container .pet-age p,
+.missing .info-container .contact-department p {
+    color: var(--white);
+}
+
+.missing .info-container .pet-age label, 
+.missing .info-container .contact-department label {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.missing .info-container, 
+.missing .contact-phone,
+.missing .info-container .pet-age {
+    border-color: rgba(0, 0, 0, 0.3);
 }
 
 
