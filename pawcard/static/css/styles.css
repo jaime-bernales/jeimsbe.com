@@ -1047,7 +1047,7 @@ footer ul li a span .open-ext {
     background-repeat: no-repeat;
     background-image: url(../img/pawcard/label-extraviado.svg);
     background-size: 280px;
-    animation: rotateText 25s linear infinite;
+    animation: rotateText 7s linear infinite;
 }
 
 @keyframes rotateText {
