@@ -802,6 +802,7 @@ footer ul li a span .open-ext {
 
 .pawcard .uploaded-mask {
     margin-top: 36px;
+    overflow: hidden;
 }
 
 .pawcard .pet-name {
@@ -1074,6 +1075,22 @@ footer ul li a span .open-ext {
 .missing .contact-user-container.active {
     background-color: rgba(187, 78, 31, 0.9);
     color: var(--white);
+}
+
+.missing .contact-user-container .header .close {
+    background-image: url(../img/pawcard/close-missing.svg);
+}
+
+.missing .contact-user-container .item {
+    background-color: rgba(0, 0, 0, 0.26);
+}
+
+.missing .contact-cta img {
+    display: none;
+}
+
+.missing .contact-cta .white {
+    display: inline-block;
 }
 
 /* 
