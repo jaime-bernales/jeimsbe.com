@@ -1051,6 +1051,10 @@ footer ul li a span .open-ext {
     animation: rotateText 7s linear infinite;
 }
 
+.missing-alert.hembra {
+    background-image: url(../img/pawcard/label-extraviada.svg);
+}
+
 @keyframes rotateText {
   to {
     transform: rotate(360deg);
