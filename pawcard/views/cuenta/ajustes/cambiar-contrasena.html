@@ -37,7 +37,7 @@
             <h1 class="inner m-l">Cambiar contraseña</h1>
             <p class="text-center m-xl">Al actualizar se van a cerrar las sesiones en todos tus dispositivos.</p>
 
-            <div class="input-group m-xl">
+            <div class="input-group m-s">
                 <label class="input-label" for="currentPass">Contraseña actual</label>
                 <input class="input-text password" type="text" id="currentPass" name="currentPass">
             </div>
@@ -47,12 +47,35 @@
                 <input class="input-text password" type="text" id="newPass" name="newPass">
             </div>
 
+            <ul class="password-requirements">
+                <li>
+                    <span class="icon-ckeck"></span>
+                    Letras mayúsculas
+                </li>
+
+                <li>
+                    <span class="icon-ckeck"></span>
+                    Letras minúsculas
+                </li>
+
+                <li>
+                    <span class="icon-ckeck"></span>
+                    Números
+                </li>
+
+                <li>
+                    <span class="icon-ckeck"></span>
+                    Al menos 8 caracteres
+                </li>
+            </ul>
+                
+
             <div class="input-group">
                 <label class="input-label" for="confirmPass">Confirmá la contraseña</label>
                 <input class="input-text password" type="text" id="confirmPass" name="confirmPass">
             </div>
 
-            <a class="btn btn-primary" href="#" title="Actualizar contraseña" target="_self">Actualizar</a>
+            <a class="btn btn-primary m-xl" href="#" title="Actualizar contraseña" target="_self">Actualizar</a>
         </div>
 
         <footer>
