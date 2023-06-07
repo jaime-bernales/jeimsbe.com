@@ -359,7 +359,7 @@ header .back {
 }
 
 .nav-overlay.active .menu {
-    bottom: 80px;
+    bottom: 60px;
 }
 
 .nav-overlay .menu li {
