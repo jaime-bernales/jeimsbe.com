@@ -354,12 +354,12 @@ header .back {
 .nav-overlay .menu {
     list-style: none;
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
     transition: all 900ms ease 300ms;
 }
 
 .nav-overlay.active .menu {
-    bottom: 60px;
+    bottom: 20px;
 }
 
 .nav-overlay .menu li {
