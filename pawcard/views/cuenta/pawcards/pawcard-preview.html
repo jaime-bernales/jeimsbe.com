@@ -28,16 +28,16 @@
     </head>
 
     <body class="pawcard">
-        <nav class="nav-overlay">
+        <nav id="home-menu" class="nav-overlay">
             <span class="close" title="Cerrar"></span>
 
             <ul class="menu">
                 <li>
-                    <a href="" title="Home" target="_self">Home</a>
+                    <a href="../../../index.html" title="Inicio" target="_self">Inicio</a>
                 </li>
 
                 <li>
-                    <a href="../dashboard.html" title="Dashboard" target="_self">Dashboard</a>
+                    <a href="../dashboard.html" title="Tablero" target="_self">Tablero</a>
                 </li>
 
                 <li>
@@ -68,7 +68,7 @@
         </section>
 
         <header>
-            <nav id="home-menu" class="menu"></nav>
+            <nav class="menu open-home-menu"></nav>
         </header>
 
         <div class="container mw-500">
@@ -94,9 +94,14 @@
                 </div>
             </div>
 
-            <div class="contact-phone">
-                <a class="btn btn-primary fullwidth" href="crear/pawcard-crear.html">Editar datos</a>
+            <div class="contact-phone m-l">
+                <a class="btn btn-primary fullwidth" href="crear/pawcard-crear.html">Modificar</a>
             </div>
+
+            <span class="block text-center">
+                <a class="btn btn-link" title="Abrir vista previa">Vista previa</a>
+            </span>
+
         </div>
 
 
@@ -114,16 +119,16 @@
                     }
                 });
 
-                $('#home-menu').click(function(){
-                    $('.nav-overlay').addClass('active');
-                });
-
-                $('.nav-overlay').click(function(){
-                    $(this).removeClass('active');
+                $('.open-home-menu').click(function(){
+                    $('#home-menu').addClass('active');
                 });
 
                 $('.open-qr-details').click(function(){
                     $('#qr-details').addClass('active');
+                });
+
+                $('.nav-overlay').click(function(){
+                    $(this).removeClass('active');
                 })
             });
         </script>

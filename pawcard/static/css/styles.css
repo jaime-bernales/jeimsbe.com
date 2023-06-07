@@ -55,6 +55,7 @@
     --M: 16px;
     --L: 24px;
     --XL: 32px;
+    --XXL: 40px;
 }
 
 * {
@@ -377,11 +378,13 @@ header .back {
 }
 
 .nav-overlay.active .menu li a {
+    opacity: 0.4;
     margin-bottom: 40px;
 }
 
-.nav-overlay.active .menu li.active {
-    opacity: 0.4;
+.nav-overlay.active .menu li.active a {
+    opacity: 1;
+    pointer-events: none;
 }
 
 /* 

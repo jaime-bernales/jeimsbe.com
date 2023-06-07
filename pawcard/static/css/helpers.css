@@ -4,6 +4,7 @@
 .mt-m {margin-top: var(--M) !important}
 .mt-l {margin-top: var(--L) !important}
 .mt-xl {margin-top: var(--XL) !important}
+.mt-xxl {margin-top: var(--XXL) !important}
 
 .mr-0 {margin-right: 0 !important}
 .mr-s {margin-right: var(--S) !important}
@@ -21,6 +22,7 @@
 .m-m {margin-bottom: var(--M) !important}
 .m-l {margin-bottom: var(--L) !important}
 .m-xl {margin-bottom: var(--XL) !important}
+.m-xxl {margin-bottom: var(--XXL) !important}
 
 /* Padding */
 .pt-0 {padding-top: 0 !important} 
