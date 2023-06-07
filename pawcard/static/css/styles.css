@@ -353,12 +353,13 @@ header .back {
 
 .nav-overlay .menu {
     list-style: none;
-    margin-top: 300px;
+    position: absolute;
+    bottom: 0;
     transition: all 900ms ease 300ms;
 }
 
 .nav-overlay.active .menu {
-    margin-top: 260px;
+    bottom: 80px;
 }
 
 .nav-overlay .menu li {
