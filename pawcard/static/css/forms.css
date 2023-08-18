@@ -20,6 +20,15 @@
     transition: ease-out 0.4s;
 }
 
+.alert {
+    border-radius: 30px;
+    margin: 0 auto;
+    display: block;
+    width: calc(100% - 40px);
+    color: var(--white);
+    background-color: var(--red);
+}
+
 .btn-primary {
     background-color: var(--black);
     color: var(--white);
