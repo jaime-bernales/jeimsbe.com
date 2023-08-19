@@ -2,9 +2,13 @@
 
   "name": "PawCard", 
 
-  "short_name": "PawCard", 
+  "short_name": "PawCard",
 
-  "start_url": "https://paecard.pet", 
+  "description": "Descubrí las tarjetas de contacto para mascotas.",
+
+  "start_url": "https://pawcard.pet",
+
+  "version": "1.0",
 
   "display": "standalone", 
 
@@ -12,11 +16,11 @@
 
   "orientation": "portrait",
 
+  "launcher_icon": "img/favicon/icon.png",
+
   "icons": [{ 
 
     "src": "img/favicon/icon.png",
-
-    "sizes": "143x144", 
 
     "type": "image/png" 
 
