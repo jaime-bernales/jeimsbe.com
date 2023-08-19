@@ -1,22 +1,17 @@
 { 
 
   "name": "PawCard", 
-
   "short_name": "PawCard",
-
+  "dock_button_title": "PawCard",
   "description": "Descubrí las tarjetas de contacto para mascotas.",
-
   "start_url": "https://pawcard.pet",
-
   "version": "1.0",
 
   "display": "standalone", 
-
   "theme_color": "#D7CFB9",
-
   "orientation": "portrait",
-
-  "launcher_icon": "img/favicon/icon.png",
+  "background_color": "#000000",
+  "splash_image": "img/favicon/icon.png",
 
   "icons": [{ 
 
