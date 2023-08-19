@@ -4,6 +4,8 @@
 
   "short_name": "PawCard", 
 
+  "description": "Descubrí las tarjetas de contacto para mascotas.",
+
   "start_url": "https://pawcard.pet", 
 
   "display": "standalone", 
@@ -11,5 +13,15 @@
   "theme_color": "#D7CFB9",
 
   "orientation": "portrait",
+
+  "icons": [{ 
+
+    "src": "img/favicon/icon.png",
+
+    "sizes": "36x36", 
+
+    "type": "image/png" 
+
+  }] 
 
 }
