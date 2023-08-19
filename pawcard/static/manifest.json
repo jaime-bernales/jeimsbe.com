@@ -4,24 +4,12 @@
 
   "short_name": "PawCard", 
 
-  "start_url": "https://paecard.pet", 
+  "start_url": "https://pawcard.pet", 
 
   "display": "standalone", 
 
-  "theme_color": "#000000",
-
-  "background_color": "#c46a00",
+  "theme_color": "#D7CFB9",
 
   "orientation": "portrait",
-
-  "icons": [{ 
-
-    "src": "img/favicon/icon.png",
-
-    "sizes": "143x144", 
-
-    "type": "image/png" 
-
-  }] 
 
 }
