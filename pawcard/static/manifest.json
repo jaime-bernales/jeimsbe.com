@@ -4,15 +4,15 @@
 
   "short_name": "PawCard", 
 
-  "start_url": "https://DomainName", 
+  "start_url": "https://paecard.pet", 
 
   "display": "standalone", 
 
   "icons": [{ 
 
-    "src": "images/logo.png", 
+    "src": "img/favicon/icon.png",
 
-    "sizes": "512x512", 
+    "sizes": "143x144", 
 
     "type": "image/png" 
 
