@@ -8,6 +8,10 @@
 
   "display": "standalone", 
 
+  "theme_color": "#D7CFB9",
+
+  "orientation": "portrait",
+
   "icons": [{ 
 
     "src": "img/favicon/icon.png",
