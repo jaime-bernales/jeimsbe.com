@@ -294,7 +294,7 @@ header .back {
     position: relative;
     width: 100%;
     background-color: var(--primary);
-    border-radius: 40px;
+    border-radius: var(--M);
     margin: 0 auto;
     top: 132px;
     z-index: 1;
@@ -826,7 +826,7 @@ footer ul li a span .open-ext {
 .pawcard .info-container,
 .pawcard .contact-phone {
     border: 2px solid #9C9681;
-    border-radius: 20px 20px 0 0;
+    border-radius: var(--S) var(--S) 0 0;
     width: calc(100% - 40px);
     margin: 0 auto;
     padding: 0 20px;
@@ -834,7 +834,7 @@ footer ul li a span .open-ext {
 }
 
 .pawcard .contact-phone {
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 0 var(--S) var(--S);
     border-top: 0;
     padding: 16px;
 }
@@ -898,7 +898,7 @@ footer ul li a span .open-ext {
     width: 250px;
     height: 250px;
     padding: 30px;
-    border-radius: var(--L);
+    border-radius: var(--M);
     margin: 0 auto var(--L) auto;
 }
 
@@ -1161,7 +1161,7 @@ footer ul li a span .open-ext {
         padding: 30px 40px 10px 40px;
         top: 40px;
         left: auto;
-        border-radius: 40px 40px 0 0;
+        border-radius: var(--M) var(--M) 0 0;
     }
 
     /*
