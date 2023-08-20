@@ -354,6 +354,7 @@ header .back {
 .nav-overlay .menu {
     list-style: none;
     position: absolute;
+    width: 100%;
     bottom: -10px;
     transition: all 900ms ease 300ms;
 }
@@ -381,6 +382,10 @@ header .back {
 .nav-overlay.active .menu li a {
     opacity: 0.4;
     margin-bottom: 40px;
+}
+
+.nav-overlay.active .menu li a:hover {
+    opacity: 0.8;
 }
 
 .nav-overlay.active .menu li.active a {
@@ -1189,9 +1194,18 @@ footer ul li a span .open-ext {
         --------------
     */
 
+    .nav-overlay .menu {
+        width: calc(100% - 80px);
+    }
+
     .nav-overlay .menu,
     .nav-overlay.active .menu {
         margin-top: 200px;
+    }
+
+    .nav-overlay.active .menu {
+        bottom: auto;
+        top: var(--XL);
     }
 
     .nav-overlay .menu li a {
