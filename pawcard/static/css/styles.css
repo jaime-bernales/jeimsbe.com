@@ -45,7 +45,7 @@
     font-family: 'Unbounded-Regular', sans-serif;
 
     /* Colors */
-    --primary: #FFFFFF;
+    --primary: rgba(232, 220, 196, 1);
     --black: #000000;
     --white: #FFFFFF;
     --red: #F46426;
@@ -144,6 +144,7 @@ body {
     overflow-x: hidden;
     height: 100%;
     -ms-overflow-style: none;
+    background: linear-gradient(144deg, rgba(232, 220, 196, 1) 41%, rgba(194,185,160,1) 100%);
     background-attachment: fixed;
 }
 
@@ -175,7 +176,7 @@ header {
     z-index: 10;
     top: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.94);
+    background-color: rgba(232, 220, 196, 0.94);
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
     -o-backdrop-filter: blur(50px);
