@@ -233,7 +233,7 @@ header .back {
 
 .nav-overlay.active {
     bottom: 0;
-    background-color: rgba(219, 208, 185, 0.8);
+    background-color: rgba(219, 208, 185, 0.9);
     transition: all 0.5s ease;
 }
 
@@ -285,10 +285,6 @@ header .back {
     Modal
     ------
 */
-
-.modal.active {
-    background-color: rgba(205, 196, 172, 0.9);
-}
 
 .modal .overlay-content {
     position: relative;
@@ -639,7 +635,7 @@ footer ul li a span .open-ext {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    box-shadow: 0 0 0 4px #C8BFA4;
+    box-shadow: 0 0 0 4px #DBD1B2;
     border: 10px solid var(--primary);
 }
 
@@ -785,7 +781,7 @@ footer ul li a span .open-ext {
     width: 316px;
     height: 316px;
     margin: 8px;
-    border: 5px solid #C8BFA4;
+    border: 5px solid #DBD1B2;
     border-radius: 100%;
 }
 
