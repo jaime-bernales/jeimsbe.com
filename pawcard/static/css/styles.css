@@ -45,7 +45,7 @@
     font-family: 'Unbounded-Regular', sans-serif;
 
     /* Colors */
-    --primary: rgba(219, 208, 185, 1);
+    --primary: #FFFFFF;
     --black: #000000;
     --white: #FFFFFF;
     --red: #F46426;
@@ -176,7 +176,7 @@ header {
     z-index: 10;
     top: 0;
     left: 0;
-    background-color: rgba(219, 208, 185, 0.8);
+    background-color: rgba(219, 208, 185, 0.94);
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
     -o-backdrop-filter: blur(50px);
