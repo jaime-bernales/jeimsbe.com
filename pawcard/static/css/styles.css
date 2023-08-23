@@ -176,7 +176,7 @@ header {
     z-index: 10;
     top: 0;
     left: 0;
-    background-color: rgba(219, 208, 185, 0.94);
+    background-color: rgba(255, 255, 255, 0.94);
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
     -o-backdrop-filter: blur(50px);
@@ -455,20 +455,6 @@ footer ul li a span .open-ext {
     2. Home
 ==============================
 */
-
-.home-gradient {
-    display: block;
-    background-image: url(../img/home/home-gradient.png);
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-size: 100% auto;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    position: absolute;
-    z-index: -1;
-}
 
 .home h1 {
     font-size: 50px;
