@@ -144,7 +144,6 @@ body {
     overflow-x: hidden;
     height: 100%;
     -ms-overflow-style: none;
-    background: linear-gradient(144deg, rgba(219,208,185,1) 41%, rgba(194,185,160,1) 100%);
     background-attachment: fixed;
 }
 
