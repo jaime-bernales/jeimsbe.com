@@ -367,8 +367,8 @@ header .back {
 .nav-overlay .menu li a {
     font-family: 'Unbounded-Medium', sans-serif;
     display: block;
-    font-size: 38px;
-    line-height: 38px;
+    font-size: var(--XL);
+    line-height: var(--XL);
     margin-bottom: 60px;
     text-decoration: none;
     color: var(--black);
@@ -585,7 +585,7 @@ footer ul li a span .open-ext {
     line-height: 310px;
     margin-bottom: 60px;
     border-radius: 170px;
-    background-color: rgba(225, 220, 207, 0.5);
+    background-color: #DFD3BA;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -1107,7 +1107,7 @@ footer ul li a span .open-ext {
         height: calc(100vh - 80px);
         position: relative;
         padding-top: 110px;
-        border-radius: 40px;
+        border-radius: var(--M);
         max-width: calc(100% - 360px);
         background: var(--primary);
         background-attachment: local;
@@ -1156,7 +1156,7 @@ footer ul li a span .open-ext {
         width: calc(100% - 360px);
         left: auto;
         padding: 40px;
-        border-radius: 40px;
+        border-radius: var(--M);
     }
 
     .nav-overlay.active {
@@ -1191,9 +1191,8 @@ footer ul li a span .open-ext {
     }
 
     .nav-overlay .menu li a {
-        text-align: center;
-        font-size: 50px;
-        line-height: 64px;
+        font-size: 46px;
+        line-height: 60px;
     }
 
     /* 
