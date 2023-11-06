@@ -7,22 +7,25 @@
 */
 
 @font-face {
-    font-family: 'Unbounded-Light';
-    src: url(../fonts/Unbounded-Light.ttf) format(truetype);
+    font-family: 'AbhayaLibre-Regular';
+    src: url(../fonts/AbhayaLibre-Regular.ttf) format(truetype);
 }
 
 @font-face {
-    font-family: 'Unbounded-Regular';
-    src: url(../fonts/Unbounded-Regular.ttf) format(truetype);
+    font-family: 'AbhayaLibre-Medium';
+    src: url(../fonts/AbhayaLibre-Medium.ttf) format(truetype);
 }
 
 @font-face {
-    font-family: 'Unbounded-Medium';
-    src: url(../fonts/Unbounded-Medium.ttf) format(truetype);
+    font-family: 'AbhayaLibre-ExtraBold';
+    src: url(../fonts/AbhayaLibre-ExtraBold.ttf) format(truetype);
 }
 
 :root {
-    font-family: 'Unbounded-Regular', sans-serif;
+    font-family: 'AbhayaLibre-Regular', serif;
+
+    /* Colors */
+    --light: #E1E1E1;
 
     /* Sizing */
     --S: 8px;
@@ -83,8 +86,67 @@ body {
 */
 
 .container {
-    padding: var(--M);
     width: 100%;
-    max-width: 600px;
+    max-width: 1200px;
+    padding: 0 var(--M);
     margin: 0 auto;
+}
+
+/* 
+    Content
+    --------
+*/
+
+h2, h3 {
+    text-align: center;
+}
+
+h2 {
+    font-family: 'AbhayaLibre-ExtraBold', serif;
+    font-size: 50px;
+    margin-bottom: var(--L);
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: var(--L);
+}
+
+.hero {
+    margin: 390px auto 120px auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero .land {
+    margin-top: var(--XXL);
+    width: 100%;
+}
+
+.hero .land.mobile {
+    width: calc(100% - var(--M));
+}
+
+.tab-container {
+    display: inline-flex;
+    width: 100%;
+    border-bottom: 1px solid var(--light);
+    list-style: none;
+    justify-content: center;
+}
+
+.tab-container .item {
+    font-size: 22px;
+    padding: var(--L);
+    float: left;
+    text-align: center;
+    color: #888888;
+    cursor: pointer;
+}
+
+.tab-container .item.active {
+    font-family: 'AbhayaLibre-ExtraBold', serif;
+    color: #000000;
+    cursor: default;
 }
