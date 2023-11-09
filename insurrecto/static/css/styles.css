@@ -166,12 +166,12 @@ h3 {
     text-align: center;
 }
 
-.hero .land {
+.hero .hero-image {
     margin-top: var(--XXL);
     width: 100%;
 }
 
-.hero .land.mobile {
+.hero .hero-image.mobile {
     width: calc(100% - var(--M));
 }
 
@@ -364,10 +364,25 @@ article.performance {
     width: 50%;
     float: left;
     margin: 40px 0 120px 0;
-    padding: 70px 0;
-    text-align: center;
+    padding: 70px 50px;
+    text-align: left;
 }
 
 article.performance.left {
     border-right: 0;
+}
+
+article.performance .text-label,
+article.performance .text-info {
+    width: 100%;
+}
+
+/* 
+    Discover
+    ---------
+*/
+
+section.discover .content {
+    width: 630px;
+    margin: 0 auto;
 }
