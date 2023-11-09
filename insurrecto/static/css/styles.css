@@ -231,7 +231,7 @@ h3 {
 }
 
 .wine-details#malbec-2021 {
-    background-image: url(../img/nuestrosvinos/malbec-2021.jpg);
+    background-image: url(../img/seccion-nuestrosvinos/malbec-2021.jpg);
 }
 
 .wine-details h4 {
@@ -326,12 +326,12 @@ article.news .photo {
 }
 
 article.contact .photo {
-    background-image: url(../img/nosotros/contact-logo.svg);
+    background-image: url(../img/seccion-nosotros/contact-logo.svg);
     background-color: #000000;
 }
 
 article.news #new-1 .photo {
-    background-image: url(../img/nosotros/new-1.jpg);
+    background-image: url(../img/seccion-nosotros/new-1.jpg);
     background-color: #000000;
 }
 
