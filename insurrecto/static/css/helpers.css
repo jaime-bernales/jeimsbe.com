@@ -66,4 +66,4 @@
 .text-right {text-align: right !important}
 
 .fullheight {height: 100vh}
-.fullwidth {width: 100%}
+.fullwidth {width: 100% !important}

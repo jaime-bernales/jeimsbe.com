@@ -21,8 +21,14 @@
     src: url(../fonts/AbhayaLibre-ExtraBold.ttf) format(truetype);
 }
 
+@font-face {
+    font-family: 'Almarai';
+    src: url(../fonts/Almarai-Regular.ttf) format(truetype);
+}
+
 :root {
     font-family: 'AbhayaLibre-Regular', serif;
+    color: #000000;
 
     /* Colors */
     --light: #E1E1E1;
@@ -48,8 +54,26 @@
     -webkit-tap-highlight-color: transparent !important;
 }
 
-a {
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a, button {
     cursor: pointer;
+    color: #000000;
+    border: 0;
+    outline: none;
+    text-decoration: none;
+}
+
+p {
+    font-family: 'AbhayaLibre-Regular', serif;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: var(--L);
 }
 
 img:focus,
@@ -80,6 +104,22 @@ body {
     -ms-overflow-style: none;
 }
 
+.btn {
+    padding: 18px 26px;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: 'AbhayaLibre-ExtraBold', serif;
+    border: 1px solid #000000;
+    background-color: #FFFFFF;
+}
+
+.btn.buy {
+    padding: 18px 26px 18px 48px;
+    background-position: left 22px center;
+    background-repeat: no-repeat;
+    background-image: url(../img/icon-cart.svg);
+}
+
 /* 
     Wrappers
     --------
@@ -107,10 +147,17 @@ h2 {
     margin-bottom: var(--L);
 }
 
+h2.small {
+    font-size: 36px;
+    margin: 0;
+}
+
 h3 {
     font-size: 20px;
     line-height: 26px;
     margin-bottom: var(--L);
+    font-family: 'AbhayaLibre-Regular', serif;
+    font-weight: 100;
 }
 
 .hero {
@@ -132,21 +179,195 @@ h3 {
     display: inline-flex;
     width: 100%;
     border-bottom: 1px solid var(--light);
-    list-style: none;
     justify-content: center;
+    margin-bottom: var(--XL);
 }
 
 .tab-container .item {
     font-size: 22px;
-    padding: var(--L);
+    padding: var(--L) 0;
+    margin: 0 var(--L);
     float: left;
     text-align: center;
     color: #888888;
     cursor: pointer;
+    border-bottom: 3px solid transparent;
 }
 
 .tab-container .item.active {
     font-family: 'AbhayaLibre-ExtraBold', serif;
     color: #000000;
     cursor: default;
+    border-color: #000000;
+}
+
+.text-label {
+    font-family: 'Almarai', sans-serif;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: var(--S);
+    line-height: var(--M);
+    color: #909090;
+}
+
+.text-info {
+    font-family: 'AbhayaLibre-Medium', serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+/* 
+    Nuestros vinos
+    --------------
+*/
+
+.wine-details {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center top;
+    padding: 60px 0 0 0;
+    min-height: 1060px;
+}
+
+.wine-details#malbec-2021 {
+    background-image: url(../img/_nuestrosvinos/malbec-2021.jpg);
+}
+
+.wine-details h4 {
+    font-family: 'AbhayaLibre-ExtraBold', serif;
+    width: 400px;
+    font-size: var(--XXL);
+    line-height: 50px;
+    margin-bottom: 60px;
+}
+
+.wine-details .left-side,
+.wine-details .right-side {
+    width: 50%;
+    float: left;
+}
+
+.wine-details .right-side {
+    margin-top: 70px;
+}
+
+.wine-details .right-side .text-content,
+.wine-details .stats {
+    width: 300px;
+}
+
+.wine-details .stats {
+    float: right;
+}
+
+.wine-details .stats .bars {
+    margin-bottom: var(--XXL);
+}
+
+.wine-details .stats a {
+    font-size: 18px;
+    display: inline-block;
+    border-bottom: 1px solid #000000;
+}
+
+.text-content {
+    max-width: 400px;
+    clear: both;
+    display: flex;
+    margin-bottom: 44px;
+}
+
+.text-content li {
+    width: 50%;
+    float: left;
+}
+
+/* 
+    Nosotros
+    --------
+*/
+
+article.contact,
+article.news {
+    margin: 60px 0 150px 0;
+    width: 50%;
+    height: 220px;
+    padding: 50px 70px;
+    float: left;
+    border: 1px solid var(--light);
+}
+
+article.contact {
+    border-right: 0;
+}
+
+article.contact .photo,
+article.news .photo {
+    width: 110px;
+    height: 110px;
+    margin-right: var(--L);
+    border-radius: 55px;
+    background-color: #E1E1E1;
+    display: block;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+article.contact .text-label,
+article.news .text-label {
+    font-size: var(--M);
+    margin: 0 0 10px 0;
+}
+
+article.news .photo {
+    background-size: cover;
+}
+
+article.contact .photo {
+    background-image: url(../img/_nosotros/contact-logo.svg);
+    background-color: #000000;
+}
+
+article.news #new-1 .photo {
+    background-image: url(../img/_nosotros/new-1.jpg);
+    background-color: #000000;
+}
+
+article.news .read-more {
+    font-family: 'Almarai', sans-serif;
+    display: inline-block;
+    font-size: var(--M);
+    margin-top: var(--M);
+    cursor: pointer;
+    border-bottom: 1px solid #000000;
+}
+
+/* 
+    Vineyards
+    ---------
+*/
+
+section.vineyards .content {
+    margin: 60px auto 80px auto;
+    width: 820px;
+}
+
+section.vineyards .map {
+    margin: 80px auto;
+    display: block;
+}
+
+article.performance {
+    border: 1px solid #E1E1E1;
+    width: 50%;
+    float: left;
+    margin: 40px 0 120px 0;
+    padding: 70px 0;
+    text-align: center;
+}
+
+article.performance.left {
+    border-right: 0;
 }
