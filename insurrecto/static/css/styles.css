@@ -60,12 +60,16 @@ ul, li {
     margin: 0;
 }
 
-a, button {
+a, button, .link {
     cursor: pointer;
     color: #000000;
     border: 0;
     outline: none;
     text-decoration: none;
+}
+
+a, .link {
+    border-bottom: 1px solid #000000;
 }
 
 p {
@@ -268,7 +272,6 @@ h3 {
 .wine-details .stats a {
     font-size: 18px;
     display: inline-block;
-    border-bottom: 1px solid #000000;
 }
 
 .text-content {
@@ -391,10 +394,64 @@ section.discover .pairing {
 
 section.discover .pairing .pairing-container {
     width: calc(100% - 40px);
-    height: 440px;
+    height: 460px;
+    position: relative;
     padding: 50px;
     margin: 0 auto;
     border: 1px solid #E1E1E1;
+}
+
+section.discover .pairing .pairing-container .pagination {
+    left: 40px;
+    width: calc(100% - 90px);
+    height: 36px;
+    position: absolute;
+    bottom: var(--XL);
+}
+
+section.discover .pairing .arrows {
+    float: left;
+    width: 80px;
+}
+
+section.discover .pairing .arrows .prev {
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+    float: left;
+    cursor: pointer;
+    background-position: center;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-image: url(../img/icon-prev.svg);
+}
+
+section.discover .pairing .arrows .next {
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+    float: right;
+    cursor: pointer;
+    background-position: center;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-image: url(../img/icon-next.svg);
+}
+
+section.discover .pairing .arrows .prev:hover,
+section.discover .pairing .arrows .next:hover {
+    background-color: #F1F1F1;
+}
+
+section.discover .pairing .steps {
+    display: block;
+    float: right;
+    color: #909090;
+    height: 36px;
+    line-height: 36px;
+    font-family: 'Almarai', sans-serif;
 }
 
 section.discover .pairing .text-label {
@@ -425,3 +482,90 @@ section.discover .pairing h3 {
     margin-bottom: var(--XXL);
     font-family: 'AbhayaLibre-ExtraBold', serif;
 }
+
+section.discover .pairing #pair-malbec-1 .photo {
+    background-image: url(../img/section-discover/pair-malbec-1.jpg);
+}
+
+section.discover .pairing #pair-blend-1 .photo {
+    background-image: url(../img/section-discover/pair-blend-1.jpg);
+}
+
+article.spotify {
+    width: calc(100% - 32px);
+    height: 474px;
+    margin: 0 auto 80px auto;
+    clear: both;
+    position: relative;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/section-discover/spotify_desktop.jpg);
+}
+
+article.spotify .foot {
+    width: 100%;
+    height: 76px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    background-color: #523828;
+    color: #FFFFFF;
+}
+
+article.spotify .foot p {
+    font-size: 16px;
+    line-height: 76px;
+    font-family: 'Almarai', sans-serif;
+}
+
+article.spotify .foot p a {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+    Responsive
+    ----------
+*/
+
+.desktop {display: inline-block;}
+.mobile {display: none}
+
+
+@media only screen and (max-width: 960px) {
+
+    .desktop {display: none}
+    .mobile {display: inline-block;}
+
+    .wine-details {
+        padding: 60px 0 0 0;
+        min-height: 1060px;
+    }
+
+    .wine-details#malbec-2021 {
+        background-image: none;
+    }
+
+    .wine-details .left-side, .wine-details .right-side {
+        width: 100%;
+    }
+}
+
+
+
