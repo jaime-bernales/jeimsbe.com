@@ -570,6 +570,10 @@ article.spotify .foot p a {
         margin-bottom: var(--L);
     }
 
+    .hero {
+        margin-top: 150px;
+    }
+
     /* 
         Nuestros vinos
         --------------
@@ -682,7 +686,7 @@ article.spotify .foot p a {
     }
 
     section.vineyards .map {
-        width: 100%;
+        width: calc(100% - 32px);
         max-width: 420px;
     }
 
@@ -716,6 +720,29 @@ article.spotify .foot p a {
 
     section.discover .content {
         width: 100%;
+    }
+
+    section.discover .pairing {
+        width: 100%;
+        padding: 0;
+        margin: 30px 0 30px 0;
+        float: none;
+    }
+
+    section.discover .pairing .pairing-container {
+        height: auto;
+        width: 100%;
+        padding: 30px 30px 70px 30px;
+    }
+
+    section.discover .pairing .pairing-container .pagination {
+        left: 24px;
+        width: calc(100% - 54px);
+    }
+
+    section.discover .pairing .photo {
+        width: 70px;
+        height: 70px;
     }
 
 
