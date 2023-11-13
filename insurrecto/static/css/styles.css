@@ -166,6 +166,9 @@ h3 {
 
 .hero {
     margin: 390px auto 120px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
 }
@@ -235,7 +238,7 @@ h3 {
 }
 
 .wine-details#malbec-2021 {
-    background-image: url(../img/seccion-nuestrosvinos/malbec-2021.jpg);
+    background-image: url(../img/section-nuestrosvinos/malbec-2021.jpg);
 }
 
 .wine-details h4 {
@@ -329,12 +332,12 @@ article.news .photo {
 }
 
 article.contact .photo {
-    background-image: url(../img/seccion-nosotros/contact-logo.svg);
+    background-image: url(../img/section-nosotros/contact-logo.svg);
     background-color: #000000;
 }
 
 article.news #new-1 .photo {
-    background-image: url(../img/seccion-nosotros/new-1.jpg);
+    background-image: url(../img/section-nosotros/new-1.jpg);
     background-color: #000000;
 }
 
@@ -359,7 +362,6 @@ section.vineyards .content {
 
 section.vineyards .map {
     margin: 80px auto;
-    display: block;
 }
 
 article.performance {
@@ -424,7 +426,7 @@ section.discover .pairing .arrows .prev {
     background-position: center;
     background-size: 24px;
     background-repeat: no-repeat;
-    background-image: url(../img/icon-prev.svg);
+    background-image: url(../img/icons/icon-prev.svg);
 }
 
 section.discover .pairing .arrows .next {
@@ -437,7 +439,7 @@ section.discover .pairing .arrows .next {
     background-position: center;
     background-size: 24px;
     background-repeat: no-repeat;
-    background-image: url(../img/icon-next.svg);
+    background-image: url(../img/icons/icon-next.svg);
 }
 
 section.discover .pairing .arrows .prev:hover,
@@ -544,14 +546,14 @@ article.spotify .foot p a {
     ----------
 */
 
-.desktop {display: inline-block;}
-.mobile {display: none}
+.desktop {display: block !important}
+.mobile {display: none !important}
 
 
 @media only screen and (max-width: 960px) {
 
-    .desktop {display: none}
-    .mobile {display: inline-block}
+    .desktop {display: none !important}
+    .mobile {display: block !important}
 
     .btn {
         width: 100%;
@@ -575,6 +577,12 @@ article.spotify .foot p a {
         width: 100%;
     }
 
+    .wine-details h4 {
+        font-size: 30px;
+        line-height: 36px;
+        width: 100%;
+    }
+
     .wine-details .stepper {
         width: 100%;
         height: 27px;
@@ -591,6 +599,22 @@ article.spotify .foot p a {
         border-radius: 15px;
         border: 2px solid #000000;
         margin: 0 10px;
+        position: relative;
+    }
+
+    .wine-details .stepper .active .marker {
+        display: block;
+        width: 27px;
+        height: 27px;
+        border-radius: 27px;
+        position: absolute;
+        top: -8px;
+        left: -8px;
+        border: 2px solid #E1E1E1;
+    }
+
+    .wine-details .text-content:last-child {
+        margin-bottom: 0;
     }
 
     /* 
@@ -602,11 +626,17 @@ article.spotify .foot p a {
         width: 100%;
         padding: 50px 30px;
         height: auto;
+        margin-bottom: 110px;
     }
 
     article.contact .photo, article.news .photo {
         width: 70px;
         height: 70px;
+        margin: 0;
+    }
+
+    article.news .text-label {
+        margin-top: var(--L);
     }
 
     article.contact {
@@ -620,7 +650,9 @@ article.spotify .foot p a {
     }
 
     article.contact .text-label,
-    article.contact .text-info {
+    article.contact .text-info,
+    article.news .text-label,
+    article.news .text-info {
         width: 100%;
     }
 
@@ -631,4 +663,12 @@ article.spotify .foot p a {
 }
 
 
+/* 
+    Nosotros
+    --------
+*/
 
+
+section.vineyards .content {
+    width: 100%;
+}
