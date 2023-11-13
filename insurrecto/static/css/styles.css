@@ -586,7 +586,7 @@ article.spotify .foot p a {
     .wine-details .stepper {
         width: 100%;
         height: 27px;
-        display: flex;
+        display: flex !important;
         justify-content: center;
         align-items: center;
         margin-bottom: var(--L);
@@ -660,15 +660,52 @@ article.spotify .foot p a {
         background-size: 40px auto;
         margin: 0 auto var(--L) auto;
     }
-}
+
+    /* 
+        Vineyards
+        ---------
+    */
+
+    section.vineyards .content {
+        width: 100%;
+    }
+
+    section.vineyards .map {
+        width: 100%;
+        max-width: 420px;
+    }
+
+    article.performance {
+        width: 100%;
+        padding: 30px var(--XL);
+        height: auto;
+        margin-bottom: 0;
+        float: none;
+    }
+
+    article.performance.right {
+        margin-top: 0;
+        margin-bottom: 110px;
+        border-top: 0;
+    }
+
+    article.performance.left {
+        border-right: 1px solid #E1E1E1;
+    }
+
+    article.performance .mobile {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    /* 
+        Discover
+        ---------
+    */
+
+    section.discover .content {
+        width: 100%;
+    }
 
 
-/* 
-    Nosotros
-    --------
-*/
-
-
-section.vineyards .content {
-    width: 100%;
 }
