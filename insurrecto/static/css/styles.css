@@ -560,6 +560,17 @@ article.spotify .foot p a {
     }
 
     /* 
+        Content
+        --------
+    */
+
+    h2 {
+        font-size: 40px;
+        line-height: 46px;
+        margin-bottom: var(--L);
+    }
+
+    /* 
         Nuestros vinos
         --------------
     */
