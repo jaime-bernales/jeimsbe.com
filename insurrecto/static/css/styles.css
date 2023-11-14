@@ -308,6 +308,11 @@ article.contact {
     border-right: 0;
 }
 
+article.contact .social-networks .link {
+    border: 0;
+    margin: 0 18px;
+}
+
 article.contact .photo,
 article.news .photo {
     width: 110px;
@@ -345,7 +350,6 @@ article.news .read-more {
     font-family: 'Almarai', sans-serif;
     display: inline-block;
     font-size: var(--M);
-    margin-top: var(--M);
     cursor: pointer;
     border-bottom: 1px solid #000000;
 }
@@ -637,6 +641,12 @@ article.spotify .foot p a {
         --------
     */
 
+    article.contact .social-networks {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
     article.contact, article.news {
         width: 100%;
         padding: 50px 30px;
@@ -725,7 +735,7 @@ article.spotify .foot p a {
     section.discover .pairing {
         width: 100%;
         padding: 0;
-        margin: 30px 0 30px 0;
+        margin: 40px 0 30px 0;
         float: none;
     }
 
@@ -744,6 +754,5 @@ article.spotify .foot p a {
         width: 70px;
         height: 70px;
     }
-
 
 }
