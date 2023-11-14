@@ -569,6 +569,15 @@ article.spotify .foot p a {
     }
 
     /* 
+        Wrappers
+        --------
+    */
+
+    .container {
+        margin: 40px auto 0 auto;
+    }
+
+    /* 
         Content
         --------
     */
@@ -580,7 +589,7 @@ article.spotify .foot p a {
     }
 
     .hero {
-        margin-top: 150px;
+        margin-top: 130px;
     }
 
     /* 
