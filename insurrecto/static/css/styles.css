@@ -180,7 +180,7 @@ h3 {
 }
 
 .hero .hero-image {
-    margin-top: var(--XXL);
+    margin-top: 60px;
     width: 100%;
 }
 
