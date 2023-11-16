@@ -167,6 +167,7 @@ h3 {
 .logo {
     margin: 0 auto;
     display: block;
+    width: 208px;
 }
 
 .hero {
@@ -574,7 +575,7 @@ article.spotify .foot p a {
     */
 
     .container {
-        margin: 30px auto 0 auto;
+        margin: 50px auto 0 auto;
     }
 
     /* 
@@ -586,6 +587,10 @@ article.spotify .foot p a {
         font-size: 40px;
         line-height: 46px;
         margin-bottom: var(--L);
+    }
+
+    .logo {
+        width: 166px;
     }
 
     .hero {
