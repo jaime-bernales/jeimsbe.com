@@ -769,4 +769,10 @@ article.spotify .foot p a {
         height: 70px;
     }
 
+    article.spotify {
+        width: 100%;
+        height: 540px;
+        background-image: url(../img/section-discover/spotify_mobile.jpg);
+    }
+
 }
