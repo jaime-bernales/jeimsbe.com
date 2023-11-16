@@ -133,7 +133,7 @@ body {
     width: 100%;
     max-width: 1200px;
     padding: 0 var(--M);
-    margin: 90px auto 0 auto;
+    margin: 180px auto 0 auto;
 }
 
 /* 
@@ -167,11 +167,11 @@ h3 {
 .logo {
     margin: 0 auto;
     display: block;
-    width: 208px;
+    width: 240px;
 }
 
 .hero {
-    margin: 280px auto 120px auto;
+    margin: 100px auto 120px auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
