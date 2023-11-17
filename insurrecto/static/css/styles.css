@@ -243,10 +243,16 @@ section.age .question {
     border-radius: 45px;
 }
 
+.inactive {
+    opacity: 0;
+    transition: all 1s ease;
+}
+
 .logo {
     margin: 0 auto;
     display: block;
     width: 240px;
+    transition: all 2s ease;
 }
 
 .hero {
@@ -256,6 +262,7 @@ section.age .question {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    transition: all 2s ease;
 }
 
 .hero .hero-image {

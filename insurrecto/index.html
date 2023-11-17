@@ -37,7 +37,6 @@
         <div class="container">
 
             <section class="age">
-
                 <img class="logo" src="static/img/logo-white.svg" alt="Insurrecto Wines">
 
                 <p class="question">¿Sos mayor de 18 años?</p>
@@ -49,13 +48,11 @@
 
                     <span class="option">Si</span>
                 </div>
-
             </section>
 
-            <img class="logo" src="static/img/logo-black.svg" alt="Insurrecto Wines">
+            <img class="logo inactive" src="static/img/logo-black.svg" alt="Insurrecto Wines">
 
-            <section class="hero parallax">
-
+            <section class="hero parallax inactive">
                 <img class="desktop" src="static/img/welcome_desktop.svg" alt="Muchas veces se intenta moldear el espíritu libre del viñedo y, en ocasiones, la rebeldía de la viña termina por imponerse.">
                 <img class="mobile" src="static/img/welcome_mobile.svg" alt="Muchas veces se intenta moldear el espíritu libre del viñedo y, en ocasiones, la rebeldía de la viña termina por imponerse.">
 
@@ -63,7 +60,6 @@
                 <img class="hero-image mobile" src="static/img/hero_mobile.jpg" alt="Foto de Gualtallary, cordillera y viñas. Provincia de Mendoza.">
 
                 <img class="tree" src="static/img/tree.png">
-
             </section>
 
             <section>
@@ -375,17 +371,6 @@
               }
             });
 
-            option.click(function() {
-              option.addClass('active');
-              switchHandle.animate({
-                left: 0
-              }, 100);
-            });
-
-            switchArea.click(function() {
-              conditionMoveSnap();
-            });
-
             function conditionMove() {
               if(parseInt(switchHandle.css('left')) <= (sizeSwitch / 2)) {
                 switchHandle.animate({
@@ -394,26 +379,21 @@
                 ageContainer.removeClass('valid');
               }
               else {
+                window.scrollTo({
+                  top: 0
+                });
+
                 switchHandle.animate({
                   left: sizeSwitch + 'px'
                 }, 100);
-                ageContainer.addClass('valid');
-              }
-            }
 
-            function conditionMoveSnap() {
-              if(parseInt(switchHandle.css('left')) == sizeSwitch) {
-                switchHandle.animate({
-                  left: 0
-                }, 100);
-                ageContainer.removeClass('valid');
-
-              }
-              else {
-                switchHandle.animate({
-                  left: sizeSwitch + 'px'
-                }, 100);
                 ageContainer.addClass('valid');
+
+                setTimeout(function() {
+                    ageContainer.addClass('hidden');
+                    $('.inactive').removeClass('inactive');
+                }, 1000);
+
               }
             }
         </script>
