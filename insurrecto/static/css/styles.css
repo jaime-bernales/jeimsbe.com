@@ -207,6 +207,7 @@ section.age {
     display: block;
     cursor: move;
     border: 3px solid #FFFFFF;
+    background: #000000;
     height: 45px;
     width: 45px;
     border-radius: 45px;
