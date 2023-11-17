@@ -196,16 +196,23 @@ section.age .question {
 .switcher  .option {
     font-family: 'Almarai', sans-serif;
     color: #FFFFFF;
+    background-color: #030303;
     font-size: 16px;
     display: block;
     position: absolute;
     z-index: 12;
-    top: 2px;
-    right: 6px;
-    height: 60px;
-    line-height: 60px;
-    width: 53px;
+    top: 6px;
+    right: 8px;
+    line-height: 48px;
+    border-radius: 48px;
+    height: 48px;
+    width: 48px;
     text-align: center;
+}
+
+.switcher  .option.active {
+    background-color: #FFFFFF;
+    color: #000000;
 }
 
 .switcher  .switch {
@@ -650,7 +657,7 @@ article.spotify .foot p a {
 
     section.age .logo {
         width: 112px;
-        margin-top: 120px;
+        margin-top: 150px;
     }
 
     h2 {

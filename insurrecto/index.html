@@ -363,7 +363,7 @@
             var sizeSwitch = $('.switcher').width();
             sizeSwitch = sizeSwitch - 63;
             var switchHandle = $('.switch .handle');
-            var yes =  $('option');
+            var yes =  $('.option');
             var switchArea =  $('.switch');
 
             switchHandle.draggable({
@@ -391,13 +391,13 @@
                 switchHandle.animate({
                   left: 0
                 }, 100);
-                yes.addClass('active');
+                yes.removeClass('active');
               }
               else {
                 switchHandle.animate({
                   left: sizeSwitch + 'px'
                 }, 100);
-                yes.removeClass('active');
+                yes.addClass('active');
               }
             }
 
@@ -406,13 +406,13 @@
                 switchHandle.animate({
                   left: 0
                 }, 100);
-                yes.addClass('active');
+                yes.removeClass('active');
               }
               else {
                 switchHandle.animate({
                   left: sizeSwitch + 'px'
                 }, 100);
-                yes.removeClass('active');
+                yes.addClass('active');
               }
             }
         </script>
