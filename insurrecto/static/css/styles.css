@@ -173,8 +173,20 @@ section.age {
     background-color: #000000;
 }
 
+section.age .logo {
+    width: 150px;
+    margin: 250px auto 0 auto;
+}
+
+section.age .question {
+    font-size: 26px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 50px auto 0 auto;
+}
+
 .switcher {
-    width: 352px;
+    width: 350px;
     height: 60px;
     position: relative;
     z-index: 11;
@@ -635,6 +647,10 @@ article.spotify .foot p a {
         Content
         --------
     */
+
+    section.age .logo {
+        width: 112px;
+    }
 
     h2 {
         font-size: 40px;
