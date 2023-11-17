@@ -237,9 +237,9 @@ section.age .question {
     display: block;
     cursor: grab;
     border: 3px solid #FFFFFF;
-    background: #000000;
     height: 45px;
     width: 45px;
+    z-index: 14;
     border-radius: 45px;
 }
 
