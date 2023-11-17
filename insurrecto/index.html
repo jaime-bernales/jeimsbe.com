@@ -363,7 +363,8 @@
             var sizeSwitch = $('.switcher').width();
             sizeSwitch = sizeSwitch - 63;
             var switchHandle = $('.switch .handle');
-            var yes =  $('.option');
+            var option =  $('.option');
+            var ageContainer =  $('.age');
             var switchArea =  $('.switch');
 
             switchHandle.draggable({
@@ -374,8 +375,8 @@
               }
             });
 
-            yes.click(function() {
-              yes.addClass('active');
+            option.click(function() {
+              option.addClass('active');
               switchHandle.animate({
                 left: 0
               }, 100);
@@ -385,19 +386,18 @@
               conditionMoveSnap();
             });
 
-
             function conditionMove() {
               if(parseInt(switchHandle.css('left')) <= (sizeSwitch / 2)) {
                 switchHandle.animate({
                   left: 0
                 }, 100);
-                yes.removeClass('active');
+                ageContainer.removeClass('valid');
               }
               else {
                 switchHandle.animate({
                   left: sizeSwitch + 'px'
                 }, 100);
-                yes.addClass('active');
+                ageContainer.addClass('valid');
               }
             }
 
@@ -406,13 +406,14 @@
                 switchHandle.animate({
                   left: 0
                 }, 100);
-                yes.removeClass('active');
+                ageContainer.removeClass('valid');
+
               }
               else {
                 switchHandle.animate({
                   left: sizeSwitch + 'px'
                 }, 100);
-                yes.addClass('active');
+                ageContainer.addClass('valid');
               }
             }
         </script>
