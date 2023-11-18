@@ -201,8 +201,8 @@ section.age .question {
 
 .switcher .option {
     font-family: 'Almarai', sans-serif;
-    color: #FFFFFF;
-    background-color: #090909;
+    color: #888888;
+    background-color: #0B0B0B;
     font-size: 16px;
     display: block;
     position: absolute;
@@ -219,7 +219,6 @@ section.age .question {
 .switcher .option.left {
     right: auto;
     left: 8px;
-    color: #666666;
 }
 
 .switcher .switch {
