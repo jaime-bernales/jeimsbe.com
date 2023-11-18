@@ -821,6 +821,10 @@ article.spotify .foot p a {
         margin: 0;
     }
 
+    article.news .new {
+        display: block;
+    }
+
     article.news .text-label {
         margin-top: var(--L);
     }
