@@ -199,7 +199,7 @@ section.age .question {
     margin: 45px auto 0 auto;
 }
 
-.switcher  .option {
+.switcher .option {
     font-family: 'Almarai', sans-serif;
     color: #FFFFFF;
     background-color: #090909;
@@ -216,9 +216,10 @@ section.age .question {
     text-align: center;
 }
 
-.valid .switcher .option {
-    background-color: #FFFFFF;
-    transition: all 0.6s ease;
+.switcher .option.left {
+    right: auto;
+    left: 8px;
+    color: #666666;
 }
 
 .switcher .switch {
@@ -233,6 +234,12 @@ section.age .question {
     transition: all 0.6s ease;
 }
 
+.valid .switcher .option {
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+    transition: all 0.6s ease;
+}
+
 .switch .handle {
     display: block;
     cursor: grab;
@@ -240,6 +247,7 @@ section.age .question {
     height: 45px;
     width: 45px;
     z-index: 14;
+    left: calc(50% - 22px);
     border-radius: 45px;
 }
 
@@ -413,10 +421,15 @@ article.contact,
 article.news {
     margin: 60px 0 150px 0;
     width: 50%;
-    height: 220px;
+    height: 250px;
     padding: 50px 70px;
     float: left;
     border: 1px solid var(--light);
+}
+
+article.news .new {
+    display: flex;
+    flex-direction: row;
 }
 
 article.contact {
@@ -461,14 +474,29 @@ article.news #new-1 .photo {
     background-color: #000000;
 }
 
+article.news .text-info {
+    width: calc(100% - 180px);
+    margin: 0;
+}
+
+article.news .details {
+    display: block;
+    width: 100%;
+    min-width: 278px;
+    margin-bottom: var(--M);
+    max-height: 78px;
+    overflow-y: hidden;
+}
+
 article.news .read-more {
     font-family: 'Almarai', sans-serif;
+    line-height: 20px;
     display: inline-block;
     font-size: var(--M);
     cursor: pointer;
+    min-width: 66px;
     border-bottom: 1px solid #000000;
 }
-
 /* 
     Vineyards
     ---------

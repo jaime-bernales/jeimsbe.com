@@ -46,6 +46,7 @@
                         <span class="handle"></span>
                     </div>
 
+                    <span class="option left">No</span>
                     <span class="option">Si</span>
                 </div>
             </section>
@@ -223,17 +224,19 @@
                 </article>
 
                 <article class="news">
-                    <div id="new-1">
+                    <div class="new" id="new-1">
                         <span class="photo"></span>
 
-                        <span class="text-label">Noticias</span>
-
                         <p class="text-info">
-                            Participamos de la feria anual (8va edición) organizada por Gorros Wine.
-                        </p>
+                            <span class="text-label">Noticias</span>
 
-                        <p class="text-info">
-                            <span class="read-more">Leer más</span>
+                            <span class="details">
+                                Participamos de la feria anual (8va edición) organizada por Gorros Wine.
+                            </span>
+
+                            <span class="read-more">
+                                Leer más
+                            </span>
                         </p>
                     </div>
                 </article>
@@ -405,7 +408,10 @@
                   left: sizeSwitch + 'px'
                 }, 100);
 
-                ageContainer.addClass('valid');
+
+                setTimeout(function() {
+                    ageContainer.addClass('valid');
+                }, 600);
 
                 setTimeout(function() {
                     ageContainer.addClass('hidden');
