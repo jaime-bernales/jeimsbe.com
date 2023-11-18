@@ -67,13 +67,15 @@
                 <h3>Conocé nuestros distintos vinos. <br>Encontralos <span class="link">online</span>.</h3>
 
                 <ul class="tab-container">
-                    <li class="item active">
+                    <li class="item active" id="tab-malbec">
                         Malbec
                     </li>
 
-                    <li class="item">
+                    <li class="item" id="tab-blend">
                         Blend
                     </li>
+
+                    <span class="marker tab-malbec"></span>
                 </ul>
 
                 <article class="wine-details" id="malbec-2021">
@@ -356,6 +358,22 @@
                 )`
             });
 
+            $('.tab-container #tab-malbec').click(function(){
+                $('.tab-container .item').removeClass('active');
+                $(this).addClass('active');
+
+                $('.tab-container .marker').removeClass('tab-blend');
+                $('.tab-container .marker').addClass('tab-malbec');
+            });
+
+            $('.tab-container #tab-blend').click(function(){
+                $('.tab-container .item').removeClass('active');
+                $(this).addClass('active');
+
+                $('.tab-container .marker').removeClass('tab-malbec');
+                $('.tab-container .marker').addClass('tab-blend');
+            });
+
             var sizeSwitch = $('.switcher').width();
             sizeSwitch = sizeSwitch - 63;
             var switchHandle = $('.switch .handle');
@@ -396,6 +414,8 @@
 
               }
             }
+
+
         </script>
     </body>
 
