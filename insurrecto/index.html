@@ -379,7 +379,7 @@
             });
 
             var sizeSwitch = $('.switcher').width();
-            sizeSwitch = sizeSwitch - 63;
+            //sizeSwitch = sizeSwitch - 63;
             var switchHandle = $('.switch .handle');
             var option =  $('.option');
             var ageContainer =  $('.age');
@@ -394,7 +394,7 @@
             });
 
             function conditionMove() {
-              if(parseInt(switchHandle.css('left')) <= (sizeSwitch / 2 + 30)) {
+              if(parseInt(switchHandle.css('left')) <= (sizeSwitch / 2)) {
                 switchHandle.animate({
                   left: 0
                 }, 100);
