@@ -394,7 +394,7 @@
             });
 
             function conditionMove() {
-              if(parseInt(switchHandle.css('left')) <= (sizeSwitch / 2)) {
+              if(parseInt(switchHandle.css('left')) <= (sizeSwitch / 2 + 30)) {
                 switchHandle.animate({
                   left: 0
                 }, 100);
