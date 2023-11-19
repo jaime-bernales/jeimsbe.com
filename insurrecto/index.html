@@ -39,7 +39,8 @@
             <section class="age">
                 <img class="logo" src="static/img/logo-white.svg" alt="Insurrecto Wines">
 
-                <p class="question">¿Sos mayor de 18 años?</p>
+                <p class="question">¿Sos mayor de edad?</p>
+                <p class="statement">Al seleccionar “Si” declaro que tengo edad<br> legal para consumir alcohol.</p>
 
                 <div class="switcher">
                     <div class="switch">
@@ -398,6 +399,12 @@
                   left: 0
                 }, 100);
                 ageContainer.removeClass('valid');
+                switchHandle.removeClass('yes');
+
+                setTimeout(function() {
+                    switchHandle.addClass('no');
+                }, 100);
+
               }
               else {
                 window.scrollTo({
@@ -406,6 +413,12 @@
 
                 switchHandle.animate({
                   left: sizeSwitch + 'px'
+                }, 100);
+
+                switchHandle.removeClass('no');
+
+                setTimeout(function() {
+                    switchHandle.addClass('yes');
                 }, 100);
 
 

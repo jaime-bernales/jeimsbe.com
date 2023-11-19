@@ -181,7 +181,7 @@ section.age.valid {
 
 section.age .logo {
     width: 150px;
-    margin: 250px auto 0 auto;
+    margin: 150px auto 0 auto;
 }
 
 section.age .question {
@@ -189,6 +189,14 @@ section.age .question {
     color: #FFFFFF;
     text-align: center;
     margin: 50px auto 0 auto;
+}
+
+section.age .statement {
+    color: #CCCCCC;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: var(--M);
 }
 
 .switcher {
@@ -202,23 +210,30 @@ section.age .question {
 .switcher .option {
     font-family: 'Almarai', sans-serif;
     color: #888888;
-    background-color: #0B0B0B;
+    background-color: #000000;
     font-size: 16px;
     display: block;
     position: absolute;
     z-index: 12;
     top: 6px;
-    right: 8px;
+    right: 16px;
     line-height: 48px;
     border-radius: 48px;
     height: 48px;
-    width: 48px;
-    text-align: center;
+    width: 64px;
+    text-align: left;
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-image: url(../img/icons/icon-chevronnext.svg);
+    background-position: right 0px center;
 }
 
 .switcher .option.left {
+    text-align: right;
     right: auto;
-    left: 8px;
+    left: 16px;
+    background-image: url(../img/icons/icon-chevronprev.svg);
+    background-position: left 0px center;
 }
 
 .switcher .switch {
@@ -235,7 +250,7 @@ section.age .question {
 
 .valid .switcher .option {
     color: #FFFFFF;
-    background-color: #FFFFFF;
+    background: #FFFFFF;
     transition: all 0.6s ease;
 }
 
@@ -248,6 +263,23 @@ section.age .question {
     z-index: 14;
     left: calc(50% - 22px);
     border-radius: 45px;
+    transition: all 0.2s ease;
+}
+
+.switch .handle.no {
+    width: 104px !important;
+    transition: all 0.2s ease;
+}
+
+.switch .handle.yes {
+    width: 104px !important;
+    left: auto !important;
+    right: calc(-60% - 29px)!important;
+    transition: all 0.2s ease;
+}
+
+.switch .handle:active {
+    width: 45px !important;
 }
 
 .inactive {
