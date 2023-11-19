@@ -40,7 +40,7 @@
                 <img class="logo" src="static/img/logo-white.svg" alt="Insurrecto Wines">
 
                 <p class="question">¿Sos mayor de edad?</p>
-                <p class="statement">Al seleccionar “Si” declaro que tengo edad<br> legal para consumir alcohol.</p>
+                <p class="statement">Al seleccionar “Si” declaro que tengo edad legal para consumir alcohol.</p>
 
                 <div class="switcher">
                     <div class="switch">
@@ -403,6 +403,8 @@
 
                 setTimeout(function() {
                     switchHandle.addClass('no');
+                    $('.age .question').text('Insurrecto Wines');
+                    $('.age .statement').text('Para navegar en el sitio debés tener la edad legal para consumir alcohol.');
                 }, 100);
 
               }
@@ -421,8 +423,8 @@
                     switchHandle.addClass('yes');
                 }, 100);
 
-
                 setTimeout(function() {
+                    switchHandle.css("width", "104px");
                     ageContainer.addClass('valid');
                 }, 600);
 
