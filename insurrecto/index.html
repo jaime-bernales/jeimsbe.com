@@ -394,8 +394,7 @@
             });
 
             function conditionMove() {
-              if(parseInt(switchHandle.css('left')) <= (sizeSwitch / 2)) {
-                console.log(sizeSwitch);
+              if(parseInt(switchHandle.css('left')) < (sizeSwitch / 2)) {
                 switchHandle.animate({
                   left: 0
                 }, 100);
@@ -405,6 +404,7 @@
 
                 setTimeout(function() {
                     switchHandle.addClass('no');
+                    switchHandle.css("width", "96px");
                     $('.age .question').text('Insurrecto Wines');
                     $('.age .statement').text('Para navegar en el sitio debés tener la edad legal para consumir alcohol.');
                 }, 100);
@@ -412,7 +412,7 @@
               }
               else {
                 switchHandle.removeClass('no');
-                switchHandle.css("width", "104px");
+                switchHandle.css("width", "96px");
 
                 window.scrollTo({
                   top: 0
