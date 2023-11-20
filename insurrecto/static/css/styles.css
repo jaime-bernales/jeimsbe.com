@@ -216,6 +216,7 @@ section.age .statement {
     font-size: 16px;
     display: block;
     position: absolute;
+    cursor: pointer;
     z-index: 12;
     top: 6px;
     right: 16px;

@@ -47,8 +47,8 @@
                         <span class="handle"></span>
                     </div>
 
-                    <span class="option left">No</span>
-                    <span class="option">Si</span>
+                    <span class="option left" id="optionNo">No</span>
+                    <span class="option" id="optionYes">Si</span>
                 </div>
             </section>
 
@@ -382,19 +382,12 @@
             sizeSwitch = sizeSwitch - 63;
             var switchHandle = $('.switch .handle');
             var option =  $('.option');
+            var optionYes =  $('#optionYes');
+            var optionNo =  $('#optionNo');
             var ageContainer =  $('.age');
             var switchArea =  $('.switch');
 
-            switchHandle.draggable({
-              axis: 'x',
-              containment: 'parent',
-              stop: function() {
-                conditionMove();
-              }
-            });
-
-            function conditionMove() {
-              if(parseInt(switchHandle.css('left')) < (sizeSwitch / 2)) {
+            function moveNo(){
                 switchHandle.animate({
                   left: 0
                 }, 100);
@@ -408,9 +401,9 @@
                     $('.age .question').text('Insurrecto Wines');
                     $('.age .statement').text('Para navegar en el sitio debés tener la edad legal para consumir alcohol.');
                 }, 100);
+            };
 
-              }
-              else {
+            function moveYes(){
                 switchHandle.removeClass('no');
                 switchHandle.css("width", "96px");
 
@@ -419,7 +412,7 @@
                 });
 
                 switchHandle.animate({
-                  left: sizeSwitch - 59 + 'px'
+                  left: sizeSwitch - 49 + 'px'
                 }, 100);
 
                 setTimeout(function() {
@@ -430,7 +423,31 @@
                     ageContainer.addClass('hidden');
                     $('.inactive').removeClass('inactive');
                 }, 1000);
+            };
 
+            switchHandle.draggable({
+              axis: 'x',
+              containment: 'parent',
+              stop: function() {
+                conditionMove();
+              }
+            });
+
+            optionNo.click(function() {
+                moveNo();
+            });
+
+            optionYes.click(function() {
+                moveYes();
+            });
+
+
+            function conditionMove() {
+              if(parseInt(switchHandle.css('left')) < (sizeSwitch / 2)) {
+                moveNo();
+              }
+              else {
+                moveYes();
               }
             }
 
