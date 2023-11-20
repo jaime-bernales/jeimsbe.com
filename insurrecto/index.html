@@ -379,7 +379,7 @@
             });
 
             var sizeSwitch = $('.switcher').width();
-            //sizeSwitch = sizeSwitch - 63;
+            sizeSwitch = sizeSwitch - 63;
             var switchHandle = $('.switch .handle');
             var option =  $('.option');
             var ageContainer =  $('.age');
@@ -395,9 +395,11 @@
 
             function conditionMove() {
               if(parseInt(switchHandle.css('left')) <= (sizeSwitch / 2)) {
+                console.log(sizeSwitch);
                 switchHandle.animate({
                   left: 0
                 }, 100);
+
                 ageContainer.removeClass('valid');
                 switchHandle.removeClass('yes');
 
@@ -409,22 +411,18 @@
 
               }
               else {
+                switchHandle.removeClass('no');
+                switchHandle.css("width", "104px");
+
                 window.scrollTo({
                   top: 0
                 });
 
                 switchHandle.animate({
-                  left: sizeSwitch + 'px'
-                }, 100);
-
-                switchHandle.removeClass('no');
-
-                setTimeout(function() {
-                    switchHandle.addClass('yes');
+                  left: sizeSwitch - 59 + 'px'
                 }, 100);
 
                 setTimeout(function() {
-                    switchHandle.css("width", "104px");
                     ageContainer.addClass('valid');
                 }, 600);
 
