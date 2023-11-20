@@ -45,11 +45,11 @@ switchHandle.draggable({
 });
 
 function conditionMove() {
-    if(parseInt(switchHandle.css('left')) < (sizeSwitch / 2)) {
+    if(parseInt(switchHandle.css('left')) < (sizeSwitch / 2) - 20) {
         moveNo();
     }
 
-    if(parseInt(switchHandle.css('left')) > (sizeSwitch / 2)) {
+    if(parseInt(switchHandle.css('left')) > (sizeSwitch / 2) + 20) {
         moveYes();
     }
 }
