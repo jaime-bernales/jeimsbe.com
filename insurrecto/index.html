@@ -344,6 +344,7 @@
         <script type="text/javascript" src="static/js/jquery-3.6.0.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
         <script type="text/javascript" src="static/js/jquery.ui.touch-punch.js"></script>
+        <script type="text/javascript" src="static/js/valida.js"></script>
 
         <script>
             const parallax = document.querySelector('.hero');
@@ -377,78 +378,6 @@
                 $('.tab-container .marker').removeClass('tab-malbec');
                 $('.tab-container .marker').addClass('tab-blend');
             });
-
-            var sizeSwitch = $('.switcher').width();
-            sizeSwitch = sizeSwitch - 63;
-            var switchHandle = $('.switch .handle');
-            var option =  $('.option');
-            var optionYes =  $('#optionYes');
-            var optionNo =  $('#optionNo');
-            var ageContainer =  $('.age');
-            var switchArea =  $('.switch');
-
-            function moveNo(){
-
-                switchHandle.removeClass('yes');
-
-                setTimeout(function() {
-                    switchHandle.addClass('no');
-                    switchHandle.css("width", "96px");
-                    $('.age .question').text('Insurrecto Wines');
-                    $('.age .statement').text('Para navegar en el sitio debés tener la edad legal para consumir alcohol.');
-                }, 100);
-            };
-
-            function moveYes(){
-                switchHandle.removeClass('no');
-
-                setTimeout(function() {
-                    switchHandle.addClass('yes');
-                    switchHandle.css("width", "96px");
-                }, 100);
-
-                window.scrollTo({
-                  top: 0
-                });
-
-                setTimeout(function() {
-                    ageContainer.addClass('valid');
-                }, 600);
-
-                setTimeout(function() {
-                    ageContainer.addClass('hidden');
-                    $('.inactive').removeClass('inactive');
-                }, 1000);
-            };
-
-            switchHandle.draggable({
-              axis: 'x',
-              containment: 'parent',
-              stop: function() {
-                conditionMove();
-              }
-            });
-
-            optionNo.click(function() {
-                moveNo();
-            });
-
-            optionYes.click(function() {
-                moveYes();
-            });
-
-
-            function conditionMove() {
-              if(parseInt(switchHandle.css('left')) < (sizeSwitch / 2)) {
-                moveNo();
-              }
-
-
-              if(parseInt(switchHandle.css('left')) > (sizeSwitch / 2)) {
-                moveYes();
-              }
-            }
-
 
         </script>
     </body>
