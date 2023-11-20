@@ -386,14 +386,25 @@ section.age .statement {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center top;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.wine-details.active {
+    opacity: 1;
     padding: 60px 0 0 0;
     min-height: 1060px;
+    height: auto;
 }
 
 .wine-details#malbec-2021 {
     background-image: url(../img/section-nuestrosvinos/malbec-2021.jpg);
 }
 
+.wine-details#blend-2021 {
+    background-image: url(../img/section-nuestrosvinos/malbec-2021.jpg);
+}
 .wine-details h4 {
     font-family: 'AbhayaLibre-ExtraBold', serif;
     width: 400px;
@@ -409,7 +420,7 @@ section.age .statement {
 }
 
 .wine-details .right-side {
-    margin-top: 70px;
+    margin-top: 190px;
 }
 
 .wine-details .right-side .text-content,
