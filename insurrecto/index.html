@@ -446,7 +446,8 @@
               if(parseInt(switchHandle.css('left')) < (sizeSwitch / 2)) {
                 moveNo();
               }
-              else {
+
+              if(parseInt(switchHandle.css('left')) > (sizeSwitch / 2)) {
                 moveYes();
               }
             }
