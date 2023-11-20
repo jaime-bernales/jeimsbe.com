@@ -269,6 +269,14 @@ section.age .statement {
     transition: all 0.2s ease;
 }
 
+.switch .handle.no {
+    left: 0 !important;
+}
+
+.switch .handle.yes {
+    left: calc(100% - 98px)!important;
+}
+
 .switch .handle:active {
     width: 45px !important;
 }

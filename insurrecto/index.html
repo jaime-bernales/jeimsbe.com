@@ -388,11 +388,7 @@
             var switchArea =  $('.switch');
 
             function moveNo(){
-                switchHandle.animate({
-                  left: 0
-                }, 100);
 
-                ageContainer.removeClass('valid');
                 switchHandle.removeClass('yes');
 
                 setTimeout(function() {
@@ -405,15 +401,15 @@
 
             function moveYes(){
                 switchHandle.removeClass('no');
-                switchHandle.css("width", "96px");
+
+                setTimeout(function() {
+                    switchHandle.addClass('yes');
+                    switchHandle.css("width", "96px");
+                }, 100);
 
                 window.scrollTo({
                   top: 0
                 });
-
-                switchHandle.animate({
-                  left: sizeSwitch - 49 + 'px'
-                }, 100);
 
                 setTimeout(function() {
                     ageContainer.addClass('valid');
@@ -446,6 +442,7 @@
               if(parseInt(switchHandle.css('left')) < (sizeSwitch / 2)) {
                 moveNo();
               }
+
 
               if(parseInt(switchHandle.css('left')) > (sizeSwitch / 2)) {
                 moveYes();
