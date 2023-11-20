@@ -207,6 +207,7 @@ section.age .statement {
     position: relative;
     z-index: 11;
     margin: 45px auto 0 auto;
+    overflow: hidden;
 }
 
 .switcher .option {

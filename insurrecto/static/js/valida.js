@@ -38,18 +38,17 @@ function moveYes(){
 
 switchHandle.draggable({
   axis: 'x',
-  containment: 'parent',
   stop: function() {
     conditionMove();
   }
 });
 
 function conditionMove() {
-    if(parseInt(switchHandle.css('left')) < (sizeSwitch / 2) - 20) {
+    if(parseInt(switchHandle.css('left')) < (sizeSwitch / 2)) {
         moveNo();
     }
 
-    if(parseInt(switchHandle.css('left')) > (sizeSwitch / 2) + 20) {
+    if(parseInt(switchHandle.css('left')) > (sizeSwitch / 2)) {
         moveYes();
     }
 }
