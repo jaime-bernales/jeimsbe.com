@@ -52,23 +52,16 @@ switchArea.click(function() {
 function conditionMove() {
     if(parseInt(switchHandle.css('left')) <= (sizeSwitch / 2)) {
         setTimeout(function() {
-            switchHandle.animate({
-              left: 0
-            }, 100);
-
             switchHandle.css("width", "96px");
-
+            switchHandle.css("left", "0");
             $('.age .question').text('Insurrecto Wines');
             $('.age .statement').text('Para navegar en el sitio debés tener la edad legal para consumir alcohol.');
         }, 100);
   }
   else {
     setTimeout(function() {
-        //switchHandle.css("left", "calc(100% - 96px)");
-        switchHandle.animate({
-          left: sizeSwitch - 50 + 'px'
-        }, 100);
         switchHandle.css("width", "96px");
+        switchHandle.css("left", "calc(100% - 96px)");
     }, 100);
 
     window.scrollTo({
