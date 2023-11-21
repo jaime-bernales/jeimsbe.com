@@ -1,3 +1,5 @@
+// Age validation
+
 var sizeSwitch = $('.switcher').width();
 sizeSwitch = sizeSwitch - 63;
 var switchHandle = $('.switch .handle');
@@ -74,3 +76,69 @@ function conditionMove() {
     }, 1000);
   }
 }
+
+// Pairings slides
+var malbecActiveParing = 1;
+var blendActiveParing = 1;
+
+$('.malbec .pairing-container .next').click(function(){
+    malbecActiveParing++;
+
+    if(malbecActiveParing > 4) {
+        malbecActiveParing = 1;
+        $('.malbec #pair-malbec-1').removeClass('hidden');
+    }
+
+    var malbecParing = "#pair-malbec-" + malbecActiveParing;
+    $('.malbec .pairing-container').addClass('hidden');
+    $(this).closest('.pairing').find(malbecParing).removeClass('hidden');
+});
+
+$('.malbec .pairing-container .prev').click(function(){
+    if(malbecActiveParing == 1) {
+        malbecActiveParing = 4;
+        $('.malbec #pair-malbec-1').removeClass('hidden');
+        console.log(malbecParing);
+    }
+
+    else {
+        malbecActiveParing--;
+    }
+
+    var malbecParing = "#pair-malbec-" + malbecActiveParing;
+    $('.malbec .pairing-container').addClass('hidden');
+    $(this).closest('.pairing').find(malbecParing).removeClass('hidden');
+});
+
+//--------------------------
+
+$('.blend .pairing-container .next').click(function(){
+    blendActiveParing++;
+
+    if(blendActiveParing > 4) {
+        blendActiveParing = 1;
+        $('.blend #pair-blend-1').removeClass('hidden');
+    }
+
+    var blendParing = "#pair-blend-" + blendActiveParing;
+    $('.blend .pairing-container').addClass('hidden');
+    $(this).closest('.pairing').find(blendParing).removeClass('hidden');
+});
+
+$('.blend .pairing-container .prev').click(function(){
+    if(blendActiveParing == 1) {
+        blendActiveParing = 4;
+        $('.blend #pair-blend-1').removeClass('hidden');
+        console.log(blendParing);
+    }
+
+    else {
+        blendActiveParing--;
+    }
+
+    var blendParing = "#pair-blend-" + blendActiveParing;
+    $('.blend .pairing-container').addClass('hidden');
+    $(this).closest('.pairing').find(blendParing).removeClass('hidden');
+});
+
+

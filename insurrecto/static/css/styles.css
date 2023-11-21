@@ -681,8 +681,32 @@ section.discover .pairing #pair-malbec-1 .photo {
     background-image: url(../img/section-discover/pair-malbec-1.jpg);
 }
 
+section.discover .pairing #pair-malbec-2 .photo {
+    background-image: url(../img/section-discover/pair-malbec-2.jpg);
+}
+
+section.discover .pairing #pair-malbec-3 .photo {
+    background-image: url(../img/section-discover/pair-malbec-3.jpg);
+}
+
+section.discover .pairing #pair-malbec-4 .photo {
+    background-image: url(../img/section-discover/pair-malbec-4.jpg);
+}
+
 section.discover .pairing #pair-blend-1 .photo {
     background-image: url(../img/section-discover/pair-blend-1.jpg);
+}
+
+section.discover .pairing #pair-blend-2 .photo {
+    background-image: url(../img/section-discover/pair-blend-2.jpg);
+}
+
+section.discover .pairing #pair-blend-3 .photo {
+    background-image: url(../img/section-discover/pair-blend-3.jpg);
+}
+
+section.discover .pairing #pair-blend-4 .photo {
+    background-image: url(../img/section-discover/pair-blend-4.jpg);
 }
 
 article.spotify {
