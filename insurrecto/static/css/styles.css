@@ -399,12 +399,13 @@ section.age .statement {
 }
 
 .wine-details#malbec-2021 {
-    background-image: url(../img/section-nuestrosvinos/malbec-2021.jpg);
+    background-image: url(../img/section-nuestrosvinos/malbec-2021_desktop.jpg);
 }
 
 .wine-details#blend-2021 {
-    background-image: url(../img/section-nuestrosvinos/malbec-2021.jpg);
+    background-image: url(../img/section-nuestrosvinos/malbec-2021_desktop.jpg);
 }
+
 .wine-details h4 {
     font-family: 'AbhayaLibre-ExtraBold', serif;
     width: 400px;
@@ -814,17 +815,35 @@ article.spotify .foot p a {
         --------------
     */
 
-    .wine-details {
-        padding: 60px 0 0 0;
-        min-height: 1060px;
-    }
-
-    .wine-details#malbec-2021 {
+    .wine-details#malbec-2021,
+    .wine-details#blend-2021 {
         background-image: none;
     }
 
-    .wine-details .left-side, .wine-details .right-side {
+    .wine-details {
         width: 100%;
+        overflow-x: scroll;
+    }
+
+    .wine-details .left-side, 
+    .wine-details .right-side {
+        width: 33%;
+        float: left;
+        margin: 0;
+    }
+
+    .wine-details .wine-content {
+        width: 300%;
+    }
+
+    .wine-details#malbec-2021 .wine-bottle {
+        float: left;
+        width: 33%;
+        height: 570px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center bottom;
+        background-image: url(../img/section-nuestrosvinos/malbec-2021_mobile.jpg);
     }
 
     .wine-details h4 {
