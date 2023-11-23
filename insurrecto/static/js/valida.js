@@ -78,6 +78,7 @@ function conditionMove() {
 }
 
 // Pairings slides
+
 var malbecActiveParing = 1;
 var blendActiveParing = 1;
 
@@ -141,4 +142,30 @@ $('.blend .pairing-container .prev').click(function(){
     $(this).closest('.pairing').find(blendParing).removeClass('hidden');
 });
 
+// Stepper
 
+$('.wine-details#malbec-2021').scroll(function() {
+    var scrollLeft = $(this).scrollLeft();
+    var ancho = this.scrollWidth;
+
+    if(scrollLeft < ancho / 3) {
+        console.log(scrollLeft);
+        $('.stepper .step').removeClass('active');
+        $('.stepper #step-1').addClass('active');
+    }
+
+    if(scrollLeft > ancho / 3 && scrollLeft < ancho / 3 * 2) {
+        console.log(scrollLeft);
+
+        $('.stepper .step').removeClass('active');
+        $('.stepper #step-2').addClass('active');
+    }
+
+    if(scrollLeft >= ancho / 3 * 2) {
+        console.log(scrollLeft);
+
+        $('.stepper .step').removeClass('active');
+        $('.stepper #step-3').addClass('active');
+    }
+
+});
