@@ -144,26 +144,21 @@ $('.blend .pairing-container .prev').click(function(){
 
 // Stepper
 
-$('.wine-details#malbec-2021').scroll(function() {
+$('.wine-details#malbec-2021, .wine-details#blend-2021').scroll(function() {
     var scrollLeft = $(this).scrollLeft();
     var ancho = this.scrollWidth;
 
     if(scrollLeft < ancho / 3) {
-        console.log(scrollLeft);
         $('.stepper .step').removeClass('active');
         $('.stepper #step-1').addClass('active');
     }
 
-    if(scrollLeft > ancho / 3 && scrollLeft < ancho / 3 * 2) {
-        console.log(scrollLeft);
-
+    if(scrollLeft > ancho / 3 - 30 && scrollLeft < ancho / 3 * 2) {
         $('.stepper .step').removeClass('active');
         $('.stepper #step-2').addClass('active');
     }
 
     if(scrollLeft >= ancho / 3 * 2) {
-        console.log(scrollLeft);
-
         $('.stepper .step').removeClass('active');
         $('.stepper #step-3').addClass('active');
     }

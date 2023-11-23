@@ -841,7 +841,7 @@ article.spotify .foot p a {
         width: 300%;
     }
 
-    .wine-details#malbec-2021 .wine-bottle {
+    .wine-details .wine-bottle {
         float: left;
         width: 33%;
         height: 570px;
@@ -864,7 +864,7 @@ article.spotify .foot p a {
         display: flex !important;
         justify-content: center;
         align-items: center;
-        margin: -110px 0 170px 0;
+        margin: var(--XL) 0 120px 0;
     }
 
     .stepper .step {
