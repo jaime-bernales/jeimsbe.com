@@ -498,6 +498,10 @@ section.age .statement {
     cursor: default;
 }
 
+.year-selector .btn:hover {
+    box-shadow: inset 0 0 0 0 #FFFFFF;
+}
+
 /* 
     Nosotros
     --------
@@ -788,11 +792,40 @@ article.spotify .foot p a {
     border-color: #FFFFFF;
 }
 
+/* 
+    Fermentación
+    ------------
+*/
 
+body.ferment .container {
+    margin-top: 80px;
+}
 
+body.ferment .hero-ferment {
+    width: 100%;
+}
 
+.logo-gray {
+    display: block;
+    margin: 90px auto 60px auto;
+}
 
+body.ferment h3 {
+    margin-bottom: 80px;
+}
 
+body.ferment .content {
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto 0 auto;
+}
+
+body.ferment .text-label {
+    width: 100%;
+    padding-bottom: 12px;
+    margin-bottom: var(--L);
+    border-bottom: 1px solid #E1E1E1;
+}
 
 
 
@@ -1064,6 +1097,15 @@ article.spotify .foot p a {
         height: 540px;
         background-image: url(../img/section-discover/spotify_mobile.jpg);
         background-size: cover;
+    }
+
+    /* 
+        Fermentación
+        ------------
+    */
+
+    body.ferment .container {
+        margin-top: var(--M);
     }
 
 }

@@ -55,11 +55,11 @@
             <img class="logo inactive" src="static/img/logo-black.svg" alt="Insurrecto Wines">
 
             <section class="hero parallax inactive">
-                <img class="desktop" src="static/img/welcome_desktop.svg" alt="Muchas veces se intenta moldear el espíritu libre del viñedo y, en ocasiones, la rebeldía de la viña termina por imponerse.">
-                <img class="mobile" src="static/img/welcome_mobile.svg" alt="Muchas veces se intenta moldear el espíritu libre del viñedo y, en ocasiones, la rebeldía de la viña termina por imponerse.">
+                <img class="desktop" src="static/img/page-home/welcome_desktop.svg" alt="Muchas veces se intenta moldear el espíritu libre del viñedo y, en ocasiones, la rebeldía de la viña termina por imponerse.">
+                <img class="mobile" src="static/img/page-home/welcome_mobile.svg" alt="Muchas veces se intenta moldear el espíritu libre del viñedo y, en ocasiones, la rebeldía de la viña termina por imponerse.">
 
-                <img class="hero-image desktop" src="static/img/hero_desktop.jpg" alt="Foto de Gualtallary, cordillera y viñas. Provincia de Mendoza.">
-                <img class="hero-image mobile" src="static/img/hero_mobile.jpg" alt="Foto de Gualtallary, cordillera y viñas. Provincia de Mendoza.">
+                <img class="hero-image desktop" src="static/img/page-home/hero_desktop.jpg" alt="Foto de Gualtallary, cordillera y viñas. Provincia de Mendoza.">
+                <img class="hero-image mobile" src="static/img/page-home/hero_mobile.jpg" alt="Foto de Gualtallary, cordillera y viñas. Provincia de Mendoza.">
 
                 <img class="tree" src="static/img/section-nuestrosvinos/tree.png">
             </section>
@@ -179,8 +179,8 @@
                 <article class="wine-details" id="blend-2021">
 
                     <div class="year-selector">
-                        <span class="btn active mr-m">2021</span>
-                        <span class="btn">2017</span>
+                        <span class="btn active mr-m" id="cta-2021">2021</span>
+                        <span class="btn" id="cta-2017">2017</span>
                     </div>
 
                     <h4>
@@ -195,7 +195,7 @@
                                     <p class="text-info">Tupungato,<br>Mendoza</p>
                                 </li>
 
-                                <li style="width: calc(50% + 20px)">
+                                <li class="wine-2021" style="width: calc(50% + 20px)">
                                     <span class="text-label">Variedad</span>
                                     <p class="text-info">
                                         <span class="block">Malbec 38%</span>
@@ -204,17 +204,37 @@
                                         <span class="block">Cabernet Franc 12%</span>
                                     </p>
                                 </li>
+
+                                <li class="wine-2017 hidden" style="width: calc(50% + 20px)">
+                                    <span class="text-label">Variedad</span>
+                                    <p class="text-info">
+                                        <span class="block">Malbec 39%</span>
+                                        <span class="block">Merlot 31%</span>
+                                        <span class="block">Cabernet Sauvignon 20%</span>
+                                        <span class="block">Cabernet Franc 9%</span>
+                                    </p>
+                                </li>
                             </ul>
 
                             <ul class="text-content">
-                                <li>
+                                <li class="wine-2021">
                                     <span class="text-label">Añada</span>
                                     <p class="text-info">2021</p>
                                 </li>
 
-                                <li>
+                                <li class="wine-2017 hidden">
+                                    <span class="text-label">Añada</span>
+                                    <p class="text-info">2017</p>
+                                </li>
+
+                                <li class="wine-2021">
                                     <span class="text-label">En barrica</span>
                                     <p class="text-info">12 meses</p>
+                                </li>
+
+                                <li class="wine-2017 hidden">
+                                    <span class="text-label">En barrica</span>
+                                    <p class="text-info">14 meses</p>
                                 </li>
                             </ul>
 
@@ -243,7 +263,7 @@
                             </ul>
 
                             <div class="btn">
-                                <img src="static/img/icons/icon-cart.svg"> Comprar
+                                <img class="black" src="static/img/icons/icon-cart.svg"><img class="white" src="static/img/icons/icon-cart_white.svg"> Comprar
                             </div>
                         </div>
 
@@ -585,6 +605,21 @@
                 $('.stepper #step-1').addClass('active');
             });
 
+            // Year 2021
+            $('.year-selector #cta-2021').click(function(){
+                $('.year-selector #cta-2017').removeClass('active');
+                $(this).addClass('active');
+                $('.wine-2017').addClass('hidden');
+                $('.wine-2021').removeClass('hidden');
+            });
+
+            // Year 2017
+            $('.year-selector #cta-2017').click(function(){
+                $('.year-selector #cta-2021').removeClass('active');
+                $(this).addClass('active');
+                $('.wine-2021').addClass('hidden');
+                $('.wine-2017').removeClass('hidden');
+            });
         </script>
     </body>
 
