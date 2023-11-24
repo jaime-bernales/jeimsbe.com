@@ -1,3 +1,23 @@
+// Modal
+$('.overlay, .btn-close').click(function(){
+    $('.overlay, .modal-container').addClass('hidden');
+});
+
+// News
+var newID ;
+
+$('.new').click(function(){
+    newID = $(this).attr('id');
+    $('.overlay').removeClass('hidden');
+    $('#modal-' + newID).removeClass('hidden');
+});
+
+// Buy
+$('.btn-buy').click(function(){
+    $('.overlay').removeClass('hidden');
+    $('#subsidiaries').removeClass('hidden');
+});
+
 // Age validation
 
 var sizeSwitch = $('.switcher').width();
@@ -77,8 +97,66 @@ function conditionMove() {
   }
 }
 
-// Pairings slides
+const parallax = document.querySelector('.hero');
+const hero = document.querySelector('.hero-image');
 
+const sHero = 1000;
+
+parallax.addEventListener('mousemove', e => {
+    const x = e.clientX;
+    const y = e.clientY;
+
+    hero.style.transform = `
+    translate(
+        ${x / sHero}%,
+        ${y / sHero}%
+    )`
+});
+
+// Tab MALBEC
+$('.tab-container #tab-malbec').click(function(){
+    $('.tab-container .item').removeClass('active');
+    $(this).addClass('active');
+
+    $('.tab-container .marker').removeClass('tab-blend');
+    $('.tab-container .marker').addClass('tab-malbec');
+
+    $('#malbec-2021').addClass('active');
+    $('#blend-2021').removeClass('active');
+});
+
+// Tab BLEND
+$('.tab-container #tab-blend').click(function(){
+    $('.tab-container .item').removeClass('active');
+    $(this).addClass('active');
+
+    $('.tab-container .marker').removeClass('tab-malbec');
+    $('.tab-container .marker').addClass('tab-blend');
+
+    $('#blend-2021').addClass('active');
+    $('#malbec-2021').removeClass('active');
+
+    $('.stepper .step').removeClass('active');
+    $('.stepper #step-1').addClass('active');
+});
+
+// Year 2021
+$('.year-selector #cta-2021').click(function(){
+    $('.year-selector #cta-2017').removeClass('active');
+    $(this).addClass('active');
+    $('.wine-2017').addClass('hidden');
+    $('.wine-2021').removeClass('hidden');
+});
+
+// Year 2017
+$('.year-selector #cta-2017').click(function(){
+    $('.year-selector #cta-2021').removeClass('active');
+    $(this).addClass('active');
+    $('.wine-2021').addClass('hidden');
+    $('.wine-2017').removeClass('hidden');
+});
+
+// Pairings slides
 var malbecActiveParing = 1;
 var blendActiveParing = 1;
 

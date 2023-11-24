@@ -34,6 +34,38 @@
     </head>
 
     <body>
+        <!-- Elegir Sucursal -->
+        <div class="modal-container hidden" id="subsidiaries">
+            <span class="photo"></span>
+
+            <h3>Elegí tu ubicación</h3>
+            <p>Texto descriptivo</p>
+
+            <span class="btn btn-close">Cerrar</span>
+        </div>
+
+        <!-- Noticias -->
+        <div class="modal-container hidden" id="modal-new-1">
+            <span class="photo"></span>
+
+            <h3>Participamos de la feria anual (8va edición) organizada por Gorros Wine.</h3>
+            <p>Texto descriptivo</p>
+
+            <span class="btn btn-close">Cerrar</span>
+        </div>
+
+        <div class="modal-container hidden" id="modal-new-1">
+            <span class="photo"></span>
+            
+            <h3>Noticia 2</h3>
+            <p>Texto descriptivo</p>
+
+            <span class="btn btn-close">Cerrar</span>
+        </div>
+
+        <span class="overlay hidden"></span>
+
+
         <div class="container">
 
             <section class="age">
@@ -135,7 +167,7 @@
                                 </li>
                             </ul>
 
-                            <div class="btn">
+                            <div class="btn btn-buy">
                                 <img class="black" src="static/img/icons/icon-cart.svg"><img class="white" src="static/img/icons/icon-cart_white.svg"> Comprar
                             </div>
                         </div>
@@ -262,7 +294,7 @@
                                 </li>
                             </ul>
 
-                            <div class="btn">
+                            <div class="btn btn-buy">
                                 <img class="black" src="static/img/icons/icon-cart.svg"><img class="white" src="static/img/icons/icon-cart_white.svg"> Comprar
                             </div>
                         </div>
@@ -318,7 +350,6 @@
                         <span class="marker"></span>
                     </span>
                 </div>
-
             </section>
 
             <section>
@@ -562,64 +593,7 @@
         <script type="text/javascript" src="static/js/valida.js"></script>
 
         <script>
-            const parallax = document.querySelector('.hero');
-            const hero = document.querySelector('.hero-image');
 
-            const sHero = 1000;
-
-            parallax.addEventListener('mousemove', e => {
-                const x = e.clientX;
-                const y = e.clientY;
-
-                hero.style.transform = `
-                translate(
-                    ${x / sHero}%,
-                    ${y / sHero}%
-                )`
-            });
-
-            // Tab MALBEC
-            $('.tab-container #tab-malbec').click(function(){
-                $('.tab-container .item').removeClass('active');
-                $(this).addClass('active');
-
-                $('.tab-container .marker').removeClass('tab-blend');
-                $('.tab-container .marker').addClass('tab-malbec');
-
-                $('#malbec-2021').addClass('active');
-                $('#blend-2021').removeClass('active');
-            });
-
-            // Tab BLEND
-            $('.tab-container #tab-blend').click(function(){
-                $('.tab-container .item').removeClass('active');
-                $(this).addClass('active');
-
-                $('.tab-container .marker').removeClass('tab-malbec');
-                $('.tab-container .marker').addClass('tab-blend');
-
-                $('#blend-2021').addClass('active');
-                $('#malbec-2021').removeClass('active');
-
-                $('.stepper .step').removeClass('active');
-                $('.stepper #step-1').addClass('active');
-            });
-
-            // Year 2021
-            $('.year-selector #cta-2021').click(function(){
-                $('.year-selector #cta-2017').removeClass('active');
-                $(this).addClass('active');
-                $('.wine-2017').addClass('hidden');
-                $('.wine-2021').removeClass('hidden');
-            });
-
-            // Year 2017
-            $('.year-selector #cta-2017').click(function(){
-                $('.year-selector #cta-2021').removeClass('active');
-                $(this).addClass('active');
-                $('.wine-2021').addClass('hidden');
-                $('.wine-2017').removeClass('hidden');
-            });
         </script>
     </body>
 
