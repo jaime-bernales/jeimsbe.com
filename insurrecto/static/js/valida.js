@@ -6,8 +6,8 @@ $('.overlay, .btn-close').click(function(){
 // News
 var newID ;
 
-$('.new').click(function(){
-    newID = $(this).attr('id');
+$('.new .read-more').click(function(){
+    newID = $(this).closest('.new').attr('id');
     $('.overlay').removeClass('hidden');
     $('#modal-' + newID).removeClass('hidden');
 });
