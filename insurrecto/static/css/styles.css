@@ -613,6 +613,11 @@ article.contact .photo,
     background-color: #000000;
 }
 
+#subsidiaries a {
+    border: 0;
+    margin: 0 var(--S);
+}
+
 article.news #new-1 .photo,
 #modal-new-1 .photo {
     background-image: url(../img/section-nosotros/new-1.jpg);
