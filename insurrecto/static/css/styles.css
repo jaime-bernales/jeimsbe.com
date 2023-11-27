@@ -615,7 +615,16 @@ article.contact .photo,
 
 #subsidiaries a {
     border: 0;
-    margin: 0 var(--S);
+    margin: 0 var(--S) 0 var(--M);
+}
+
+#subsidiaries .text-label {
+    margin: 0;
+}
+
+#subsidiaries .text-info {
+    margin-bottom: var(--L);
+    line-height: var(--XXL);
 }
 
 article.news #new-1 .photo,
