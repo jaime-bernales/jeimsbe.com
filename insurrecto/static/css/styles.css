@@ -303,7 +303,7 @@ section.age .statement {
     text-align: left;
     background-repeat: no-repeat;
     background-size: 35px;
-    background-image: url(../img/icons/icon-chevronnext.svg);
+    background-image: url(../img/icons/icon-age_yes.svg);
     background-position: right 0px center;
 }
 
@@ -311,7 +311,7 @@ section.age .statement {
     text-align: right;
     right: auto;
     left: 16px;
-    background-image: url(../img/icons/icon-chevronprev.svg);
+    background-image: url(../img/icons/icon-age_no.svg);
     background-position: left 0px center;
 }
 
@@ -656,6 +656,36 @@ article.news .read-more {
     min-width: 66px;
     border-bottom: 1px solid #000000;
 }
+
+article.news .arrows-container {
+    position: relative;
+}
+
+article.news .arrows {
+    position: absolute;
+    right: -10px;
+    top: var(--L);
+}
+
+article.news .arrows span {
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+    cursor: pointer;
+    background-position: center;
+    background-size: 24px;
+    background-repeat: no-repeat;
+}
+
+article.news .arrows .prev {
+    background-image: url(../img/icons/icon-arrow_up.svg);
+}
+
+article.news .arrows .next {
+    background-image: url(../img/icons/icon-arrow_down.svg);
+}
+
 /* 
     Vineyards
     ---------
@@ -736,7 +766,7 @@ section.discover .pairing .arrows .prev {
     background-position: center;
     background-size: 24px;
     background-repeat: no-repeat;
-    background-image: url(../img/icons/icon-prev.svg);
+    background-image: url(../img/icons/icon-arrow_left.svg);
 }
 
 section.discover .pairing .arrows .next {
@@ -749,11 +779,13 @@ section.discover .pairing .arrows .next {
     background-position: center;
     background-size: 24px;
     background-repeat: no-repeat;
-    background-image: url(../img/icons/icon-next.svg);
+    background-image: url(../img/icons/icon-arrow_right.svg);
 }
 
 section.discover .pairing .arrows .prev:hover,
-section.discover .pairing .arrows .next:hover {
+section.discover .pairing .arrows .next:hover,
+article.news .arrows .prev:hover,
+article.news .arrows .next:hover {
     background-color: #F1F1F1;
 }
 

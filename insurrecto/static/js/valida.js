@@ -4,7 +4,41 @@ $('.overlay, .btn-close').click(function(){
 });
 
 // News
-var newID ;
+var newID;
+var currentActiveNew = 1;
+var newsAmount = $('.news .new').length;
+
+if (newsAmount == 1){
+    $('.news .arrows-container').addClass('hidden');
+}
+
+$('.news .next').click(function(){
+    currentActiveNew++;
+
+    if(currentActiveNew > newsAmount) {
+        currentActiveNew = 1;
+        $('.news #new-1').removeClass('hidden');
+    }
+
+    var newIdentifier = "#new-" + currentActiveNew;
+    $('.news .new').addClass('hidden');
+    $(this).closest('.news').find(newIdentifier).removeClass('hidden');
+});
+
+$('.news .prev').click(function(){
+
+    if(currentActiveNew == 1) {
+        currentActiveNew = newsAmount;
+    }
+
+    else {
+        currentActiveNew--;
+    }
+
+    var newIdentifier = "#new-" + currentActiveNew;
+    $('.news .new').addClass('hidden');
+    $(this).closest('.news').find(newIdentifier).removeClass('hidden');
+});
 
 $('.new .read-more').click(function(){
     newID = $(this).closest('.new').attr('id');
@@ -19,7 +53,6 @@ $('.btn-buy').click(function(){
 });
 
 // Age validation
-
 var sizeSwitch = $('.switcher').width();
 sizeSwitch = sizeSwitch - 63;
 var switchHandle = $('.switch .handle');
@@ -97,6 +130,8 @@ function conditionMove() {
   }
 }
 
+
+// Hero parallax
 const parallax = document.querySelector('.hero');
 const hero = document.querySelector('.hero-image');
 
@@ -159,11 +194,13 @@ $('.year-selector #cta-2017').click(function(){
 // Pairings slides
 var malbecActiveParing = 1;
 var blendActiveParing = 1;
+var malbecParingAmount = $('.malbec .pairing-container').length;
+var blendParingAmount = $('.blend .pairing-container').length;
 
 $('.malbec .pairing-container .next').click(function(){
     malbecActiveParing++;
 
-    if(malbecActiveParing > 4) {
+    if(malbecActiveParing > malbecParingAmount) {
         malbecActiveParing = 1;
         $('.malbec #pair-malbec-1').removeClass('hidden');
     }
@@ -175,9 +212,8 @@ $('.malbec .pairing-container .next').click(function(){
 
 $('.malbec .pairing-container .prev').click(function(){
     if(malbecActiveParing == 1) {
-        malbecActiveParing = 4;
+        malbecActiveParing = malbecParingAmount;
         $('.malbec #pair-malbec-1').removeClass('hidden');
-        console.log(malbecParing);
     }
 
     else {
@@ -194,7 +230,7 @@ $('.malbec .pairing-container .prev').click(function(){
 $('.blend .pairing-container .next').click(function(){
     blendActiveParing++;
 
-    if(blendActiveParing > 4) {
+    if(blendActiveParing > blendParingAmount) {
         blendActiveParing = 1;
         $('.blend #pair-blend-1').removeClass('hidden');
     }
@@ -206,9 +242,8 @@ $('.blend .pairing-container .next').click(function(){
 
 $('.blend .pairing-container .prev').click(function(){
     if(blendActiveParing == 1) {
-        blendActiveParing = 4;
+        blendActiveParing = blendParingAmount;
         $('.blend #pair-blend-1').removeClass('hidden');
-        console.log(blendParing);
     }
 
     else {
