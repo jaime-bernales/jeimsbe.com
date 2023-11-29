@@ -146,6 +146,7 @@ body {
     margin-bottom: var(--L);
     background-color: #E1E1E1;
     display: block;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -627,12 +628,6 @@ article.contact .photo,
     line-height: var(--XXL);
 }
 
-article.news #new-1 .photo,
-#modal-new-1 .photo {
-    background-image: url(../img/section-nosotros/new-1.jpg);
-    background-color: #000000;
-}
-
 article.news .text-info {
     width: calc(100% - 180px);
     margin: 0;
@@ -825,38 +820,6 @@ section.discover .pairing h3 {
     text-align: center;
     margin-bottom: var(--XXL);
     font-family: 'AbhayaLibre-ExtraBold', serif;
-}
-
-section.discover .pairing #pair-malbec-1 .photo {
-    background-image: url(../img/section-discover/pair-malbec-1.jpg);
-}
-
-section.discover .pairing #pair-malbec-2 .photo {
-    background-image: url(../img/section-discover/pair-malbec-2.jpg);
-}
-
-section.discover .pairing #pair-malbec-3 .photo {
-    background-image: url(../img/section-discover/pair-malbec-3.jpg);
-}
-
-section.discover .pairing #pair-malbec-4 .photo {
-    background-image: url(../img/section-discover/pair-malbec-4.jpg);
-}
-
-section.discover .pairing #pair-blend-1 .photo {
-    background-image: url(../img/section-discover/pair-blend-1.jpg);
-}
-
-section.discover .pairing #pair-blend-2 .photo {
-    background-image: url(../img/section-discover/pair-blend-2.jpg);
-}
-
-section.discover .pairing #pair-blend-3 .photo {
-    background-image: url(../img/section-discover/pair-blend-3.jpg);
-}
-
-section.discover .pairing #pair-blend-4 .photo {
-    background-image: url(../img/section-discover/pair-blend-4.jpg);
 }
 
 article.spotify {
@@ -1105,6 +1068,7 @@ footer {
         width: 70px;
         height: 70px;
         margin: 0;
+        background-size: cover;
     }
 
     article.news .new {
@@ -1215,6 +1179,13 @@ footer {
         height: 540px;
         background-image: url(../img/section-discover/spotify_mobile.jpg);
         background-size: cover;
+    }
+
+    section.discover .pairing .arrows .prev:hover,
+    section.discover .pairing .arrows .next:hover,
+    article.news .arrows .prev:hover,
+    article.news .arrows .next:hover {
+        background-color: transparent;
     }
 
     /* 

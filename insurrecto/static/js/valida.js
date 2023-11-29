@@ -8,6 +8,11 @@ var newID;
 var currentActiveNew = 1;
 var newsAmount = $('.news .new').length;
 
+$('.news .new').each(function(){
+    var newPhoto = $(this).attr('id');
+    $('.news #' + newPhoto + ' .photo, #modal-' + newPhoto + ' .photo').css('background-image', 'url(static/img/section-nosotros/' + newPhoto + '.jpg)');
+});
+
 if (newsAmount == 1){
     $('.news .arrows-container').addClass('hidden');
 }
@@ -253,6 +258,11 @@ $('.blend .pairing-container .prev').click(function(){
     var blendParing = "#pair-blend-" + blendActiveParing;
     $('.blend .pairing-container').addClass('hidden');
     $(this).closest('.pairing').find(blendParing).removeClass('hidden');
+});
+
+$('.discover .pairing .pairing-container').each(function(){
+    var pairingPhoto = $(this).attr('id');
+    $('.discover .pairing #' + pairingPhoto + ' .photo').css('background-image', 'url(static/img/section-discover/' + pairingPhoto + '.jpg)');
 });
 
 // Stepper
