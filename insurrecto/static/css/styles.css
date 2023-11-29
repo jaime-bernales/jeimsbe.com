@@ -105,6 +105,7 @@ body {
     overflow-x: hidden;
     height: 100%;
     -ms-overflow-style: none;
+    touch-action: pan-y;
 }
 
 .overlay {
