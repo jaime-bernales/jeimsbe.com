@@ -1001,7 +1001,7 @@ footer {
         width: 33%;
         height: 730px;
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: cover;
         background-position: center bottom;
     }
 
