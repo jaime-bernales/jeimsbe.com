@@ -1005,11 +1005,11 @@ footer {
         background-position: center bottom;
     }
 
-    .wine-details#malbec-2021 {
+    #malbec-2021 .wine-bottle {
         background-image: url(../img/section-nuestrosvinos/malbec-2021_mobile.jpg);
     }
-    
-    .wine-details#blend-2021 {
+
+    #blend-2021 .wine-bottle {
         background-image: url(../img/section-nuestrosvinos/blend-2021_mobile.jpg);
     }
 
@@ -1052,6 +1052,10 @@ footer {
 
     .wine-details .text-content:last-child {
         margin-bottom: 0;
+    }
+
+    .year-selector {
+        margin-top: -10px;
     }
 
     /* 
