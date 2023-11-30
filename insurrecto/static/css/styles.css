@@ -481,7 +481,7 @@ section.age .statement {
 }
 
 .wine-details#blend-2021 {
-    background-image: url(../img/section-nuestrosvinos/malbec-2021_desktop.jpg);
+    background-image: url(../img/section-nuestrosvinos/blend-2021_desktop.jpg);
 }
 
 .wine-details h4 {
@@ -1003,7 +1003,14 @@ footer {
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: center bottom;
+    }
+
+    .wine-details#malbec-2021 {
         background-image: url(../img/section-nuestrosvinos/malbec-2021_mobile.jpg);
+    }
+    
+    .wine-details#blend-2021 {
+        background-image: url(../img/section-nuestrosvinos/blend-2021_mobile.jpg);
     }
 
     .wine-details h4 {
