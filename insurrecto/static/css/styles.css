@@ -429,14 +429,14 @@ section.age .statement {
     transition: all 0.2s ease;
 }
 
-.tab-container .marker.tab-malbec {
+.tab-container .marker.tab-2 {
     width: 66px;
-    left: calc(50% - 84px);
+    left: calc(50% + 17px);
 }
 
-.tab-container .marker.tab-blend {
+.tab-container .marker.tab-1 {
     width: 52px;
-    left: calc(50% + 32px);
+    left: calc(50% - 84px);
 }
 
 .text-label {
@@ -476,11 +476,11 @@ section.age .statement {
     height: auto;
 }
 
-.wine-details#malbec-2021 {
+.wine-details#tab-content-2 {
     background-image: url(../img/section-nuestrosvinos/malbec-2021_desktop.jpg);
 }
 
-.wine-details#blend-2021 {
+.wine-details#tab-content-1 {
     background-image: url(../img/section-nuestrosvinos/blend-2021_desktop.jpg);
 }
 
@@ -970,8 +970,8 @@ footer {
         --------------
     */
 
-    .wine-details#malbec-2021,
-    .wine-details#blend-2021 {
+    .wine-details#tab-content-2,
+    .wine-details#tab-content-1 {
         background-image: none;
     }
 
@@ -1005,11 +1005,11 @@ footer {
         background-position: center bottom;
     }
 
-    #malbec-2021 .wine-bottle {
+    #tab-content-2 .wine-bottle {
         background-image: url(../img/section-nuestrosvinos/malbec-2021_mobile.jpg);
     }
 
-    #blend-2021 .wine-bottle {
+    #tab-content-1 .wine-bottle {
         background-image: url(../img/section-nuestrosvinos/blend-2021_mobile.jpg);
     }
 

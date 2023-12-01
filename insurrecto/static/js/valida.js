@@ -154,27 +154,27 @@ parallax.addEventListener('mousemove', e => {
 });
 
 // Tab MALBEC
-$('.tab-container #tab-malbec').click(function(){
+$('.tab-container #tab-2').click(function(){
     $('.tab-container .item').removeClass('active');
     $(this).addClass('active');
 
-    $('.tab-container .marker').removeClass('tab-blend');
-    $('.tab-container .marker').addClass('tab-malbec');
+    $('.tab-container .marker').removeClass('tab-1');
+    $('.tab-container .marker').addClass('tab-2');
 
-    $('#malbec-2021').addClass('active');
-    $('#blend-2021').removeClass('active');
+    $('#tab-content-2').addClass('active');
+    $('#tab-content-1').removeClass('active');
 });
 
 // Tab BLEND
-$('.tab-container #tab-blend').click(function(){
+$('.tab-container #tab-1').click(function(){
     $('.tab-container .item').removeClass('active');
     $(this).addClass('active');
 
-    $('.tab-container .marker').removeClass('tab-malbec');
-    $('.tab-container .marker').addClass('tab-blend');
+    $('.tab-container .marker').removeClass('tab-2');
+    $('.tab-container .marker').addClass('tab-1');
 
-    $('#blend-2021').addClass('active');
-    $('#malbec-2021').removeClass('active');
+    $('#tab-content-1').addClass('active');
+    $('#tab-content-2').removeClass('active');
 
     $('.stepper .step').removeClass('active');
     $('.stepper #step-1').addClass('active');
@@ -267,7 +267,7 @@ $('.discover .pairing .pairing-container').each(function(){
 
 // Stepper
 
-$('.wine-details#malbec-2021, .wine-details#blend-2021').scroll(function() {
+$('.wine-details#tab-content-2, .wine-details#tab-content-1').scroll(function() {
     var scrollLeft = $(this).scrollLeft();
     var ancho = this.scrollWidth;
 
