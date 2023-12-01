@@ -850,7 +850,7 @@ section.discover .pairing h3 {
 article.spotify {
     width: calc(100% - 32px);
     height: 474px;
-    margin: 0 auto 80px auto;
+    margin: 0 auto 160px auto;
     clear: both;
     position: relative;
     background-color: #000000;
