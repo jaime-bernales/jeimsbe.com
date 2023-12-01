@@ -628,6 +628,7 @@ article.contact .photo,
 #subsidiaries .photo {
     background-image: url(../img/section-nosotros/contact-logo.svg);
     background-color: #000000;
+    background-size: 56px auto;
 }
 
 #subsidiaries a {
