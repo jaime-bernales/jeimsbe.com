@@ -391,7 +391,7 @@ section.age .statement {
 }
 
 .tree {
-    margin: 120px auto 0 auto;
+    margin: 140px auto 0 auto;
 }
 
 .tab-container {
@@ -459,6 +459,16 @@ section.age .statement {
     Nuestros vinos
     --------------
 */
+
+section.our-wines {
+    margin-bottom: 80px;
+}
+
+section.our-wines .content {
+    width: 100%;
+    max-width: 490px;
+    margin: 0 auto;
+}
 
 .wine-details {
     background-repeat: no-repeat;
@@ -562,9 +572,14 @@ section.age .statement {
     --------
 */
 
+section.us {
+    margin-bottom: 150px;
+    display: flow-root;
+}
+
 article.contact,
 article.news {
-    margin: 60px 0 150px 0;
+    margin: 60px 0 0 0;
     width: 50%;
     height: 250px;
     padding: 50px 70px;
@@ -687,6 +702,10 @@ article.news .arrows .next {
     ---------
 */
 
+section.vineyards {
+    display: flow-root;
+}
+
 section.vineyards .content {
     margin: 60px auto 80px auto;
     width: 820px;
@@ -723,6 +742,10 @@ article.performance .text-info {
     Discover
     ---------
 */
+
+section.discover {
+    margin-top: 80px;
+}
 
 section.discover .pairing {
     width: 50%;
@@ -811,7 +834,8 @@ section.discover .pairing .photo {
 }
 
 section.discover .content {
-    width: 630px;
+    width: 100%;
+    max-width: 630px;
     margin: 0 auto;
 }
 
@@ -894,11 +918,21 @@ body.ferment .text-label {
 
 footer {
     background-color: #000000;
-    padding: 140px 0;
+    color: #FFFFFF;
+    padding: 190px 0 140px 0;
     width: 100%;
+    text-align: center;
 }
 
+footer img {
+    margin-bottom: 80px;
+    width: 90px;
+    height: 90px;
+}
 
+footer p {
+    margin-bottom: 0;
+}
 
 
 
@@ -999,7 +1033,7 @@ footer {
     .wine-details .wine-bottle {
         float: left;
         width: 33%;
-        height: 730px;
+        height: 700px;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center bottom;
